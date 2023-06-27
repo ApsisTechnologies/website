@@ -679,10 +679,48 @@
     unimport "^3.0.10"
     untyped "^1.3.2"
 
+"@nuxt/kit@npm:@nuxt/kit-edge@latest":
+  version "3.6.2-28131041.489b0888"
+  resolved "https://registry.yarnpkg.com/@nuxt/kit-edge/-/kit-edge-3.6.2-28131041.489b0888.tgz#39bcb7aef4de1577d3353b8136465b1c77cad66d"
+  integrity sha512-fIRfh9OPrPbFlXcbHuV+YafEk2sWAxQpiSBFgHtrSV0acOl+AN6YvwOZWASjBdbX86VoQYAhwanyjKkoODozcA==
+  dependencies:
+    "@nuxt/schema" "npm:@nuxt/schema-edge@3.6.2-28131041.489b0888"
+    c12 "^1.4.2"
+    consola "^3.1.0"
+    defu "^6.1.2"
+    globby "^13.2.0"
+    hash-sum "^2.0.0"
+    ignore "^5.2.4"
+    jiti "^1.18.2"
+    knitwork "^1.0.0"
+    mlly "^1.4.0"
+    pathe "^1.1.1"
+    pkg-types "^1.0.3"
+    scule "^1.0.0"
+    semver "^7.5.3"
+    unctx "^2.3.1"
+    unimport "^3.0.10"
+    untyped "^1.3.2"
+
 "@nuxt/schema@3.6.1":
   version "3.6.1"
   resolved "https://registry.yarnpkg.com/@nuxt/schema/-/schema-3.6.1.tgz#aadeeede96b00ea3f5a019bfb8f5fb80e5b7c6a3"
   integrity sha512-+4pr0lkcPP5QqprYV+/ujmBkt2JHmi/v5vaxCrMhElUFgifvJAfT89BkGFn6W7pz0b8Vd3GcByFUWI7/wX/Pcw==
+  dependencies:
+    defu "^6.1.2"
+    hookable "^5.5.3"
+    pathe "^1.1.1"
+    pkg-types "^1.0.3"
+    postcss-import-resolver "^2.0.0"
+    std-env "^3.3.3"
+    ufo "^1.1.2"
+    unimport "^3.0.10"
+    untyped "^1.3.2"
+
+"@nuxt/schema@npm:@nuxt/schema-edge@3.6.2-28131041.489b0888":
+  version "3.6.2-28131041.489b0888"
+  resolved "https://registry.yarnpkg.com/@nuxt/schema-edge/-/schema-edge-3.6.2-28131041.489b0888.tgz#be0467052ffd6b2130d3a75d5ce79183f889ff8a"
+  integrity sha512-NtjtJAr4FwD6V4KNSsMWL3kiqHDg6RZJX9eBpSak0xo6zlBHhz9lhuElIsQCGhvEl3+6i4I144Qo6jXzzxOQWw==
   dependencies:
     defu "^6.1.2"
     hookable "^5.5.3"
@@ -1095,7 +1133,7 @@
     "@vue/compiler-core" "3.3.4"
     "@vue/shared" "3.3.4"
 
-"@vue/compiler-sfc@3.3.4", "@vue/compiler-sfc@^3.3.4":
+"@vue/compiler-sfc@3.3.4", "@vue/compiler-sfc@^3.2.47", "@vue/compiler-sfc@^3.3.4":
   version "3.3.4"
   resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-3.3.4.tgz#b19d942c71938893535b46226d602720593001df"
   integrity sha512-6y/d8uw+5TkCuzBkgLS0v3lSM3hJDntFEiUORM11pQ/hKvkhSKZrXW6i69UyXlJQisJxuUEJKAWEqWbWsLeNKQ==
@@ -3496,6 +3534,15 @@ nuxi@3.6.1:
   integrity sha512-8kyDHfyiq0oLywon8UlucQWyYj3toE5AU96COjbuQy8ZzyRT6KJlAmMXmFkO/VuIhaMC8qdlcZPYg/NnHTVjaQ==
   optionalDependencies:
     fsevents "~2.3.2"
+
+nuxt-svgo@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/nuxt-svgo/-/nuxt-svgo-3.1.0.tgz#59f5645dff7ab5340e8a0ae2c3b1d9c3efa97db0"
+  integrity sha512-gqRYVUxN6kDJ2Hco/xLNUr56t665xdSwG78Ba/5o1TiYQLeIux1xErS4yR/1+ju/nIWj1DGwnBpDCw9GfX9QGA==
+  dependencies:
+    "@nuxt/kit" "npm:@nuxt/kit-edge@latest"
+    "@vue/compiler-sfc" "^3.2.47"
+    svgo "^3.0.2"
 
 nuxt@^3.1.1:
   version "3.6.1"
