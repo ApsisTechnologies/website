@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     'nuxt-svgo'
   ],
   imports: {
-    autoImport: false,
+    autoImport: false
   },
   css: [
     'assets/css/typeface.css',

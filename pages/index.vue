@@ -8,7 +8,12 @@
 </template>
 
 <script setup lang="ts">
+import { definePageMeta } from '#imports'
 import GitHubLogo from 'assets/icons/social/github.svg'
 import TwitterLogo from 'assets/icons/social/twitter.svg'
 import LinkedInLogo from 'assets/icons/social/linkedin.svg'
+
+definePageMeta({
+  layout: 'landing'
+})
 </script>
