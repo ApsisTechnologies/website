@@ -1,0 +1,180 @@
+.full-page {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Used for narrow sections that shouldn not grow horizontally past the point of legibility */
+.content-section {
+  max-width: var(--max-content-width);
+  margin: auto;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.non-breaking-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.selectable {
+  user-select: text;
+  -webkit-user-select: text;
+  cursor: auto;
+}
+
+.non-selectable {
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: default;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.no-pointer-events {
+  pointer-events: none;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.pos-fixed {
+  position: fixed;
+}
+
+.pos-sticky {
+  position: sticky;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-stretch {
+  justify-content: center;
+  align-items: stretch;
+}
+
+.flex-start {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-end {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex-space-around {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-no-wrap {
+  flex-wrap: nowrap;
+}
+
+.flex-gap {
+  gap: var(--flex-gap);
+}
+
+.flex-gap-large {
+  gap: calc(var(--flex-gap) * 2);
+}
+
+.flex-gap-small {
+  gap: calc(var(--flex-gap) / 2);
+}
+
+.flex-gap-tiny {
+  gap: calc(var(--flex-gap) / 4);
+}
+
+.scroll-snap-y-soft {
+  scroll-snap-type: y proximity;
+  scroll-snap-stop: always;
+}
+
+.scroll-snap-y-hard {
+  scroll-snap-type: y mandatory;
+  scroll-snap-stop: always;
+}
+
+.scroll-snap-align-start {
+  scroll-snap-align: start;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.icon-button {
+  width: 1.2rem;
+  height: 1.2rem;
+  transition: scale 150ms ease-out, rotate 150ms ease-out;
+}
+
+@media (--hover) {
+  .icon-button:hover {
+    scale: 1.2;
+    rotate: 5deg;
+    cursor: pointer;
+  }
+}
+
+.color-text {
+  background-image: var(--main-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-shadow {
+  text-shadow: var(--text-shadow);
+}

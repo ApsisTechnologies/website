@@ -8,4 +8,10 @@ export default defineNuxtConfig({
   imports: {
     autoImport: false,
   },
+  css: [
+    'assets/css/typeface.css',
+    'assets/css/styles.css',
+    'assets/css/global.css',
+    'assets/css/animations.css'
+  ],
 })

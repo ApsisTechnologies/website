@@ -1,5 +1,7 @@
 <template>
-  <h1>Home</h1>
+  <h3>A creative technology studio</h3>
+  <h1>Re-imagine technology</h1>
+  <p>Metaverse and web3 development services</p>
   <GitHubLogo />
   <TwitterLogo />
   <LinkedInLogo />
