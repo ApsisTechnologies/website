@@ -10,12 +10,14 @@
     "format": "eslint ./ --ext .ts,.vue --fix"
   },
   "devDependencies": {
+    "@csstools/postcss-global-data": "^1.0.3",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
     "eslint": "^8.43.0",
     "eslint-plugin-vue": "^9.15.1",
     "nuxt": "^3.1.1",
     "nuxt-svgo": "^3.1.0",
+    "postcss-custom-media": "^9.1.5",
     "typescript": "5.0.4"
   }
 }

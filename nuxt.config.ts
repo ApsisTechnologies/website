@@ -14,4 +14,14 @@ export default defineNuxtConfig({
     'assets/css/global.css',
     'assets/css/animations.css'
   ],
+  postcss: {
+    plugins: {
+      '@csstools/postcss-global-data': {
+        files: [
+          'assets/css/media.css'
+        ]
+      },
+      'postcss-custom-media': {}
+    }
+  },
 })
