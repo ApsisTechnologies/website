@@ -3,7 +3,8 @@ import { defineNuxtConfig } from 'nuxt/config'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    'nuxt-svgo'
+    'nuxt-svgo',
+    '@nuxtjs/i18n'
   ],
   imports: {
     autoImport: false
@@ -24,4 +25,23 @@ export default defineNuxtConfig({
       'postcss-custom-media': {}
     }
   },
+  i18n: {
+    strategy: 'no_prefix',
+    defaultLocale: 'en',
+    langDir: 'locales',
+    locales: [
+      {
+        code: 'en',
+        iso: 'en',
+        name: 'English',
+        file: 'en.yml',
+      },
+      {
+        code: 'es',
+        iso: 'es',
+        name: 'Español',
+        file: 'es.yml'
+      }
+    ]
+  }
 })
