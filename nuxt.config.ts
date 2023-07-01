@@ -2,6 +2,11 @@ import { defineNuxtConfig } from 'nuxt/config'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public: {
+      THEME: process.env.THEME,
+    }
+  },
   modules: [
     'nuxt-svgo',
     '@nuxtjs/i18n'

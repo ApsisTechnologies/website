@@ -2,7 +2,6 @@
   <h3>{{ t('welcome') }}</h3>
   <label>
     {{ t('language') + t('flag')}}
-    <!-- <select> -->
     <select name="locales" @change="onLocaleSelected">
       <option v-for="l in availableLocales" :value="l.code" :key="l.code">{{l.name}}</option>
     </select>
