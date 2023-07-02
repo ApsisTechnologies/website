@@ -30,6 +30,8 @@ export class ThemeManager {
     })
   }
 
+  get name() { return this._colorSchemeConfig.name }
+
   get isDarkModeActive() { return this._darkModeMediaQuery.matches }
 
   get colorScheme() { return this._colorScheme }

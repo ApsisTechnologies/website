@@ -4,12 +4,14 @@ import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
   runtimeConfig: {
     public: {
-      THEME: process.env.THEME,
+      theme: process.env.THEME,
+      appBaseUrl: process.env.APP_BASE_URL,
     }
   },
   modules: [
     'nuxt-svgo',
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+    '@pinia/nuxt'
   ],
   imports: {
     autoImport: false

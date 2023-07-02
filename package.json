@@ -24,5 +24,8 @@
     "nuxt-svgo": "^3.1.0",
     "postcss-custom-media": "^9.1.5",
     "typescript": "5.0.4"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.11"
   }
 }

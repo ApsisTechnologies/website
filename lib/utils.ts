@@ -32,3 +32,7 @@ export function isValidPassword(password: string) {
   const regex = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d!@#$%^&*()\-+=~`[\]{}|\\:;"'<>,.?/_]{8,}$/
   return regex.test(password)
 }
+
+export function getUserLocale() {
+  return window.navigator.language
+}
