@@ -5,6 +5,7 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
+    "clean": "rm -fr .nuxt .output dist",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint ./ --ext .ts,.vue",

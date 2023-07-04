@@ -1,0 +1,8 @@
+{
+	"recommendations": [
+		"Vue.volar",
+		"dbaeumer.vscode-eslint",
+		"csstools.postcss",
+		"lokalise.i18n-ally",
+	]
+}
