@@ -25,6 +25,8 @@ import { computed } from 'vue'
 import { useI18n, useHead } from '#imports'
 import { useRuntimeConfig } from 'nuxt/app'
 import { usePreferences } from 'store/preferences'
+import { useEventBus } from 'composables/eventBus'
+import { EventType } from 'lib/event'
 import GitHubLogo from 'assets/icons/social/github.svg'
 import TwitterLogo from 'assets/icons/social/twitter.svg'
 import LinkedInLogo from 'assets/icons/social/linkedin.svg'
@@ -35,6 +37,7 @@ const preferences = usePreferences()
 const config = useRuntimeConfig()
 
 const { t, locale, locales } = useI18n()
+const bus = useEventBus()
 
 const title = computed(() => `${t('company.name')} | ${t('home')}`)
 
@@ -44,6 +47,10 @@ const onLocaleSelected = (e: Event) => {
 }
 
 const availableLocales = computed(() => locales.value)
+
+bus.on(EventType.APPLICATION_ERROR, (e) => {
+  console.debug('Application error:', e.detail)
+})
 
 useHead({
   title,

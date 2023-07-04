@@ -22,6 +22,7 @@ export default defineNuxtConfig({
     'lib': resolve(__dirname, 'lib'),
     'config': resolve(__dirname, 'config'),
     'composables': resolve(__dirname, 'composables'),
+    'components': resolve(__dirname, 'components'),
     'store': resolve(__dirname, 'store'),
   },
   css: [

@@ -1,5 +1,5 @@
 export enum EventType {
-
+    APPLICATION_ERROR = 'app-error',
     MESSAGE = 'message',
     NOTIFICATION = 'notification',
     POPUP = 'popup',

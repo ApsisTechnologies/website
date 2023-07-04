@@ -14,6 +14,7 @@ This repo includes all the necessary setup to develop a Nuxt v3 application and 
 - Theme manager plugin + composable.
 - Event bus plugin + composable.
 - ESLint configuration.
+- Global application setup + error handling via `plugin/main.client.ts`.
 
 ## Setup
 

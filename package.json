@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint ./ --ext .ts,.vue",
     "format": "eslint ./ --ext .ts,.vue --fix",
-    "serve": "http-server --cors -p 3000 dist"
+    "serve": "serve --cors -p 3000 dist/"
   },
   "devDependencies": {
     "@csstools/postcss-global-data": "^1.0.3",
@@ -20,10 +20,10 @@
     "@typescript-eslint/parser": "^5.60.1",
     "eslint": "^8.43.0",
     "eslint-plugin-vue": "^9.15.1",
-    "http-server": "^14.1.1",
     "nuxt": "^3.1.1",
     "nuxt-svgo": "^3.1.0",
     "postcss-custom-media": "^9.1.5",
+    "serve": "^14.2.0",
     "typescript": "5.0.4"
   },
   "dependencies": {
