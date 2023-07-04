@@ -1,5 +1,5 @@
-import { ThemeManager } from '@/lib/theme'
-import { getUserLocale } from '@/lib/utils'
+import { ThemeManager } from 'lib/theme'
+import { getUserLocale } from 'lib/util'
 import { defineNuxtPlugin } from 'nuxt/app'
 import { usePreferences } from '@/store/preferences'
 

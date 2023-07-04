@@ -1,4 +1,4 @@
-import { setCssVariable } from '@/lib/utils'
+import { setCssVariable } from 'lib/util'
 
 type ColorSchemeVariable = { string: string }
 type ColorSchemeConfig = { [name: string]: ColorSchemeVariable }

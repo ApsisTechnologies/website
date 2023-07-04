@@ -22,12 +22,12 @@
 <script setup lang="ts">
 import { definePageMeta } from '#imports'
 import { computed } from 'vue'
+import { useI18n, useHead } from '#imports'
+import { useRuntimeConfig } from 'nuxt/app'
+import { usePreferences } from 'store/preferences'
 import GitHubLogo from 'assets/icons/social/github.svg'
 import TwitterLogo from 'assets/icons/social/twitter.svg'
 import LinkedInLogo from 'assets/icons/social/linkedin.svg'
-import { useI18n, useHead } from '#imports'
-import { useRuntimeConfig } from 'nuxt/app'
-import { usePreferences } from '@/store/preferences'
 
 definePageMeta({ layout: 'landing' })
 
@@ -36,7 +36,7 @@ const config = useRuntimeConfig()
 
 const { t, locale, locales } = useI18n()
 
-const title = computed(() => `${t('company')} | ${t('home')}`)
+const title = computed(() => `${t('company.name')} | ${t('home')}`)
 
 const onLocaleSelected = (e: Event) => {
   locale.value = e.target?.value
@@ -55,8 +55,8 @@ useHead({
     { property: 'og:title', content: title },
     { property: 'og:locale', content: locale },
     { property: 'og:url', content: config.public.appBaseUrl },
-    { property: 'og:site_name', content: t('company') },
-    // { property: 'og:description', content: copy.company.tagline },
+    { property: 'og:site_name', content: t('company.name') },
+    { property: 'og:description', content: t('company.tagline') },
     // { property: 'og:image', content: `${config.appUrl}/img/banner.png` },
     // { property: 'og:image:type', content: 'image/png' },
     // { property: 'og:image:width', content: '1200' },

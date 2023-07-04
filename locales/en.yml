@@ -1,5 +1,9 @@
 flag: 🇺🇸
-company: RockinDev
+
+company:
+  name: RockinDev
+  tagline: Reimagine technology
+
 home: Home
 welcome: Welcome!
 language: Language

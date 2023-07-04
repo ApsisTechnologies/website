@@ -1,5 +1,5 @@
 import { defineNuxtPlugin } from 'nuxt/app'
-import { ThemeManager }  from '@/lib/theme'
+import { ThemeManager }  from 'lib/theme'
 import themes from '@/config/themes.json'
 
 export default defineNuxtPlugin((nuxtApp) => {

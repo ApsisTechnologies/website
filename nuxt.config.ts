@@ -1,7 +1,9 @@
 import { defineNuxtConfig } from 'nuxt/config'
+import { resolve } from 'path'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: false,
   runtimeConfig: {
     public: {
       theme: process.env.THEME,
@@ -15,6 +17,12 @@ export default defineNuxtConfig({
   ],
   imports: {
     autoImport: false
+  },
+  alias: {
+    'lib': resolve(__dirname, 'lib'),
+    'config': resolve(__dirname, 'config'),
+    'composables': resolve(__dirname, 'composables'),
+    'store': resolve(__dirname, 'store'),
   },
   css: [
     'assets/css/typeface.css',
