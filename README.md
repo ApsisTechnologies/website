@@ -1,20 +1,26 @@
-# Nuxt 3 Minimal Starter
+# RockinDev's Nuxt 3 SSG frontend starter
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This repo includes all the necessary setup to develop a Nuxt v3 application and prerender it via `nuxt generate`.
+
+## Features
+
+- Base global styles & fontfaces.
+- Layout + pages.
+- PostCSS config for global media queries.
+- Pinia stores.
+- Internationalization support via `@nuxt/i18n` module + pre-configured locales.
+- Page meta via `unhead` for `<head>` configuration.
+- Loading of .svg files as Vue components via `nuxt-svgo`.
+- Theme manager plugin + composable.
+- Event bus plugin + composable.
+- ESLint configuration.
 
 ## Setup
 
-Make sure to install the dependencies:
+Install dependencies:
 
 ```bash
-# yarn
 yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
 ```
 
 ## Development Server
@@ -22,7 +28,7 @@ pnpm install
 Start the development server on http://localhost:3000
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 ## Production
@@ -30,13 +36,11 @@ npm run dev
 Build the application for production:
 
 ```bash
-npm run build
+yarn generate
 ```
 
 Locally preview production build:
 
 ```bash
-npm run preview
+yarn serve
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
