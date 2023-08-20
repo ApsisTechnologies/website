@@ -36,3 +36,9 @@ export function isValidPassword(password: string) {
 export function getUserLocale() {
   return window.navigator.language
 }
+
+export function navigate(url: string, external = false) {
+  window.open(url.toString(), external ? '_blank' : undefined)
+}
+
+export const rotateForward = (v: number, max: number) => v === max - 1 ? 0 : v + 1

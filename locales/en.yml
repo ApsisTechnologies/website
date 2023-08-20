@@ -2,9 +2,88 @@ flag: 🇺🇸
 
 company:
   name: RockinDev
-  tagline: Reimagine technology
+  tagline: Tech Reimagined
+  description: Next-gen development solutions
 
-home: Home
-welcome: Welcome!
-language: Language
-nextLocale: Next language
+nav:
+  blog: Blog
+  portfolio: Portfolio
+  contact: Contact us
+  about: About
+  features: Features
+  team: Team
+
+footer:
+  pre: Made with ❤️
+  notice: All rights reserved.
+
+landing:
+  hero:
+    header: Reimagine
+    title: Technology
+    subtitle: Next-gen development solutions
+    about: Welcome to RockinDev, where imagination meets innovation. We craft captivating, immersive experiences, shaping the digital landscape through our cutting-edge interface design, hyperscalable cloud infrastructure solutions, AI integrations and blockchain technology, unlocking new realms of possibility.
+
+  video:
+    loading: loading
+    marquee:
+      - reimagine
+      - पुनः कल्पयतु
+      - 再考する
+      - คิดใหม่
+
+  about:
+    title: Why we rock
+    heart:
+      text: We craft beautiful digital products *(users love)*, making sure no detail goes unnoticed.
+    arrows:
+      text: We tackle challenging technical problems and solve them through *(hyper-scalable)*, *(future-proof)* solutions.
+    point:
+      text: Looking for expert guidance? We can *(consult)* for your team, guiding it through the entire product release cycle.
+    cta: get in touch
+
+  stack:
+    title: Our stack
+
+  features:
+    title: Features
+    items:
+      - title: Artificial intelligence
+        text: We unleash the future with AI integrations that make solving hard problems a thing of the past. From conversational voice-activated chatbots to recommendation algorithms, we'll sprinkle human-like brilliance into your digital products.
+      - title: Interface design
+        text: Get ready to dazzle and captivate with interfaces that feel like home from the very first click. From 3D to 2D, we turn pixels into new pathways, crafting digital spaces where users don't just scroll and click, but flourish.
+      - title: Pixel streaming
+        text: Witness advanced, immersive graphics dance effortlessly from the cloud to your screen – no beefy GPUs required. Interact with mind-blowing visual experiences - even on low-end devices - with just an internet connection.
+      - title: Full-stack engineering
+        text: At RockinDev, we wield the full-stack magic needed to transform ideas into reality. With us, your vision is in expert hands every step of the way throughout the entire product release cycle and beyond.
+      - title: Hyper-scalable infrastructure
+        text: Our globally-scalable cloud infrastructure adapts to your needs, expanding and contracting with your users demands. From local to global, we empower your digital ambitions with a solid foundation that can grow at the speed of your imagination.
+
+  contact:
+    title: Get in touch
+    subtitle: We would love to hear from you
+    decoration: ♡
+
+    formText: Reach out to our team today to explore how we can empower your business.
+    namePlaceholder: Name
+    emailPlaceholder: Email address
+    buttonText: Send message
+    requestSentText: Your contact request was received! Please check your inbox to pick a time slot to talk to our team.
+
+    invalidName: Please type your name
+    invalidEmail: Please type a valid email address
+
+    locations:
+      us:
+        title: Miami
+        address:
+          - 18021 Biscayne Blvd, of. 303
+          - Aventura, Florida
+          - United States
+
+      ar:
+        title: Buenos Aires
+        address:
+          - Cnel. Niceto Vega 4736
+          - Ciudad de Buenos Aires
+          - Argentina

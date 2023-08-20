@@ -1,22 +1,10 @@
 <template>
-  <h3>{{ t('welcome') }}</h3>
-  <label>
-    {{ t('language') + t('flag')}}
-    <select name="locales" @change="onLocaleSelected">
-      <option v-for="l in availableLocales" :value="l.code" :key="l.code">{{l.name}}</option>
-    </select>
-  </label>
-  <br />
-
-  <GitHubLogo />
-  <TwitterLogo />
-  <LinkedInLogo />
-
-  <br />
-  <span>{{ `Current theme: ${preferences.theme}` }}</span>
-  <br />
-  <span>{{ `Current language: ${preferences.locale}` }}</span>
-  <br />
+  <HeroSection />
+  <VideoSection />
+  <AboutSection />
+  <FeaturesSection />
+  <StackSection />
+  <ContactSection />
 </template>
 
 <script setup lang="ts">
@@ -24,50 +12,41 @@ import { definePageMeta } from '#imports'
 import { computed } from 'vue'
 import { useI18n, useHead } from '#imports'
 import { useRuntimeConfig } from 'nuxt/app'
-import { usePreferences } from 'store/preferences'
-import { useEventBus } from 'composables/eventBus'
-import { EventType } from 'lib/event'
-import GitHubLogo from 'assets/icons/social/github.svg'
-import TwitterLogo from 'assets/icons/social/twitter.svg'
-import LinkedInLogo from 'assets/icons/social/linkedin.svg'
+import { useThemeManager } from 'composables/themeManager'
+import HeroSection from 'components/landing/HeroSection.vue'
+import VideoSection from 'components/landing/VideoSection.vue'
+import AboutSection from 'components/landing/AboutSection.vue'
+import FeaturesSection from 'components/landing/FeaturesSection.vue'
+import StackSection from 'components/landing/StackSection.vue'
+import ContactSection from 'components/landing/ContactSection.vue'
 
 definePageMeta({ layout: 'landing' })
 
-const preferences = usePreferences()
 const config = useRuntimeConfig()
 
-const { t, locale, locales } = useI18n()
-const bus = useEventBus()
+const { t, locale } = useI18n()
+const themeManager = useThemeManager()
 
-const title = computed(() => `${t('company.name')} | ${t('home')}`)
+themeManager.setDark()
 
-const onLocaleSelected = (e: Event) => {
-  locale.value = e.target?.value
-  preferences.setLocale(locale.value)
-}
-
-const availableLocales = computed(() => locales.value)
-
-bus.on(EventType.APPLICATION_ERROR, (e) => {
-  console.debug('Application error:', e.detail)
-})
+const title = computed(() => `${t('company.name')} | ${t('company.tagline')}`)
 
 useHead({
   title,
   htmlAttrs: { lang: locale },
   meta: [
-    { name: 'description', content: 'RockinDev\'s home page yo!' },
+    { name: 'description', content: t('company.description') },
 
     { property: 'og:type', content: 'website' },
     { property: 'og:title', content: title },
     { property: 'og:locale', content: locale },
-    { property: 'og:url', content: config.public.appBaseUrl },
+    { property: 'og:url', content: config.public.appBaseUrl as string },
     { property: 'og:site_name', content: t('company.name') },
     { property: 'og:description', content: t('company.tagline') },
-    // { property: 'og:image', content: `${config.appUrl}/img/banner.png` },
-    // { property: 'og:image:type', content: 'image/png' },
-    // { property: 'og:image:width', content: '1200' },
-    // { property: 'og:image:height', content: '630' }
+    { property: 'og:image', content: `${config.public.appBaseUrl}/banner.png` },
+    { property: 'og:image:type', content: 'image/png' },
+    { property: 'og:image:width', content: '1200' },
+    { property: 'og:image:height', content: '630' }
   ]
 })
 </script>

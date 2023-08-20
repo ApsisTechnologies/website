@@ -1,7 +1,10 @@
 .full-page {
   width: 100vw;
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow: hidden;
+  /* overflow-x: hidden; */
+  padding-left: var(--content-margin);
+  padding-right: var(--content-margin);
 }
 
 /* Used for narrow sections that shouldn not grow horizontally past the point of legibility */
@@ -154,6 +157,10 @@
   visibility: hidden;
 }
 
+.removed {
+  display: none;
+}
+
 .icon-button {
   width: 1.2rem;
   height: 1.2rem;
@@ -166,13 +173,6 @@
     rotate: 5deg;
     cursor: pointer;
   }
-}
-
-.color-text {
-  background-image: var(--main-gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .text-shadow {

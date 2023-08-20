@@ -1,0 +1,80 @@
+.landing-header {
+  font-family: var(--heading-font);
+  position: relative;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: 0.3em;
+  line-height: 1em;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.landing-title {
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 3.5rem;
+  letter-spacing: .1rem;
+  line-height: 1em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.landing-subtitle {
+  font-family: var(--heading-font);
+  position: relative;
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 0.04em;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  width: fit-content;
+  margin-bottom: .4rem;
+}
+
+.text-gradient-outline {
+  padding-left: 3px;
+  font-family: var(--heading-font);
+  position: relative;
+  display: block;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  background: var(--main-gradient);
+  color: var(--background-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 0.08em transparent;
+}
+
+.text-outline {
+  color: var(--background-color);
+  background-color: var(--text-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: var(--decoration-line-thickness) transparent;
+}
+
+.text-gradient {
+  background-image: var(--main-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-secondary {
+  background-image: var(--secondary-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+span strong, p strong {
+  background-image: var(--secondary-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: inherit;
+}

@@ -4,10 +4,21 @@ import { resolve } from 'path'
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: false,
+  spaLoadingTemplate: false,
   runtimeConfig: {
     public: {
-      theme: process.env.THEME,
-      appBaseUrl: process.env.APP_BASE_URL,
+      THEME: process.env.THEME,
+      APP_BASE_URL: process.env.APP_BASE_URL,
+      API_BASE_URL: process.env.API_BASE_URL,
+      LINKEDIN_URL: process.env.LINKEDIN_URL,
+      GITHUB_URL: process.env.GITHUB_URL,
+      TWITTER_URL: process.env.TWITTER_URL,
+      ANALYTICS_ENABLED: process.env.ANALYTICS_ENABLED,
+      FIREBASE_API_KEY: process.env.FIREBASE_API_KEY,
+      FIREBASE_AUTH_DOMAIN: process.env.FIREBASE_AUTH_DOMAIN,
+      FIREBASE_PROJECT_ID: process.env.FIREBASE_PROJECT_ID,
+      FIREBASE_APP_ID: process.env.FIREBASE_APP_ID,
+      FIREBASE_MEASUREMENT_ID: process.env.FIREBASE_MEASUREMENT_ID,
     }
   },
   modules: [
@@ -29,6 +40,7 @@ export default defineNuxtConfig({
     'assets/css/typeface.css',
     'assets/css/styles.css',
     'assets/css/global.css',
+    'assets/css/landing.css',
     'assets/css/animations.css'
   ],
   postcss: {

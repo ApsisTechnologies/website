@@ -1,10 +1,11 @@
 export enum EventType {
-    APPLICATION_ERROR = 'app-error',
-    MESSAGE = 'message',
-    NOTIFICATION = 'notification',
-    POPUP = 'popup',
+  APPLICATION_ERROR = 'app-error',
+  MESSAGE = 'message',
+  NOTIFICATION = 'notification',
+  POPUP = 'popup',
+  CONTACT = 'contact',
 
-    SERVICE_WORKER_UPDATE_FOUND = 'sw-update-found',
+  SERVICE_WORKER_UPDATE_FOUND = 'sw-update-found',
 }
 
 export type ApplicationEventCallback = (e: CustomEvent) => void
@@ -26,7 +27,7 @@ export class EventBus {
     return this.target.removeEventListener(type, listener as (e: Event) => void)
   }
 
-  emit(type: EventType, detail: Object) {
+  emit(type: EventType, detail?: Object) {
     return this.target.dispatchEvent(new CustomEvent(type, { detail, cancelable: true }))
   }
 

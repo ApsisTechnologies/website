@@ -118,7 +118,7 @@
   position: absolute;
   transform: scale(0, 1);
   background-color: var(--text-color);
-  animation: ripple 300ms linear;
+  animation: ripple 300ms ease-out;
   transform-origin: center center;
   opacity: .8;
 }

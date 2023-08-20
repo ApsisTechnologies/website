@@ -2,7 +2,7 @@ import { ThemeManager } from 'lib/theme'
 import { EventBus, EventType } from 'lib/event'
 import { getUserLocale } from 'lib/util'
 import { defineNuxtPlugin } from 'nuxt/app'
-import { usePreferences } from '@/store/preferences'
+import { usePreferences } from 'store/preferences'
 
 export default defineNuxtPlugin((nuxtApp) => {
   // App initialization hook: Run after all plugins are initialized and application is mounted
@@ -23,9 +23,8 @@ export default defineNuxtPlugin((nuxtApp) => {
   })
 
   nuxtApp.vueApp.config.errorHandler = (error: any, context) => {
+    console.error('Error:', error, ', context:', context)
     const bus = nuxtApp.vueApp.config.globalProperties.eventBus as EventBus
-    console.debug('Error:', error)
-    console.debug('Context:', context)
     bus.emit(EventType.APPLICATION_ERROR, error)
   }
 })

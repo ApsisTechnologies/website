@@ -3,21 +3,9 @@
   font-style: normal;
   font-weight: 200 700;
   font-display: swap;
-  src: url('assets/fonts/ClashDisplay-Variable.woff2') format('woff2') tech('variations'),
-       url('assets/fonts/ClashDisplay-Variable.woff2') format('woff2-variations'),
+  src: url('assets/fonts/ClashDisplay-Variable.woff2') format('woff2-variations'),
        url('assets/fonts/ClashDisplay-Regular.woff2') format('woff2'),
        url('assets/fonts/ClashDisplay-Regular.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'Author';
-  font-style: normal;
-  font-weight: 200 700;
-  font-display: swap;
-  src: url('assets/fonts/Author-Variable.woff2') format('woff2') tech('variations'),
-       url('assets/fonts/Author-Variable.woff2') format('woff2-variations'),
-       url('assets/fonts/Author-Regular.woff2') format('woff2'),
-       url('assets/fonts/Author-Regular.otf') format('opentype');
 }
 
 @font-face {
@@ -25,26 +13,24 @@
   font-style: normal;
   font-weight: 200 800;
   font-display: swap;
-  src: url('assets/fonts/PlusJakartaSans-Variable.woff2') format('woff2') tech('variations'),
-       url('assets/fonts/PlusJakartaSans-Variable.woff2') format('woff2-variations'),
+  src: url('assets/fonts/PlusJakartaSans-Variable.woff2') format('woff2-variations'),
        url('assets/fonts/PlusJakartaSans-Regular.woff2') format('woff2'),
        url('assets/fonts/PlusJakartaSans-Regular.otf') format('opentype');
 }
 
-/* @font-face {
-  font-family: 'Source Code Pro';
+@font-face {
+  font-family: 'Author';
   font-style: normal;
-  font-weight: 200 900;
+  font-weight: 200 700;
   font-display: swap;
-  src: url('assets/fonts/SourceCodePro-Variable.woff2') format('woff2 supports variations'),
-       url('assets/fonts/SourceCodePro-Variable.woff2') format('woff2-variations'),
-       url('assets/fonts/SourceCodePro-Regular.woff2') format('woff2'),
-       url('assets/fonts/SourceCodePro-Regular.ttf') format('truetype');
-} */
+  src: url('assets/fonts/Author-Variable.woff2') format('woff2-variations'),
+       url('assets/fonts/Author-Regular.woff2') format('woff2'),
+       url('assets/fonts/Author-Regular.otf') format('opentype');
+}
 
 :root {
-  --heading-font: "Clash Display", sans-serif;
-  --primary-font: "Author", sans-serif;
-  /* --primary-font: "Plus Jakarta Sans", sans-serif; */
+  --heading-font: 'Clash Display', sans-serif;
+  --primary-font: 'Plus Jakarta Sans', sans-serif;
+  /* --primary-font: "Author", sans-serif; */
   /* --code-font: Source Code Pro, monospace; */
 }
