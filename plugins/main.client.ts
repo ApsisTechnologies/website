@@ -3,6 +3,8 @@ import { EventBus, EventType } from 'lib/event'
 import { getUserLocale } from 'lib/util'
 import { defineNuxtPlugin } from 'nuxt/app'
 import { usePreferences } from 'store/preferences'
+import { useRouter } from 'vue-router'
+import NotFound from '@/pages/404.vue'
 
 export default defineNuxtPlugin((nuxtApp) => {
   // App initialization hook: Run after all plugins are initialized and application is mounted
@@ -27,4 +29,11 @@ export default defineNuxtPlugin((nuxtApp) => {
     const bus = nuxtApp.vueApp.config.globalProperties.eventBus as EventBus
     bus.emit(EventType.APPLICATION_ERROR, error)
   }
+
+  const router = useRouter()
+  router.addRoute({
+    name: 'NotFound',
+    path: '/:pathMatch(.*)*',
+    component: NotFound
+  })
 })

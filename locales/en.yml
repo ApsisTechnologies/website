@@ -3,7 +3,7 @@ flag: 🇺🇸
 company:
   name: RockinDev
   tagline: Tech Reimagined
-  description: Next-gen development solutions
+  description: Next-gen digital solutions
 
 nav:
   blog: Blog
@@ -21,7 +21,6 @@ landing:
   hero:
     header: Reimagine
     title: Technology
-    subtitle: Next-gen development solutions
     about: Welcome to RockinDev, where imagination meets innovation. We craft captivating, immersive experiences, shaping the digital landscape through our cutting-edge interface design, hyperscalable cloud infrastructure solutions, AI integrations and blockchain technology, unlocking new realms of possibility.
 
   video:
@@ -87,3 +86,9 @@ landing:
           - Cnel. Niceto Vega 4736
           - Ciudad de Buenos Aires
           - Argentina
+
+error:
+  notFound:
+    title: Page not found
+    subtitle: We couldn't find what you were looking for...
+    goBack: Get me out of here...

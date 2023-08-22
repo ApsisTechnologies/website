@@ -18,19 +18,7 @@
        url('assets/fonts/PlusJakartaSans-Regular.otf') format('opentype');
 }
 
-@font-face {
-  font-family: 'Author';
-  font-style: normal;
-  font-weight: 200 700;
-  font-display: swap;
-  src: url('assets/fonts/Author-Variable.woff2') format('woff2-variations'),
-       url('assets/fonts/Author-Regular.woff2') format('woff2'),
-       url('assets/fonts/Author-Regular.otf') format('opentype');
-}
-
 :root {
   --heading-font: 'Clash Display', sans-serif;
   --primary-font: 'Plus Jakarta Sans', sans-serif;
-  /* --primary-font: "Author", sans-serif; */
-  /* --code-font: Source Code Pro, monospace; */
 }

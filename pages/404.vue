@@ -1,34 +1,18 @@
 <template>
-  <HeroSection />
-  <VideoSection />
-  <AboutSection />
-  <FeaturesSection />
-  <StackSection />
-  <ContactSection />
+  <h1>{{ t('error.notFound.title') }}</h1>
+  <p>{{ t('error.notFound.subtitle') }}</p>
+  <NuxtLink to="/">{{ t('error.notFound.goBack') }}</NuxtLink>
 </template>
 
 <script setup lang="ts">
-import { definePageMeta } from '#imports'
 import { computed } from 'vue'
 import { useI18n, useHead } from '#imports'
 import { useRuntimeConfig } from 'nuxt/app'
-import { useDarkScheme } from 'composables/themeManager'
-import HeroSection from 'components/landing/HeroSection.vue'
-import VideoSection from 'components/landing/VideoSection.vue'
-import AboutSection from 'components/landing/AboutSection.vue'
-import FeaturesSection from 'components/landing/FeaturesSection.vue'
-import StackSection from 'components/landing/StackSection.vue'
-import ContactSection from 'components/landing/ContactSection.vue'
-
-definePageMeta({ layout: 'landing' })
-
 const config = useRuntimeConfig()
 
 const { t, locale } = useI18n()
 
-useDarkScheme()
-
-const title = computed(() => `${t('company.tagline')} | ${t('company.name')}`)
+const title = computed(() => `${t('error.notFound.title')} | ${t('company.name')}`)
 
 useHead({
   title,

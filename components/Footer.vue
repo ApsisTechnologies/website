@@ -51,9 +51,9 @@
     </div>
 
     <SocialButtonGroup
-      :linkedin="config.public.linkedInUrl"
-      :github="config.public.gitHubUrl"
-      :twitter="config.public.twitterUrl"
+      :linkedin="config.public.LINKEDIN_URL"
+      :github="config.public.GITHUB_URL"
+      :twitter="config.public.TWITTER_URL"
     />
 
     <Separator margin="0" />
