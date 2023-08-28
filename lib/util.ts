@@ -28,6 +28,12 @@ export function isValidEmailAddress(email: string) {
   return regex.test(email)
 }
 
+export function extractEmailDomain(email: string): string | null {
+  const regex = /@([a-zA-Z0-9.-]+)/
+  const match = email.match(regex)
+  return match && match.length > 1 ? match[1] : null
+}
+
 export function isValidPassword(password: string) {
   const regex = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d!@#$%^&*()\-+=~`[\]{}|\\:;"'<>,.?/_]{8,}$/
   return regex.test(password)

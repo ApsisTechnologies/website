@@ -9,7 +9,7 @@
   font-family: var(--heading-font);
   word-break: break-all;
   font-weight: 700;
-  font-size: 8rem;
+  font-size: 10rem;
   letter-spacing: 0.04em;
   line-height: .8em;
   text-transform: uppercase;
@@ -51,7 +51,7 @@
 
 @media (--res-narrow) {
   .section {
-    padding-top: 7rem;
+    padding-top: 15rem;
   }
 
   .text-pane {
@@ -66,7 +66,7 @@
 .model-pane {
   top: 0;
   right: 0;
-  /* border: 1px solid magenta; */
+  /* border: 1px solid cyan; */
 }
 
 @media (--res-desktop-large) {
@@ -78,23 +78,23 @@
 
 @media (--res-desktop) {
   .model-pane {
-    width: 70%;
+    width: 60%;
     height: 100%;
+  }
+
+  .heading-large {
+    font-size: 8rem;
   }
 }
 
 @media (--res-mobile) {
   .model-pane {
     width: 100%;
-    height: 50%;
-    margin-top: 0rem;
+    height: 70%;
   }
-}
 
-@media (--res-mobile-legacy) {
-  .model-pane {
-    width: 100%;
-    height: 40%;
+  .heading-large {
+    font-size: 6rem;
   }
 }
 
@@ -151,6 +151,11 @@
 @keyframes spin-backwards {
   100% { rotate: -1turn; }
 }
+
+.overlay {
+  z-index: 1;
+  pointer-events: none;
+}
 </style>
 
 <template>
@@ -160,16 +165,16 @@
     <img class="asteroid3 no-pointer-events pos-absolute" :src="asteroid3" />
 
     <div class="text-pane pos-relative flex-col">
-      <span class="landing-header text-gradient" style="z-index: 1">{{ t('landing.hero.header') }}</span>
+      <span class="landing-header text-gradient overlay">{{ t('landing.hero.header') }}</span>
       <div class="text-video-wrapper pos-relative">
         <span class="text-mask heading-large pos-absolute">{{ t('landing.hero.title') }}</span>
         <video class="video pos-absolute" loop autoplay muted playsinline>
           <source type="video/mp4" :src="noiseVideo" />
         </video>
-        <span class="text-overlay text-gradient-secondary heading-large pos-relative">{{ t('landing.hero.title') }}</span>
+        <span class="text-overlay text-gradient-secondary heading-large pos-relative overlay">{{ t('landing.hero.title') }}</span>
       </div>
-      <span class="landing-subtitle" style="z-index: 1">{{ t('company.description') }}</span>
-      <p class="pos-relative about" style="z-index: 1">{{ t('landing.hero.about') }}</p>
+      <span class="landing-subtitle overlay">{{ t('company.description') }}</span>
+      <p class="pos-relative about overlay">{{ t('landing.hero.about') }}</p>
     </div>
 
     <div

@@ -27,9 +27,9 @@ landing:
     loading: loading
     marquee:
       - reimagine
-      - पुनः कल्पयतु
+      - 重新想像
+      - أعد تخيل
       - 再考する
-      - คิดใหม่
 
   about:
     title: Why we rock
@@ -64,13 +64,14 @@ landing:
     decoration: ♡
 
     formText: Reach out to our team today to explore how we can empower your business.
-    namePlaceholder: Name
-    emailPlaceholder: Email address
-    buttonText: Send message
+    namePlaceholder: Your name
+    emailPlaceholder: Work email address
+    buttonText: Send
     requestSentText: Your contact request was received! Please check your inbox to pick a time slot to talk to our team.
 
     invalidName: Please type your name
-    invalidEmail: Please type a valid email address
+    invalidEmail: Please type a valid work email address
+    nonWorkEmailAddress: Please use your work email address, {DOMAIN} not supported.
 
     locations:
       us:

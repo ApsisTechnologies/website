@@ -5,7 +5,7 @@
   display: block;
   text-align: center;
   font-size: 5rem;
-  /* font-weight: 800; */
+  font-weight: 800;
   line-height: 2em;
   text-transform: uppercase;
   overflow: hidden;
@@ -30,14 +30,14 @@
   }
   10% {
     transform: translateY(0) scale(.8);
-    font-weight: 500;
-    opacity: .9;
+    /* font-weight: 500; */
+    opacity: .8;
   }
   90% {
     transform: translateY(0) scale(1);
     letter-spacing: 0.5rem;
-    font-weight: 100;
-    opacity: .9;
+    /* font-weight: 100; */
+    opacity: .8;
   }
   100% {
     transform: translateY(3rem);
