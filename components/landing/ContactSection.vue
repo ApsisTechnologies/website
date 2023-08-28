@@ -116,18 +116,18 @@
           ref="nameField"
           :name="t('landing.contact.namePlaceholder')"
           :validator="validateName"
-          :enabled="!sent"
+          :enabled="formEnabled"
         />
         <TextInput
           ref="emailField"
           :name="t('landing.contact.emailPlaceholder')"
           :validator="validateEmail"
-          :enabled="!sent"
+          :enabled="formEnabled"
         />
         <Button
           :text="t('landing.contact.buttonText')"
           @click="onSend"
-          :enabled="!sent && !sending"
+          :enabled="formEnabled"
           :loading="sending"
           expand
         />
@@ -143,10 +143,10 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useI18n } from '#imports'
-import { isValidEmailAddress } from 'lib/util'
+import { isValidEmailAddress, extractEmailDomain } from 'lib/util'
 import Button from 'components/Button.vue'
 import TextInput from 'components/TextInput.vue'
 import HeartIcon from 'assets/icons/heart.svg'
@@ -155,6 +155,24 @@ import { useApplicationEvent } from 'composables/event'
 import { EventType } from 'lib/event'
 import { sendContactRequest } from 'lib/contact'
 
+const personalEmailDomains = [
+  'gmail.com',
+  'yahoo.com',
+  'rocketmail.com',
+  'outlook.com',
+  'hotmail.com',
+  'live.com',
+  'msn.com',
+  'gmx.com',
+  'aol.com',
+  'icloud.com',
+  'me.com',
+  'mac.com',
+  'protonmail.com',
+  'zoho.com',
+  'yandex.com',
+]
+
 const { t } = useI18n()
 const router = useRouter()
 
@@ -162,6 +180,8 @@ const emailField = ref<InstanceType<typeof TextInput>>()
 const nameField = ref<InstanceType<typeof TextInput>>()
 let sending = ref(false)
 let sent = ref(false)
+
+const formEnabled = computed(() => !sending.value && !sent.value)
 
 useApplicationEvent(EventType.CONTACT, () => {
   router.push({ path: router.currentRoute.value.path, hash: '#contact' })
@@ -173,7 +193,17 @@ const validateName = (name: string) => {
 }
 
 const validateEmail = (emailAddress: string) => {
-  return isValidEmailAddress(emailAddress) ? '' : t('landing.contact.invalidEmail')
+  const emailDomain = extractEmailDomain(emailAddress)
+  if (!isValidEmailAddress(emailAddress) || !emailDomain) {
+    return t('landing.contact.invalidEmail')
+  }
+
+  if (personalEmailDomains.includes(emailDomain)) {
+    return t('landing.contact.nonWorkEmailAddress', {DOMAIN: emailDomain})
+  }
+
+  // ok
+  return ''
 }
 
 const onSend = async () => {
@@ -185,7 +215,7 @@ const onSend = async () => {
     return
   }
 
-  if (!isValidEmailAddress(email)) {
+  if (validateEmail(email) != '') {
     emailField.value.focus()
     return
   }
