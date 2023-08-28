@@ -51,7 +51,7 @@
 
 @media (--res-narrow) {
   .section {
-    padding-top: 7rem;
+    padding-top: 15rem;
   }
 
   .text-pane {
@@ -78,7 +78,7 @@
 
 @media (--res-desktop) {
   .model-pane {
-    width: 70%;
+    width: 60%;
     height: 100%;
   }
 
@@ -91,23 +91,10 @@
   .model-pane {
     width: 100%;
     height: 70%;
-    margin-top: 3rem;
   }
 
   .heading-large {
-    font-size: 7rem;
-  }
-}
-
-@media (--res-mobile-legacy) {
-  .model-pane {
-    width: 100%;
-    height: 40%;
-    margin-top: 4rem;
-  }
-
-  .heading-large {
-    font-size: 5rem;
+    font-size: 6rem;
   }
 }
 
