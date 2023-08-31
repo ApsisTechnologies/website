@@ -63,12 +63,6 @@ export default defineNuxtConfig({
         iso: 'en',
         name: 'English',
         file: 'en.yml',
-      },
-      {
-        code: 'es',
-        iso: 'es',
-        name: 'Español',
-        file: 'es.yml'
       }
     ]
   }
