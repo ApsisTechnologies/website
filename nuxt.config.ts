@@ -30,11 +30,11 @@ export default defineNuxtConfig({
     autoImport: false
   },
   alias: {
-    'lib': resolve(__dirname, 'lib'),
-    'config': resolve(__dirname, 'config'),
-    'composables': resolve(__dirname, 'composables'),
-    'components': resolve(__dirname, 'components'),
-    'store': resolve(__dirname, 'store'),
+    lib: resolve(__dirname, 'lib'),
+    config: resolve(__dirname, 'config'),
+    composables: resolve(__dirname, 'composables'),
+    components: resolve(__dirname, 'components'),
+    store: resolve(__dirname, 'store'),
   },
   css: [
     'assets/css/typeface.css',
@@ -63,12 +63,6 @@ export default defineNuxtConfig({
         iso: 'en',
         name: 'English',
         file: 'en.yml',
-      },
-      {
-        code: 'es',
-        iso: 'es',
-        name: 'Español',
-        file: 'es.yml'
       }
     ]
   }

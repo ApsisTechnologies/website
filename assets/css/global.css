@@ -2,14 +2,15 @@
   width: 100vw;
   min-height: 100vh;
   overflow: hidden;
-  /* overflow-x: hidden; */
   padding-left: var(--content-margin);
   padding-right: var(--content-margin);
 }
 
-/* Used for narrow sections that shouldn not grow horizontally past the point of legibility */
+/* Used for narrow sections that should not grow horizontally past the point of legibility */
 .content-section {
   max-width: var(--max-content-width);
+  padding-left: var(--content-margin);
+  padding-right: var(--content-margin);
   margin: auto;
 }
 

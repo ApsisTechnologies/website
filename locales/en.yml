@@ -3,7 +3,7 @@ flag: 🇺🇸
 company:
   name: RockinDev
   tagline: Tech Reimagined
-  description: Next-gen development solutions
+  description: Next-gen digital solutions
 
 nav:
   blog: Blog
@@ -21,16 +21,15 @@ landing:
   hero:
     header: Reimagine
     title: Technology
-    subtitle: Next-gen development solutions
     about: Welcome to RockinDev, where imagination meets innovation. We craft captivating, immersive experiences, shaping the digital landscape through our cutting-edge interface design, hyperscalable cloud infrastructure solutions, AI integrations and blockchain technology, unlocking new realms of possibility.
 
   video:
     loading: loading
     marquee:
       - reimagine
-      - पुनः कल्पयतु
+      - 重新想像
+      - أعد تخيل
       - 再考する
-      - คิดใหม่
 
   about:
     title: Why we rock
@@ -65,20 +64,21 @@ landing:
     decoration: ♡
 
     formText: Reach out to our team today to explore how we can empower your business.
-    namePlaceholder: Name
-    emailPlaceholder: Email address
-    buttonText: Send message
+    namePlaceholder: Your name
+    emailPlaceholder: Work email address
+    buttonText: Send
     requestSentText: Your contact request was received! Please check your inbox to pick a time slot to talk to our team.
 
     invalidName: Please type your name
-    invalidEmail: Please type a valid email address
+    invalidEmail: Please type a valid work email address
+    nonWorkEmailAddress: Please use your work email address, {DOMAIN} not supported.
 
     locations:
       us:
         title: Miami
         address:
-          - 18021 Biscayne Blvd, of. 303
-          - Aventura, Florida
+          - 2803 Cleveland St
+          - Hollywood, Florida
           - United States
 
       ar:
@@ -87,3 +87,9 @@ landing:
           - Cnel. Niceto Vega 4736
           - Ciudad de Buenos Aires
           - Argentina
+
+error:
+  notFound:
+    title: Page not found
+    subtitle: We couldn't find what you were looking for...
+    goBack: Get me out of here...
