@@ -10,12 +10,13 @@
   /* BREAKPOINT ROOT SIZES */
   --root-size-mobile-legacy: 14px;
   --root-size-mobile: 16px;
-  --root-size-desktop: 20px;
+  --root-size-desktop: 18px;
   --root-size-desktop-large: 22px;
 
   --card-shadow: 0 0.1rem 0.2rem 0 hsl(0deg 0% 0% / 20%);
   --text-shadow: -.1rem .1rem .1rem hsl(0deg 0% 0% / 100%);
 
+  /* GRADIENTS */
   --main-gradient-start-color: hsl(236deg 56% 54%);
   --main-gradient-stop-color: hsl(191deg 93% 48%);
   --main-gradient-angle: 30deg;
@@ -25,8 +26,6 @@
     var(--main-gradient-stop-color) 80%
   );
 
-  --button-gradient: linear-gradient(hsl(4deg 100% 50%) 0%, hsl(271deg 100% 50%) 100%);
-
   --secondary-gradient-start-color: hsl(271deg 98% 49%);
   --secondary-gradient-stop-color: hsl(317deg 92% 38%);
   --secondary-gradient-angle: 30deg;
@@ -35,6 +34,10 @@
     var(--secondary-gradient-start-color) 10%,
     var(--secondary-gradient-stop-color) 80%
   );
+
+  --button-gradient: linear-gradient(hsl(4deg 100% 50%) 0%, hsl(271deg 100% 50%) 100%);
+
+  --background-gradient: linear-gradient(330deg, var(--background-color) 0%, #1c2169 100%);
 }
 
 @media (--res-narrow) {
@@ -79,7 +82,8 @@
 }
 
 html {
-  font-family: var(--primary-font);
+  font-family: var(--heading-font);
+  /* font-family: var(--primary-font); */
   box-sizing: border-box;
   scroll-behavior: smooth;
   overscroll-behavior: none;
@@ -106,7 +110,7 @@ body {
   margin: 0;
   font-size: 1rem;
   font-weight: 350;
-  line-height: 1.7rem;
+  line-height: 1.6rem;
   letter-spacing: 0.04rem;
 
   /* animate dark/light transition */
@@ -114,7 +118,7 @@ body {
 }
 
 p {
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 h1, h2 {

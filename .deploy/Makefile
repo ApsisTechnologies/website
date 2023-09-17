@@ -38,7 +38,7 @@ build:
 
 sync:
 	@echo "Syncing build with bucket..."
-	cd ..; $(AWS_CMD) s3 sync $(BUILD_DIR) s3://$(BUCKET_NAME) --delete
+	@cd ..; $(AWS_CMD) s3 sync $(BUILD_DIR) s3://$(BUCKET_NAME) --delete
 
 invalidate:
 	@echo "Invalidating CloudFront distribution..."

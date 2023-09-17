@@ -57,7 +57,7 @@
     />
 
     <Separator margin="0" />
-    <span class="footer-text">{{ t('footer.pre') }} @ RockinDev®️ {{ thisYear }}. {{ t('footer.notice') }}</span>
+    <span class="footer-text text-center">{{ t('footer.pre') }} @ RockinDev®️ {{ thisYear }}. {{ t('footer.notice') }}</span>
   </footer>
 </template>
 

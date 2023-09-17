@@ -18,8 +18,9 @@
 }
 
 .about {
-  font-size: .8rem;
-  line-height: 1.8em;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6em;
   max-width: 80%;
 }
 
@@ -90,7 +91,7 @@
 @media (--res-mobile) {
   .model-pane {
     width: 100%;
-    height: 70%;
+    height: 50%;
   }
 
   .heading-large {
@@ -177,16 +178,12 @@
       <p class="pos-relative about overlay">{{ t('landing.hero.about') }}</p>
     </div>
 
-    <div
-      class="model-pane pos-absolute"
-      :class="museIsVisible ? '' : 'hidden'"
-      v-intersection-observer="onIntersectionObserver"
-    >
+    <div class="model-pane pos-absolute" v-intersection-observer="onMuseVisible">
       <Scene3D
         asset-url="/muse.glb"
         :enabled="museIsVisible"
-        :animate="true"
-        :post-process="true"
+        post-process
+        animate
       />
     </div>
   </div>
@@ -205,8 +202,5 @@ import asteroid3 from 'assets/images/asteroid-3.png'
 const { t } = useI18n()
 const museIsVisible = ref(true)
 
-function onIntersectionObserver([{ isIntersecting }]) {
-  museIsVisible.value = isIntersecting
-}
-
+const onMuseVisible = (e: IntersectionObserverEntry[]) => { museIsVisible.value = e[0].isIntersecting }
 </script>

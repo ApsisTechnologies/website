@@ -2,6 +2,7 @@
   <HeroSection />
   <VideoSection />
   <AboutSection />
+  <PortfolioSection />
   <FeaturesSection />
   <StackSection />
   <ContactSection />
@@ -17,6 +18,7 @@ import HeroSection from 'components/landing/HeroSection.vue'
 import VideoSection from 'components/landing/VideoSection.vue'
 import AboutSection from 'components/landing/AboutSection.vue'
 import FeaturesSection from 'components/landing/FeaturesSection.vue'
+import PortfolioSection from 'components/landing/PortfolioSection.vue'
 import StackSection from 'components/landing/StackSection.vue'
 import ContactSection from 'components/landing/ContactSection.vue'
 

@@ -22,7 +22,12 @@
     "@typescript-eslint"
   ],
   "rules": {
+    // Typescript
     "@typescript-eslint/indent": ["error", 2],
+    "@typescript-eslint/type-annotation-spacing": "warn",
+    "@typescript-eslint/await-thenable": "error",
+    "@typescript-eslint/ban-types": 0,
+
     "indent": [
       "error",
       2
@@ -46,10 +51,6 @@
       }
     ],
     "key-spacing": "warn",
-    "@typescript-eslint/type-annotation-spacing": "warn",
-    "vue/multi-word-component-names": 0,
-    "vue/no-reserved-component-names": 0,
-    "@typescript-eslint/ban-types": 0,
     "no-useless-escape": 0,
     "no-undef": 0,
     "eol-last": [
@@ -64,9 +65,10 @@
         "maxEOF": 1
       }
     ],
-    "vue/html-indent": [
-      "error",
-      2
-    ]
+
+    // Vue.js
+    "vue/html-indent": ["error", 2],
+    "vue/multi-word-component-names": 0,
+    "vue/no-reserved-component-names": 0
   }
 }

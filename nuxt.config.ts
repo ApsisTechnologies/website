@@ -30,6 +30,7 @@ export default defineNuxtConfig({
     autoImport: false
   },
   alias: {
+    assets: resolve(__dirname, 'assets'),
     lib: resolve(__dirname, 'lib'),
     config: resolve(__dirname, 'config'),
     composables: resolve(__dirname, 'composables'),

@@ -48,3 +48,21 @@ export function navigate(url: string, external = false) {
 }
 
 export const rotateForward = (v: number, max: number) => v === max - 1 ? 0 : v + 1
+
+export const toggleClassIfVisible = (e: IntersectionObserverEntry, animClassName: string) => {
+  const element = e.target
+  const isVisible = e.isIntersecting
+  if (element && isVisible) {
+    element.classList.add(animClassName)
+  } else {
+    element.classList.remove(animClassName)
+  }
+}
+
+export const addClassIfVisible = (e: IntersectionObserverEntry, animClassName: string) => {
+  const element = e.target
+  const isVisible = e.isIntersecting
+  if (element && isVisible) {
+    element.classList.add(animClassName)
+  }
+}

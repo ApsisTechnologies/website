@@ -13,19 +13,19 @@
     "serve": "serve --cors -p 3000 dist/"
   },
   "devDependencies": {
-    "@csstools/postcss-global-data": "^1.0.3",
+    "@csstools/postcss-global-data": "^2.1.0",
     "@nuxtjs/i18n": "^8.0.0-beta.12",
     "@types/node": "^20.3.2",
-    "@types/three": "^0.154.0",
-    "@typescript-eslint/eslint-plugin": "^5.60.1",
-    "@typescript-eslint/parser": "^5.60.1",
+    "@types/three": "^0.156.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
     "eslint": "^8.43.0",
     "eslint-plugin-vue": "^9.15.1",
-    "nuxt": "^3.1.1",
+    "nuxt": "^3.7.3",
     "nuxt-svgo": "^3.1.0",
-    "postcss-custom-media": "^9.1.5",
+    "postcss-custom-media": "^10.0.0",
     "serve": "^14.2.0",
-    "typescript": "5.0.4"
+    "typescript": "5.2.2"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.11",
@@ -33,6 +33,6 @@
     "@vueuse/core": "^10.3.0",
     "axios": "^1.4.0",
     "firebase": "^10.2.0",
-    "three": "^0.154.0"
+    "three": "^0.156.1"
   }
 }

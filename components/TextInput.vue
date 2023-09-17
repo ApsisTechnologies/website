@@ -76,7 +76,7 @@
 .label {
   display: block;
   color: var(--muted-text-color);
-  font-weight: 100;
+  font-weight: 400;
   position: absolute;
   pointer-events: none;
   top: 0;

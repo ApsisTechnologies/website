@@ -90,9 +90,6 @@ const initScene = (canvas: HTMLCanvasElement) => {
   camera.position.set(0,5,13)
   scene.add(camera)
 
-  // const light = new Three.AmbientLight(0xffffff)
-  // scene.add(light)
-
   if (props.postProcess) {
     renderPass = new RenderPass(scene, camera)
     outputPass = new OutputPass(Three.ReinhardToneMapping)
@@ -124,7 +121,7 @@ const initScene = (canvas: HTMLCanvasElement) => {
   if (props.assetUrl) {
     loader.load(props.assetUrl, (gltf) => {
       scene.add(gltf.scene)
-      dimLights(scene)
+      // dimLights(scene)
       renderScene()
     },
     undefined,

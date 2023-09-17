@@ -44,10 +44,10 @@ import { useI18n } from '#imports'
 const { t } = useI18n()
 
 const navLinks = [
-  { route: '/#features', text: t('nav.features') },
   { route: '/#about', text: t('nav.about') },
+  { route: '/#projects', text: t('landing.portfolio.title') },
+  { route: '/#features', text: t('landing.features.title') },
   // { route: '/', text: t('nav.blog') },
-  // { route: '/portfolio',  text: t('nav.portfolio') }
 ]
 
 const router = useRouter()

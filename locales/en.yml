@@ -7,10 +7,9 @@ company:
 
 nav:
   blog: Blog
-  portfolio: Portfolio
   contact: Contact us
-  about: About
-  features: Features
+  about: Why us
+  services: Services
   team: Team
 
 footer:
@@ -33,6 +32,7 @@ landing:
 
   about:
     title: Why we rock
+
     heart:
       text: We craft beautiful digital products *(users love)*, making sure no detail goes unnoticed.
     arrows:
@@ -40,9 +40,6 @@ landing:
     point:
       text: Looking for expert guidance? We can *(consult)* for your team, guiding it through the entire product release cycle.
     cta: get in touch
-
-  stack:
-    title: Our stack
 
   features:
     title: Features
@@ -57,6 +54,28 @@ landing:
         text: At RockinDev, we wield the full-stack magic needed to transform ideas into reality. With us, your vision is in expert hands every step of the way throughout the entire product release cycle and beyond.
       - title: Hyper-scalable infrastructure
         text: Our globally-scalable cloud infrastructure adapts to your needs, expanding and contracting with your users demands. From local to global, we empower your digital ambitions with a solid foundation that can grow at the speed of your imagination.
+
+  portfolio:
+    title: Projects
+    projects:
+      minipcr:
+        title: miniPCR Digital
+        description: "We partnered with miniPCR Bio to develop their flagship e-learning platform, miniPCR Digital, to train students on how to use their cutting-edge biotech products.\\nminiPCR delivers their technology to the International Space Station and we're proud to be a key part of their digital transformation!"
+
+      ristband:
+        title: Ristband
+        description: "Ristband pushes the boundaries of live entertainment by bringing music shows to the metaverse.\\nWe developed Ristband's metaverse platform leveraging Unreal Engine's pixel streaming technology and AWS cloud infrastructure to deliver truly next-gen immersive experiences."
+
+      forestify:
+        title: Forestify
+        description: "Forestify is a decentralized app (a.k.a. \"dapp\") that allows users to invest in natural habitat restoration projects through nature-backed NFTs."
+
+      groovly:
+        title: Groovly
+        description: "\"TikTok for music\", Groovly is an audio platform that allows independent artists to upload short music tracks as well as unfinished projects to promote their work and grow their fan base."
+
+  stack:
+    title: Our stack
 
   contact:
     title: Get in touch
