@@ -11,22 +11,24 @@
   height: .6rem;
   border-radius: 50%;
   background-color: var(--muted-text-color);
-  transition: background 200ms linear;
-}
-
-.active {
-  background-color: var(--text-color);
-  pointer-events: none;
+  transition: all 100ms ease-out;
 }
 
 .arrow {
   font-size: 1.2rem;
   font-weight: 400;
+  transition: all 100ms linear;
+}
+
+.active {
+  background-color: var(--text-color);
+  /* pointer-events: none; */
 }
 
 @media (--hover) {
   .dot:hover, .arrow:hover {
     cursor: pointer;
+    transform: scale(1.5);
   }
 }
 </style>

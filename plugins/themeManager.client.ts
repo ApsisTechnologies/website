@@ -7,9 +7,6 @@ export default defineNuxtPlugin((nuxtApp) => {
   /* @ts-expect-error: A type error is expected on the following line */
   const themeManager = new ThemeManager(themes[themeName])
 
-  // color scheme defaults to auto
-  themeManager.setAuto()
-
   nuxtApp.vueApp.provide('themeManager', themeManager)
   nuxtApp.vueApp.config.globalProperties.themeManager = themeManager
 })

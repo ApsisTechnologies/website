@@ -68,7 +68,7 @@
 </style>
 
 <template>
-  <div id="features" class="section pos-relative flex-col">
+  <div id="features" class="section pos-relative flex-col scroll-snap-align-start">
     <span class="landing-title">{{ t('landing.features.title') }}</span>
 
     <div class="container flex-col">

@@ -1,5 +1,9 @@
 # EXAMPLE USAGE:
-# make deploy AWS_PROFILE=rockin-prod BUCKET_NAME=rockindev-website-prod CLOUDFRONT_DIST_ID=E3N24OLNS13N75
+# make deploy AWS_PROFILE=rockin-prod BUCKET_NAME=rockindev-website-prod CLOUDFRONT_DIST_ID=E3N24OLNS13N75 ENV=prod
+
+ENV=dev
+SRC_DIR=$(PWD)/..
+BUILD_DIR=.output/public
 
 AWS_PROFILE=
 AWS_REGION=us-east-1
@@ -7,7 +11,6 @@ AWS_CMD=aws --profile $(AWS_PROFILE) --region $(AWS_REGION)
 
 BUCKET_NAME=
 CLOUDFRONT_DIST_ID=
-BUILD_DIR=.output/public
 DISTRIBUTION_INVALIDATION_PATH=/*
 
 CLOUDFRONT_CREATE_INVALIDATION_CMD=$(AWS_CMD) cloudfront create-invalidation \
@@ -35,6 +38,9 @@ endif
 build:
 	@echo "Building webapp..."
 	@cd ..; yarn generate
+	@rm $(SRC_DIR)/$(BUILD_DIR)/200.html
+	@rm $(SRC_DIR)/$(BUILD_DIR)/404.html
+	@cp $(SRC_DIR)/config/robots.$(ENV).txt $(SRC_DIR)/$(BUILD_DIR)/robots.txt
 
 sync:
 	@echo "Syncing build with bucket..."
@@ -49,3 +55,8 @@ deploy: validate build sync invalidate
 
 wait:
 	@$(AWS_CMD) cloudfront wait invalidation-completed --distribution-id $(CLOUDFRONT_DIST_ID) --id $(INVALIDATION_ID)
+
+print:
+	@echo $(BUILD_DIR)
+	@echo $(SRC_DIR)
+	@echo $(ENV)

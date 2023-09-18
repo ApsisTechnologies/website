@@ -20,7 +20,7 @@ landing:
   hero:
     header: Reimagine
     title: Technology
-    about: Welcome to RockinDev, where imagination meets innovation. We craft captivating, immersive experiences, shaping the digital landscape through our cutting-edge interface design, hyperscalable cloud infrastructure solutions, AI integrations and blockchain technology, unlocking new realms of possibility.
+    about: Welcome to RockinDev, where imagination meets innovation. We craft captivating user experiences that shape the digital landscape through cutting-edge interface design, hyper-scalable cloud solutions, AI and blockchain technology, unlocking new realms of possibility.
 
   video:
     loading: loading
@@ -34,26 +34,26 @@ landing:
     title: Why we rock
 
     heart:
-      text: We craft beautiful digital products *(users love)*, making sure no detail goes unnoticed.
+      text: We craft beautiful products *(users love)*, making sure no detail goes unnoticed.
     arrows:
-      text: We tackle challenging technical problems and solve them through *(hyper-scalable)*, *(future-proof)* solutions.
+      text: We solve challenging technical problems through *(future-proof)* solutions.
     point:
-      text: Looking for expert guidance? We can *(consult)* for your team, guiding it through the entire product release cycle.
+      text: We provide *(expert guidance)*, leading your team through the entire product cycle.
     cta: get in touch
 
   features:
     title: Features
     items:
       - title: Artificial intelligence
-        text: We unleash the future with AI integrations that make solving hard problems a thing of the past. From conversational voice-activated chatbots to recommendation algorithms, we'll sprinkle human-like brilliance into your digital products.
+        text: Unleash the future with AI integrations that make solving hard problems a thing of the past. From conversational voice-enabled chatbots to recommendation algorithms, we'll sprinkle human-like brilliance into your products.
       - title: Interface design
-        text: Get ready to dazzle and captivate with interfaces that feel like home from the very first click. From 3D to 2D, we turn pixels into new pathways, crafting digital spaces where users don't just scroll and click, but flourish.
+        text: Dazzle and captivate with interfaces that feel like home from the very first click. From 3D to 2D, we turn pixels into new pathways, crafting digital spaces where users don't just scroll and click, but flourish.
       - title: Pixel streaming
-        text: Witness advanced, immersive graphics dance effortlessly from the cloud to your screen – no beefy GPUs required. Interact with mind-blowing visual experiences - even on low-end devices - with just an internet connection.
+        text: Witness immersive graphics dance effortlessly from the cloud to your screen – no beefy GPUs required. Interact with mind-blowing visual experiences - even on low-end devices - with just an internet connection.
       - title: Full-stack engineering
-        text: At RockinDev, we wield the full-stack magic needed to transform ideas into reality. With us, your vision is in expert hands every step of the way throughout the entire product release cycle and beyond.
-      - title: Hyper-scalable infrastructure
-        text: Our globally-scalable cloud infrastructure adapts to your needs, expanding and contracting with your users demands. From local to global, we empower your digital ambitions with a solid foundation that can grow at the speed of your imagination.
+        text: We transform your ideas into reality using our full-stack magic and engineering prowess. You can rest assured your vision is in expert hands every step of the way.
+      - title: Hyper-scalable solutions
+        text: We supercharge your company's digital journey through rock-solid infrastructure that can grow at the speed of your imagination. Our globally-scalable cloud solutions adapt to your needs, scaling with your users' demands.
 
   portfolio:
     title: Projects
@@ -79,18 +79,18 @@ landing:
 
   contact:
     title: Get in touch
-    subtitle: We would love to hear from you
+    subtitle: Let's build great things together
     decoration: ♡
 
-    formText: Reach out to our team today to explore how we can empower your business.
+    formText: Reach out to our team today to discover how we can empower your business.
     namePlaceholder: Your name
     emailPlaceholder: Work email address
     buttonText: Send
     requestSentText: Your contact request was received! Please check your inbox to pick a time slot to talk to our team.
 
-    invalidName: Please type your name
-    invalidEmail: Please type a valid work email address
-    nonWorkEmailAddress: Please use your work email address, {DOMAIN} not supported.
+    invalidName: Please type your name.
+    invalidEmail: Please type a valid work email address.
+    nonWorkEmailAddress: Please use a valid work email address.
 
     locations:
       us:

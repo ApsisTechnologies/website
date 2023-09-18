@@ -9,6 +9,7 @@
 
 .panel-container {
   align-items: flex-start;
+  justify-content: space-between;
   gap: 4rem;
 }
 
@@ -31,6 +32,8 @@
   padding: 2rem;
   position: relative;
   max-width: 30rem;
+
+  overflow-x: hidden;
 }
 
 .form-panel::before {
@@ -84,13 +87,13 @@
 <template>
   <div id="contact" class="section pos-relative flex-col">
     <span class="landing-title">{{ t('landing.contact.title') }}</span>
+    <div style="display: inline; margin-bottom: 2rem">
+      <span class="landing-subtitle text-gradient">{{ t('landing.contact.subtitle') }}</span>
+      <HeartIcon class="subtitle-decoration" />
+    </div>
     <div class="panel-container flex-row">
 
       <div class="location-panel flex-col">
-        <div style="display: inline;">
-          <span class="landing-subtitle text-gradient">{{ t('landing.contact.subtitle') }}</span>
-          <HeartIcon class="subtitle-decoration" />
-        </div>
         <div class="location flex-row flex-gap selectable">
           <LocationIcon class="location-icon" />
           <div class="flex-col">
@@ -199,7 +202,7 @@ const validateEmail = (emailAddress: string) => {
   }
 
   if (personalEmailDomains.includes(emailDomain)) {
-    return t('landing.contact.nonWorkEmailAddress', {DOMAIN: emailDomain})
+    return t('landing.contact.nonWorkEmailAddress')
   }
 
   // ok

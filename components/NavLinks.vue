@@ -6,8 +6,8 @@
 }
 
 .nav-link {
-  font-size: .8rem;
-  font-weight: 600;
+  font-size: .7rem;
+  font-weight: 500;
   line-height: 1rem;
   letter-spacing: .06rem;
   text-transform: uppercase;

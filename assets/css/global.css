@@ -124,13 +124,13 @@
   gap: calc(var(--flex-gap) / 4);
 }
 
-.scroll-snap-x-hard {
-  scroll-snap-type: x mandatory;
+.scroll-snap-x-soft {
+  scroll-snap-type: x proximity;
   scroll-snap-stop: always;
 }
 
-.scroll-snap-x-soft {
-  scroll-snap-type: x proximity;
+.scroll-snap-x-hard {
+  scroll-snap-type: x mandatory;
   scroll-snap-stop: always;
 }
 

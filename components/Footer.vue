@@ -35,7 +35,6 @@
 
 .location-link {
   text-transform: uppercase;
-  font-family: var(--heading-font);
   font-weight: 600;
   letter-spacing: 0.04rem;
   cursor: pointer;

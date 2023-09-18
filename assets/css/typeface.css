@@ -8,17 +8,6 @@
        url('assets/fonts/ClashDisplay-Regular.otf') format('opentype');
 }
 
-@font-face {
-  font-family: 'Plus Jakarta Sans';
-  font-style: normal;
-  font-weight: 200 800;
-  font-display: swap;
-  src: url('assets/fonts/PlusJakartaSans-Variable.woff2') format('woff2-variations'),
-       url('assets/fonts/PlusJakartaSans-Regular.woff2') format('woff2'),
-       url('assets/fonts/PlusJakartaSans-Regular.otf') format('opentype');
-}
-
 :root {
-  --heading-font: 'Clash Display', sans-serif;
-  --primary-font: 'Plus Jakarta Sans', sans-serif;
+  --primary-font: 'Clash Display', sans-serif;
 }

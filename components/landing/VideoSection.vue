@@ -5,7 +5,7 @@
 </style>
 
 <template>
-  <div class="section full-page pos-relative flex-col flex-center">
+  <div class="section full-page pos-relative flex-col flex-center scroll-snap-align-start">
     <VideoBackground
       :src="desktopVideoSrc"
       :src-mobile="mobileVideoSrc"

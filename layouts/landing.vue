@@ -1,7 +1,12 @@
+<style>
+html {
+  scroll-snap-type: y proximity;
+  scroll-snap-stop: normal;
+}
+</style>
+
 <template>
-  <main class="pos-relative overflow-x-hidden">
-    <slot />
-  </main>
+  <slot />
   <Nav />
   <Footer />
   <!-- <BreakpointDebugger /> -->
@@ -21,4 +26,3 @@ useHead({
   ]
 })
 </script>
-

@@ -6,8 +6,6 @@
 
 .slider {
   overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  scroll-snap-stop: always;
   overscroll-behavior-x: contain;
   scroll-behavior: smooth;
   gap: 0;
@@ -20,7 +18,6 @@
 }
 
 .slide {
-  scroll-snap-align: start;
   flex-shrink: 0;
 
   position: relative;
@@ -68,16 +65,16 @@
 </style>
 
 <template>
-  <div id="projects" class="section pos-relative full-page flex-col">
+  <div id="projects" class="section pos-relative full-page flex-col scroll-snap-align-start">
     <span class="landing-title">{{ t('landing.portfolio.title') }}</span>
 
     <div
       ref="slider"
-      class="slider flex-row"
+      class="slider scroll-snap-x-hard flex-row"
       @scrollend="onScroll"
       v-intersection-observer="onSliderVisibilityChanged"
     >
-      <div v-for="item in copy" class="slide">
+      <div v-for="item in copy" class="slide scroll-snap-align-start">
         <img class="slide-img no-pointer-events" :src="item.image" />
         <div class="flex-col slide-text">
           <span class="slide-title landing-subtitle">{{ item.title }}</span>

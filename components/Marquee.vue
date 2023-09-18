@@ -1,6 +1,5 @@
 <style scoped>
 .marquee {
-  font-family: var(--heading-font);
   position: relative;
   display: block;
   text-align: center;
@@ -52,8 +51,8 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from 'vue'
-import { useWindowEvent } from 'composables/event'
+import { computed, ref, onMounted } from 'vue'
+import { useEventListener } from '@vueuse/core'
 import { rotateForward } from 'lib/util'
 
 const props = withDefaults(defineProps<{
@@ -67,9 +66,9 @@ const marquee = ref<HTMLElement>()
 
 const marqueeText = computed(() => props.words ? props.words[marqueeActiveIndex.value] : '')
 
-const doMarqueeTransition = () => {
-  marqueeActiveIndex.value = rotateForward(marqueeActiveIndex.value, props.words.length)
-}
-
-useWindowEvent('animationiteration', doMarqueeTransition)
+onMounted(() => {
+  useEventListener(marquee.value, 'animationiteration', () => {
+    marqueeActiveIndex.value = rotateForward(marqueeActiveIndex.value, props.words.length)
+  })
+})
 </script>

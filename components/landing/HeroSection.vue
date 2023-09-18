@@ -6,7 +6,6 @@
 }
 
 .heading-large {
-  font-family: var(--heading-font);
   word-break: break-all;
   font-weight: 700;
   font-size: 10rem;
@@ -160,7 +159,7 @@
 </style>
 
 <template>
-  <div class="full-page flex-col pos-relative section">
+  <div class="full-page flex-col pos-relative section scroll-snap-align-start">
     <img class="asteroid1 no-pointer-events pos-absolute" :src="asteroid1" />
     <img class="asteroid2 no-pointer-events pos-absolute" :src="asteroid2" />
     <img class="asteroid3 no-pointer-events pos-absolute" :src="asteroid3" />

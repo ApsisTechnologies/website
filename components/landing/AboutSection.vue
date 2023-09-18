@@ -26,12 +26,10 @@
 }
 
 .text {
-  font-family: var(--heading-font);
-  text-transform: uppercase;
   text-align: center;
-  font-weight: 700;
-  letter-spacing: .04rem;
-  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: .06rem;
+  font-size: 1.2rem;
   line-height: 1.4rem;
   padding: 0 1rem;
   animation-delay: 500ms;
@@ -40,7 +38,7 @@
 </style>
 
 <template>
-  <div id="about" class="full-page flex-col section">
+  <div id="about" class="full-page flex-col section scroll-snap-align-start">
     <span class="landing-title text-outline">{{ t('landing.about.title' ) }}</span>
 
     <div class="icon-container flex-gap">

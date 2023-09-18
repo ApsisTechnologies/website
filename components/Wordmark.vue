@@ -1,6 +1,5 @@
 <style scoped>
 .wordmark {
-  font-family: var(--heading-font);
   font-size: 1.2rem;
   letter-spacing: 0.06rem;
   text-transform: uppercase;

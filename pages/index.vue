@@ -10,7 +10,7 @@
 
 <script setup lang="ts">
 import { definePageMeta } from '#imports'
-import { computed } from 'vue'
+import { computed, onMounted } from 'vue'
 import { useI18n, useHead } from '#imports'
 import { useRuntimeConfig } from 'nuxt/app'
 import { useDarkScheme } from 'composables/themeManager'
@@ -28,7 +28,9 @@ const config = useRuntimeConfig()
 
 const { t, locale } = useI18n()
 
-useDarkScheme()
+onMounted(() => {
+  useDarkScheme()
+})
 
 const title = computed(() => `${t('company.tagline')} | ${t('company.name')}`)
 

@@ -7,11 +7,11 @@ import { useRouter } from 'vue-router'
 import NotFound from '@/pages/404.vue'
 
 export default defineNuxtPlugin((nuxtApp) => {
-  // App initialization hook: Run after all plugins are initialized and application is mounted
   nuxtApp.hook('app:mounted', () => {
     const preferences = usePreferences()
 
     const themeManager = nuxtApp.vueApp.config.globalProperties.themeManager as ThemeManager
+    themeManager.setDark()
 
     preferences.setTheme(themeManager.name)
 

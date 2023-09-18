@@ -4,8 +4,12 @@
   width: 100%;
   height: 100%;
   opacity: 0;
-  /* transition: opacity 1s ease-in; */
-  /* border: 1px solid cyan; */
+}
+
+@media (--hover) {
+  .canvas:hover {
+    cursor: pointer;
+  }
 }
 </style>
 
@@ -97,7 +101,7 @@ const initScene = (canvas: HTMLCanvasElement) => {
     composer = new EffectComposer(renderer)
 
     bloomPass.threshold = 0.5
-    bloomPass.strength = .05
+    bloomPass.strength = .03
     bloomPass.radius = 0
     outputPass.toneMappingExposure = .3
 

@@ -1,5 +1,4 @@
 .landing-header {
-  font-family: var(--heading-font);
   position: relative;
   font-weight: 500;
   font-size: 2rem;
@@ -11,7 +10,6 @@
 }
 
 .landing-title {
-  font-family: var(--heading-font);
   font-weight: 700;
   font-size: 3.5rem;
   letter-spacing: .1rem;
@@ -21,7 +19,6 @@
 }
 
 .landing-subtitle {
-  font-family: var(--heading-font);
   position: relative;
   font-weight: 700;
   font-size: 1.6rem;
@@ -34,7 +31,6 @@
 
 .text-gradient-outline {
   padding-left: 3px;
-  font-family: var(--heading-font);
   position: relative;
   display: block;
   font-weight: 600;
