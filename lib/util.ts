@@ -1,19 +1,13 @@
-export function wait(milliseconds: number) {
-  return new Promise((resolve) => {
-    setTimeout(resolve, milliseconds)
+const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+const passwordRegex = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d!@#$%^&*()\-+=~`[\]{}|\\:;"'<>,.?/_]{8,}$/
+
+export const wait = (milliseconds: number) => new Promise((resolve) => {
+    window.setTimeout(resolve, milliseconds)
   })
-}
 
-export function pickRandomElement(array: []) {
-  if (!Array.isArray(array)) {
-    return null
-  }
-  return array[Math.trunc(Math.random() * array.length)]
-}
+export const pickRandomElement = (array: []) => array[Math.trunc(Math.random() * array.length)]
 
-export function clamp(value: number, min: number, max: number) {
-  return Math.min(Math.max(value, min), max)
-}
+export const clamp = (value: number, min: number, max: number) => Math.min(Math.max(value, min), max)
 
 export function getCssVariable(name: string) {
   return getComputedStyle(document.documentElement).getPropertyValue(name)
@@ -23,10 +17,7 @@ export function setCssVariable(name: string, value: string) {
   document.documentElement.style.setProperty(name, value)
 }
 
-export function isValidEmailAddress(email: string) {
-  const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-  return regex.test(email)
-}
+export const isValidEmailAddress = (email: string) => emailRegex.test(email)
 
 export function extractEmailDomain(email: string): string | null {
   const regex = /@([a-zA-Z0-9.-]+)/
@@ -34,17 +25,12 @@ export function extractEmailDomain(email: string): string | null {
   return match && match.length > 1 ? match[1] : null
 }
 
-export function isValidPassword(password: string) {
-  const regex = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d!@#$%^&*()\-+=~`[\]{}|\\:;"'<>,.?/_]{8,}$/
-  return regex.test(password)
-}
+export const isValidPassword = (password: string) => passwordRegex.test(password)
 
-export function getUserLocale() {
-  return window.navigator.language
-}
+export const getUserLocale = () => window.navigator.language
 
 export function navigate(url: string, external = false) {
-  window.open(url.toString(), external ? '_blank' : undefined)
+  window.open(url, external ? '_blank' : '_self')
 }
 
 export const rotateForward = (v: number, max: number) => v === max - 1 ? 0 : v + 1

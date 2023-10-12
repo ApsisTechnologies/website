@@ -34,12 +34,20 @@
     >
       {{ item.text }}
     </span>
+    <span
+      class="link nav-link pos-relative"
+      @click="onNavigateToBlog"
+    >
+      {{ t('nav.blog') }}
+    </span>
   </div>
 </template>
 
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
+import { navigate } from 'lib/util'
 import { useI18n } from '#imports'
+import { useNuxtApp } from 'nuxt/app'
 
 const { t } = useI18n()
 
@@ -47,8 +55,11 @@ const navLinks = [
   { route: '/#about', text: t('nav.about') },
   { route: '/#projects', text: t('landing.portfolio.title') },
   { route: '/#features', text: t('landing.features.title') },
-  // { route: '/', text: t('nav.blog') },
 ]
 
 const router = useRouter()
+
+const onNavigateToBlog = () => {
+  navigate(useNuxtApp().$config.public.BLOG_BASE_URL)
+}
 </script>

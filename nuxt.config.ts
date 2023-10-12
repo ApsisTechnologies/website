@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     public: {
       THEME: process.env.THEME,
       APP_BASE_URL: process.env.APP_BASE_URL,
+      BLOG_BASE_URL: process.env.BLOG_BASE_URL,
       API_BASE_URL: process.env.API_BASE_URL,
       LINKEDIN_URL: process.env.LINKEDIN_URL,
       GITHUB_URL: process.env.GITHUB_URL,
