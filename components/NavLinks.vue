@@ -53,8 +53,8 @@ const { t } = useI18n()
 
 const navLinks = [
   { route: '/#about', text: t('nav.about') },
+  { route: '/#services', text: t('landing.features.title') },
   { route: '/#projects', text: t('landing.portfolio.title') },
-  { route: '/#features', text: t('landing.features.title') },
 ]
 
 const router = useRouter()

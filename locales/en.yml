@@ -3,12 +3,12 @@ flag: 🇺🇸
 company:
   name: RockinDev
   tagline: Tech Reimagined
-  description: Next-gen digital solutions
+  description: Otherworldly digital solutions
 
 nav:
   blog: Blog
   contact: Contact us
-  about: Why us
+  about: About
   services: Services
 
 footer:
@@ -19,7 +19,7 @@ landing:
   hero:
     header: Reimagine
     title: Technology
-    about: Welcome to RockinDev, where imagination meets innovation. We craft captivating user experiences that shape the digital landscape through cutting-edge interface design, hyper-scalable cloud solutions, AI and blockchain technology, unlocking new realms of possibility.
+    about: We enable Ed-Tech, Entertainment and Gaming companies through advanced digital solutions, helping them focus on what really matters; delighting customers, scaling up and monetizing.
 
   video:
     loading: loading
@@ -30,29 +30,39 @@ landing:
       - 再考する
 
   about:
-    title: Why we rock
+    title: What we do
+
+    point:
+      text: We partner with our clients to help them ace their *(digital transformation)* journey.
 
     heart:
-      text: We craft beautiful products *(users love)*, making sure no detail goes unnoticed.
+      text: We build cutting-edge solutions that *(accelerate market adoption)*, helping companies stand out from the crowd.
+
     arrows:
-      text: We solve challenging technical problems through *(future-proof)* solutions.
-    point:
-      text: We provide *(expert guidance)*, leading your team through the entire product cycle.
+      text: We solve challenging problems through *(hyper-scalable solutions)* that do the heavy-lifting for you and your team.
+
     cta: get in touch
 
   features:
-    title: Features
+    title: Services
     items:
-      - title: Artificial intelligence
-        text: Unleash the future with AI integrations that make solving hard problems a thing of the past. From conversational voice-enabled chatbots to recommendation algorithms, we'll sprinkle human-like brilliance into your products.
-      - title: Interface design
-        text: Dazzle and captivate with interfaces that feel like home from the very first click. From 3D to 2D, we turn pixels into new pathways, crafting digital spaces where users don't just scroll and click, but flourish.
       - title: Pixel streaming
-        text: Witness immersive graphics dance effortlessly from the cloud to your screen – no beefy GPUs required. Interact with mind-blowing visual experiences - even on low-end devices - with just an internet connection.
-      - title: Full-stack engineering
-        text: We transform your ideas into reality using our full-stack magic and engineering prowess. You can rest assured your vision is in expert hands every step of the way.
-      - title: Hyper-scalable solutions
-        text: We supercharge your company's digital journey through rock-solid infrastructure that can grow at the speed of your imagination. Our globally-scalable cloud solutions adapt to your needs, scaling with your users' demands.
+        text: Enable high-end graphics in the cloud, no GPUs or lengthy downloads required. From AAA games, to architecture applications, product configurators and more, your users can now experience next-gen graphics from any internet-enabled device.
+
+      - title: Multiplayer infrastructure
+        text: Seamlessly deploy multiplayer game servers to our scalable cloud infrastructure. Our multiplayer cloud solutions support most popular game engines, autoscaling globally with player traffic; no Ops team required.
+
+      - title: Web3 solutions
+        text: Integrate plug-and-play blockchain solutions to enable frictionless monetization of your game and entertainment projects. From collectibles, digital asset purchases and in-game microtransactions, blockchain technology paves the way to a user-empowered, permissionless, decentralized future.
+
+      - title: Pipeline automation
+        text: Release projects faster by fully automating game builds through our Continuous Integration cloud solutions. We enable your development and production teams through game build solutions and custom asset pipelines, speeding up collaboration and interation times.
+
+      - title: Web services
+        text: From vibrant landing pages to accessible documentation sites, user feedback tools and analytics solutions, we enhance your online presence and empower your Marketing teams so that you are free to focus on your core business.
+
+      - title: Game production
+        text: Need help with gameplay design, art or game development? No problem! We can augment your team with top, certified game development resources or take full ownership of your game development project. From game concept to release, we got you covered every step of the way.
 
   portfolio:
     title: Projects
@@ -78,10 +88,10 @@ landing:
 
   contact:
     title: Get in touch
-    subtitle: Let's build great things together
+    subtitle: Let's build together
     decoration: ♡
 
-    formText: Reach out to our team today to discover how we can empower your business.
+    formText: Reach out to our team today to discover how we can help you skyrocket your project. ✨🚀
     namePlaceholder: Your name
     emailPlaceholder: Work email address
     buttonText: Send

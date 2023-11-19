@@ -1,10 +1,10 @@
 .landing-header {
   position: relative;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 2rem;
   letter-spacing: 0.3em;
   line-height: 1em;
-  margin-bottom: 1rem;
+  margin-bottom: .4rem;
   text-transform: uppercase;
   width: fit-content;
 }
@@ -15,7 +15,7 @@
   letter-spacing: .1rem;
   line-height: 1em;
   text-transform: uppercase;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .landing-subtitle {

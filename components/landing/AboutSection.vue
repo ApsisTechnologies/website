@@ -48,7 +48,7 @@
         class="icon flex-col flex-center"
       >
         <img
-          class="icon-img  no-pointer-events"
+          class="icon-img no-pointer-events"
           :src="element.img"
           v-intersection-observer="(e) => onIntersect(e, iconAnimationName)"
         />
@@ -90,6 +90,10 @@ const format = (text: string) => text
 
 const icons = [
   {
+    textKey: computed(() => format(t('landing.about.point.text'))),
+    img: point,
+  },
+  {
     textKey: computed(() => format(t('landing.about.heart.text'))),
     img: heart,
   },
@@ -97,10 +101,6 @@ const icons = [
     textKey: computed(() => format(t('landing.about.arrows.text'))),
     img: arrows,
   },
-  {
-    textKey: computed(() => format(t('landing.about.point.text'))),
-    img: point,
-  }
 ]
 
 const { t } = useI18n()

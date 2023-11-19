@@ -2,8 +2,8 @@
   <HeroSection />
   <VideoSection />
   <AboutSection />
-  <PortfolioSection />
   <FeaturesSection />
+  <PortfolioSection />
   <StackSection />
   <ContactSection />
 </template>

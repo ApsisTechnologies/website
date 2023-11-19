@@ -18,7 +18,7 @@
 
 .about {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.6em;
   max-width: 80%;
 }
@@ -32,7 +32,7 @@
 .text-video-wrapper {
   padding-left: 3px;
   overflow: hidden;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .video {

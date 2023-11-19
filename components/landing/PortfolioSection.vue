@@ -114,14 +114,14 @@ const page = ref(0)
 
 const copy = [
   {
-    title: t('landing.portfolio.projects.minipcr.title'),
-    image: minipcrImg,
-    description: t('landing.portfolio.projects.minipcr.description').split('\\n')
-  },
-  {
     title: t('landing.portfolio.projects.ristband.title'),
     image: ristbandImg,
     description: t('landing.portfolio.projects.ristband.description').split('\\n')
+  },
+  {
+    title: t('landing.portfolio.projects.minipcr.title'),
+    image: minipcrImg,
+    description: t('landing.portfolio.projects.minipcr.description').split('\\n')
   },
   {
     title: t('landing.portfolio.projects.forestify.title'),

@@ -68,7 +68,7 @@
 </style>
 
 <template>
-  <div id="features" class="section pos-relative flex-col scroll-snap-align-start">
+  <div id="services" class="section pos-relative flex-col scroll-snap-align-start">
     <span class="landing-title">{{ t('landing.features.title') }}</span>
 
     <div class="container flex-col">
@@ -109,39 +109,45 @@
 import { useI18n } from '#imports'
 import { vIntersectionObserver } from '@vueuse/components'
 import { addClassIfVisible } from 'lib/util'
-import brain from 'assets/images/brain.png'
+import blockchain from 'assets/images/blockchain.png'
 import ux from 'assets/images/ux.png'
-import engineering from 'assets/images/engineering.png'
+import web from 'assets/images/web-services.png'
+import automation from 'assets/images/automation.png'
 import rack from 'assets/images/rack.png'
-import pixelStream from 'assets/images/pixelStream.png'
+import pixelStreaming from 'assets/images/pixel-streaming.png'
 
 const { t } = useI18n()
 
 const items = [
-  {
-    img: brain,
+{
+    img: pixelStreaming,
     title: t('landing.features.items[0].title'),
     text: t('landing.features.items[0].text')
   },
   {
-    img: ux,
+    img: rack,
     title: t('landing.features.items[1].title'),
     text: t('landing.features.items[1].text')
   },
   {
-    img: pixelStream,
+    img: blockchain,
     title: t('landing.features.items[2].title'),
     text: t('landing.features.items[2].text')
   },
   {
-    img: engineering,
+    img: automation,
     title: t('landing.features.items[3].title'),
     text: t('landing.features.items[3].text')
   },
   {
-    img: rack,
+    img: web,
     title: t('landing.features.items[4].title'),
     text: t('landing.features.items[4].text')
+  },
+  {
+    img: ux,
+    title: t('landing.features.items[5].title'),
+    text: t('landing.features.items[5].text')
   },
 ]
 
