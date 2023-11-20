@@ -12,7 +12,7 @@ export default defineNuxtConfig({
       BLOG_BASE_URL: process.env.BLOG_BASE_URL,
       API_BASE_URL: process.env.API_BASE_URL,
       LINKEDIN_URL: process.env.LINKEDIN_URL,
-      GITHUB_URL: process.env.GITHUB_URL,
+      GITHUB_URL: process.env.GIT_HUB_URL,
       TWITTER_URL: process.env.TWITTER_URL,
       ANALYTICS_ENABLED: process.env.ANALYTICS_ENABLED,
       FIREBASE_API_KEY: process.env.FIREBASE_API_KEY,

@@ -43,6 +43,7 @@
       <UELogo class="logo" v-intersection-observer="onIntersect" />
       <EthereumLogo class="logo" v-intersection-observer="onIntersect" />
       <PolygonLogo class="logo" v-intersection-observer="onIntersect" />
+      <AlgorandLogo class="logo" v-intersection-observer="onIntersect" />
     </div>
   </div>
 </template>
@@ -55,6 +56,7 @@ import UELogo from '@/assets/icons/logos/ue.svg'
 import PolygonLogo from '@/assets/icons/logos/polygon.svg'
 import EthereumLogo from '@/assets/icons/logos/ethereum.svg'
 import AWSLogo from '@/assets/icons/logos/aws.svg'
+import AlgorandLogo from '@/assets/icons/logos/algorand.svg'
 
 const { t } = useI18n()
 

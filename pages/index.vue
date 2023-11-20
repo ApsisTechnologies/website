@@ -45,7 +45,7 @@ useHead({
     { property: 'og:locale', content: locale },
     { property: 'og:url', content: config.public.APP_BASE_URL as string },
     { property: 'og:site_name', content: t('company.name') },
-    { property: 'og:description', content: t('company.description') },
+    { property: 'og:description', content: t('landing.hero.about') },
     { property: 'og:image', content: `${config.public.APP_BASE_URL}/banner.jpg` },
     { property: 'og:image:type', content: 'image/jpeg' },
     { property: 'og:image:width', content: '1200' },
