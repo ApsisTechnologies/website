@@ -32,13 +32,13 @@ onMounted(() => {
   useDarkScheme()
 })
 
-const title = computed(() => `${t('company.tagline')} | ${t('company.name')}`)
+const title = computed(() => `${t('company.name')} | ${t('company.tagline')}`)
 
 useHead({
   title,
   htmlAttrs: { lang: locale },
   meta: [
-    { name: 'description', content: t('company.description') },
+    { name: 'description', content: t('company.tagline') },
 
     { property: 'og:type', content: 'website' },
     { property: 'og:title', content: title },
@@ -46,8 +46,8 @@ useHead({
     { property: 'og:url', content: config.public.APP_BASE_URL as string },
     { property: 'og:site_name', content: t('company.name') },
     { property: 'og:description', content: t('landing.hero.about') },
-    { property: 'og:image', content: `${config.public.APP_BASE_URL}/banner.jpg` },
-    { property: 'og:image:type', content: 'image/jpeg' },
+    { property: 'og:image', content: `${config.public.APP_BASE_URL}/opengraph-banner.png` },
+    { property: 'og:image:type', content: 'image/png' },
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' }
   ]

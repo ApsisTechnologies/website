@@ -173,7 +173,7 @@
         </video>
         <span class="text-overlay text-gradient-secondary heading-large pos-relative overlay">{{ t('landing.hero.title') }}</span>
       </div>
-      <span class="landing-subtitle overlay">{{ t('company.description') }}</span>
+      <span class="landing-subtitle overlay">{{ t('company.tagline') }}</span>
       <p class="pos-relative about overlay">{{ t('landing.hero.about') }}</p>
     </div>
 

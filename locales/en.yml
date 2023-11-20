@@ -2,8 +2,7 @@ flag: 🇺🇸
 
 company:
   name: RockinDev
-  tagline: Next-Gen GameOps Solutions
-  description: Otherworldly digital solutions
+  tagline: Next-Gen Entertainment Solutions
 
 nav:
   blog: Blog
@@ -19,7 +18,7 @@ landing:
   hero:
     header: Reimagine
     title: Technology
-    about: We enable Ed-Tech, Entertainment and Gaming companies through future-proof digital solutions, helping them focus on what really matters; delighting users, scaling up and monetizing.
+    about: We enable Ed-Tech, Gaming and Entertainment companies through advanced digital solutions, helping them focus on delighting customers, growing their user base and monetizing.
 
   video:
     loading: loading
@@ -56,7 +55,7 @@ landing:
         text: Integrate plug-and-play blockchain solutions to enable frictionless monetization of your game and entertainment projects. From collectibles, digital asset purchases and in-game microtransactions, blockchain technology paves the way to a user-empowered, permissionless, decentralized future.
 
       - title: Pipeline automation
-        text: Release projects faster by fully automating game builds through our Continuous Integration cloud solutions. We enable your development and production teams through game build solutions and custom asset pipelines, speeding up collaboration and interation times.
+        text: Release projects faster by fully automating game builds through our Continuous Integration cloud solutions. We enable your development and production teams through game build solutions and custom asset pipelines, speeding up collaboration and iteration times.
 
       - title: Web services
         text: From vibrant landing pages to accessible documentation sites, user feedback tools and analytics solutions, we enhance your online presence and empower your Marketing teams so that you are free to focus on your core business.

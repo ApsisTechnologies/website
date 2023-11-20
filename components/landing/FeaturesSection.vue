@@ -113,7 +113,7 @@ import blockchain from 'assets/images/blockchain.png'
 import ux from 'assets/images/ux.png'
 import web from 'assets/images/web-services.png'
 import automation from 'assets/images/automation.png'
-import rack from 'assets/images/rack.png'
+import datacenter from 'assets/images/datacenter.png'
 import pixelStreaming from 'assets/images/pixel-streaming.png'
 
 const { t } = useI18n()
@@ -125,7 +125,7 @@ const items = [
     text: t('landing.features.items[0].text')
   },
   {
-    img: rack,
+    img: datacenter,
     title: t('landing.features.items[1].title'),
     text: t('landing.features.items[1].text')
   },
