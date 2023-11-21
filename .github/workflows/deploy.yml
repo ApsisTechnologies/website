@@ -1,4 +1,4 @@
-name: Deploy RockinDev blog to AWS
+name: Deploy RockinDev website to AWS
 
 on:
   push:
