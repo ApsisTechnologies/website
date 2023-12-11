@@ -18,7 +18,7 @@ landing:
   hero:
     header: Reimagine
     title: Technology
-    about: We enable Ed-Tech, Gaming and Entertainment companies through advanced digital solutions, helping them focus on delighting customers, growing their user base and monetizing.
+    about: We help gaming companies build and launch awesome experiences, reducing complexity and maximizing fan engagement throughout the entire game release cycle.
 
   video:
     loading: loading
@@ -27,48 +27,52 @@ landing:
       - 重新想像
       - أعد تخيل
       - 再考する
+    text:
+      - Welcome to RockinDev, where imagination meets innovation.
+      - We're on a mission to help entertainment companies launch superior experiences so they can grow their fan base, monetize frictionlessly and build a long-lasting brand and legacy.
+      - We specialize in GameOps, LiveOps and game production services, developing custom systems and integrating plug-and-play solutions that simplify continuous game releases and maximize fan engagement.
 
   about:
     title: What we do
 
     point:
-      text: We partner with our clients to help them ace their *(digital transformation)* journey.
+      text: We help entertainment companies *(build and launch interactive experiences)* through custom GameOps solutions.
 
     heart:
-      text: We build cutting-edge solutions that *(accelerate market adoption)*, helping companies stand out from the crowd.
+      text: We *(enhance your digital presence)* throughout the entire release cycle, accelerating fan adoption in measurable, predictable ways.
 
     arrows:
-      text: We solve challenging problems through *(hyper-scalable solutions)* that do the heavy-lifting for you and your team.
+      text: We *(slash infrastructure costs and complexity)* through cloud automation, accelerating release cycles and continuous updates.
 
-    cta: get in touch
+    cta: Explore case studies
 
   features:
     title: Services
     items:
-      - title: Pixel streaming
-        text: Enable high-end graphics in the cloud, no GPUs or lengthy downloads required. From AAA games, to architecture applications, product configurators and more, your users can now experience next-gen graphics from any internet-enabled device.
+      - title: Cloud Rendering
+        text: Unleash the power of the web for games, architectural applications, product configurators and beyond. With Cloud Rendering technology, users can now experience next-gen graphics from any internet-enabled device, no GPUs or lengthy downloads required.
 
       - title: Multiplayer infrastructure
-        text: Seamlessly deploy multiplayer game servers to our scalable cloud infrastructure. Our multiplayer cloud solutions support most popular game engines, autoscaling globally with player traffic; no Ops team required.
+        text: Seamlessly deploy multiplayer games to our scalable cloud infrastructure, no Ops team required. Our ultra-low latency, multiplayer cloud solutions support most popular game engines, auto-scaling globally with player traffic.
 
       - title: Web3 solutions
-        text: Integrate plug-and-play blockchain solutions to enable frictionless monetization of your game and entertainment projects. From collectibles, digital asset purchases and in-game microtransactions, blockchain technology paves the way to a user-empowered, permissionless, decentralized future.
+        text: Integrate plug-and-play blockchain solutions to enable frictionless monetization of your game and entertainment projects. From collectibles, digital asset purchases and in-game microtransactions, blockchain technology paves the way to a permissionless, decentralized future.
 
       - title: Pipeline automation
-        text: Release projects faster by fully automating game builds through our Continuous Integration cloud solutions. We enable your development and production teams through game build solutions and custom asset pipelines, speeding up collaboration and iteration times.
+        text: Accelerate your product release cycle by automating game builds and custom asset pipelines through our continuous integration solutions, freeing up your team's resources so they can focus on building experiences and iterating faster.
 
       - title: Web services
-        text: From vibrant landing pages to accessible documentation sites, user feedback tools and analytics solutions, we enhance your online presence and empower your Marketing teams so that you are free to focus on your core business.
+        text: From vibrant landing pages, documentation sites, blogs, user feedback, analytics solutions and more, we holistically build your online presence, empowering your marketing efforts so that you can continuously maximize fan value.
 
       - title: Game production
-        text: Need help with gameplay design, art or game development? No problem! We can augment your team with top, certified game development resources or take full ownership of your game development project. From game concept to release, we got you covered every step of the way.
+        text: Need help with game development and production? No problem! We can augment your team with top game dev talent, even taking full ownership of your project. From game concept to release, we got you covered every step of the way.
 
   portfolio:
     title: Projects
     projects:
       minipcr:
         title: miniPCR Digital
-        description: "We partnered with miniPCR Bio to develop their flagship e-learning platform, miniPCR Digital, to train students on how to use their cutting-edge biotech products.\\nminiPCR delivers their technology to the International Space Station and we're proud to be a key part of their digital transformation!"
+        description: "We partnered with miniPCR Bio to develop their flagship, gamified e-learning platform, to train students on how to use their cutting-edge biotech products.\\nminiPCR delivers their technology to the International Space Station and we're proud to be a key part of their digital transformation!"
 
       ristband:
         title: Ristband
@@ -76,7 +80,7 @@ landing:
 
       forestify:
         title: Forestify
-        description: "Forestify is a decentralized app (a.k.a. \"dapp\") that allows users to invest in natural habitat restoration projects through nature-backed NFTs."
+        description: "Forestify is an Ethereum-based decentralized app (a.k.a. \"dapp\") that allows users to invest in natural habitat restoration projects through nature-backed NFTs in a gamified experience with several tiers of rewards, producing a truly virtuous cycle."
 
       groovly:
         title: Groovly
@@ -114,6 +118,13 @@ landing:
           - Cnel. Niceto Vega 4736
           - Ciudad de Buenos Aires
           - Argentina
+
+careers:
+  title: Work with us
+  content:
+  - Hi
+  - Bye
+  cta: Upload resume
 
 error:
   notFound:

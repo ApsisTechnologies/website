@@ -16,7 +16,7 @@
 
 .video-overlay-texture {
   background-image: url('assets/images/dot-matrix.png');
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .loading {

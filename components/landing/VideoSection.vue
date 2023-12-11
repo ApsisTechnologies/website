@@ -1,21 +1,38 @@
 <style scoped>
 .section {
   position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.landing-text {
+  position: relative;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: .06rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  max-width: var(--max-content-width);
 }
 </style>
 
 <template>
-  <div class="section full-page pos-relative flex-col flex-center scroll-snap-align-start">
+  <div class="section full-page pos-relative flex-col scroll-snap-align-start">
     <VideoBackground
       :src="desktopVideoSrc"
       :src-mobile="mobileVideoSrc"
       :poster="desktopVideoPoster"
       :poster-mobile="mobileVideoPoster"
-      :darken="0.3"
+      :darken="0.4"
       :loading-text="t('landing.video.loading')"
       autoplay
     />
     <Marquee :words="words" />
+    <p class="landing-text">{{ t('landing.video.text[0]') }}</p>
+    <p class="landing-text">{{ t('landing.video.text[1]') }}</p>
+    <p class="landing-text">{{ t('landing.video.text[2]') }}</p>
+
   </div>
 </template>
 

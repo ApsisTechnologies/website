@@ -21,7 +21,7 @@
 }
 
 .icon-img {
-  width: 15em;
+  width: 12em;
   opacity: 0;
 }
 
@@ -63,7 +63,7 @@
     <Button
       small
       :text="t('landing.about.cta')"
-      @click="onContact"
+      @click="onNavigateToBlog"
     />
   </div>
 </template>
@@ -72,9 +72,9 @@
 import { useI18n } from '#imports'
 import { computed } from 'vue'
 import { useEventBus } from 'composables/event'
-import { EventType } from 'lib/event'
+import { useNuxtApp } from 'nuxt/app'
 import { vIntersectionObserver } from '@vueuse/components'
-import { addClassIfVisible } from 'lib/util'
+import { addClassIfVisible, navigate } from 'lib/util'
 import Button from 'components/Button.vue'
 import arrows from '@/assets/images/arrows.jpg'
 import heart from '@/assets/images/heart.jpg'
@@ -104,9 +104,10 @@ const icons = [
 ]
 
 const { t } = useI18n()
-const bus = useEventBus()
 
-const onContact = () => { bus.emit(EventType.CONTACT) }
+const onNavigateToBlog = () => {
+  navigate(useNuxtApp().$config.public.BLOG_BASE_URL, true)
+}
 
 const onIntersect = (e: IntersectionObserverEntry[], animClassName: string) => {
   addClassIfVisible(e[0], animClassName)
