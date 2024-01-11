@@ -147,15 +147,12 @@
 
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import { useRouter } from 'vue-router'
 import { useI18n } from '#imports'
 import { isValidEmailAddress, extractEmailDomain } from 'lib/util'
 import Button from 'components/Button.vue'
 import TextInput from 'components/TextInput.vue'
 import HeartIcon from 'assets/icons/heart.svg'
 import LocationIcon from 'assets/icons/location.svg'
-import { useApplicationEvent } from 'composables/event'
-import { EventType } from 'lib/event'
 import { sendContactRequest } from 'lib/contact'
 
 const personalEmailDomains = [
@@ -177,7 +174,6 @@ const personalEmailDomains = [
 ]
 
 const { t } = useI18n()
-const router = useRouter()
 
 const emailField = ref<InstanceType<typeof TextInput>>()
 const nameField = ref<InstanceType<typeof TextInput>>()
@@ -185,11 +181,6 @@ let sending = ref(false)
 let sent = ref(false)
 
 const formEnabled = computed(() => !sending.value && !sent.value)
-
-useApplicationEvent(EventType.CONTACT, () => {
-  router.push({ path: router.currentRoute.value.path, hash: '#contact' })
-  nameField.value.focus()
-})
 
 const validateName = (name: string) => {
   return name.length ? '' : t('landing.contact.invalidName')

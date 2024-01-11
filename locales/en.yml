@@ -9,6 +9,7 @@ nav:
   contact: Contact us
   about: About
   services: Services
+  jobs: Jobs
 
 footer:
   pre: Made with ❤️
@@ -30,7 +31,7 @@ landing:
     text:
       - Welcome to RockinDev, where imagination meets innovation.
       - We're on a mission to help entertainment companies launch superior experiences so they can grow their fan base, monetize frictionlessly and build a long-lasting brand and legacy.
-      - We specialize in GameOps, LiveOps and game production services, developing custom systems and integrating plug-and-play solutions that simplify continuous game releases and maximize fan engagement.
+      - We specialize in GameOps and game production services, developing custom systems and integrating plug-and-play solutions that simplify continuous game releases and maximize fan engagement.
 
   about:
     title: What we do
@@ -119,12 +120,42 @@ landing:
           - Ciudad de Buenos Aires
           - Argentina
 
-careers:
-  title: Work with us
+jobs:
+  title: Join our team
   content:
-  - Hi
-  - Bye
-  cta: Upload resume
+    - If you love games, technology and creative challenges then we'd love to hear from you!
+    - Please take a moment to read about our values below. They should give you a good sense of what it feels like being part of our team. If you think you might be a good fit then please take a look at our open positions and consider applying.
+    - We highly appreciate your interest in working with us and look forward to learning more about you.
+
+  positions:
+    open: Browse open positions
+    closed: No positions currently open
+
+  values:
+    title: Our values
+    description: Our values shape our company culture and work philosophy. We use them as guiding principles in our everyday work and our professional life, giving us a commom framework that helps us find meaning and become a cohesive, highly-effective team, so we look for people that resonate with them.
+
+    items:
+      - title: Be Curious
+        body: Curiosity is the driving force that makes us constantly seek knowledge, ask questions and find answers, often in unlikely places. We value curiosity and expect our team members to freely express it, staying open to new ways of thinking and regularly venturing out of their comfort zones in order to constantly improve and innovate.
+
+      - title: Have a growth mindset
+        body: We believe that life is a never-ending process of acquiring knowledge, developing new skills and expanding our awareness in multiple areas. We actively disabuse us of the notion that "we already know everything there is to know" and realize there's always room for improvement, while staying humble and open to new ideas.
+
+      - title: Build and generalize
+        body: Problem-solving is the main way in which we deliver value. Still, we realize we can go beyond the problem at hand and actively attempt to generalize solutions so that they can potentially transcend their original purpose, leading to discoveries, reusability, cost savings, efficiency and new business opportunities.
+
+      - title: Communicate effectively
+        body: Team work requires more than solving problems. It also requires others to understand the value of our ideas. This means we don't just settle for solving immediate problems, but also actively hone our communication skills every chance we get in order to generate team alignment and eventually become trusted leaders.
+
+      - title: Have integrity
+        body: We take pride in our work and expect our team to act in a professional, honorable way. We prioritize doing what's right on top of doing what's easy, upholding our core values at all times.
+
+      - title: Be Bold
+        body: Change is often difficult and innovation requires constant experimentation. We recognize that for every successful experiment there might be many failed ones, so we encourage boldness, experimentation and calculated risk-taking. We realize that every failed attempt gets us one step closer to success.
+
+      - title: Connect and enjoy yourself
+        body: We believe that work is more than just a means to make a living. Work is one of our main sources of human significance and meaning. We strive to not just do work we can be proud of but also to connect deeply with others in a common pursuit of excellence, building long-lasting connections that propel us forward as a team while also having fun and enjoying the process.
 
 error:
   notFound:

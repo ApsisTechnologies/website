@@ -2,11 +2,12 @@
 .footer {
   width: 100%;
   padding: 1rem var(--content-margin);
-  background-color: #2c313f;
+  background-color: var(--callout-color);
 
   top: 100vh;
 
   display: flex;
+  position: sticky;
   align-items: center;
 
   transition: transform 200ms ease-out, opacity 200ms linear;

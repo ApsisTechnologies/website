@@ -10,10 +10,10 @@
 
 <script setup lang="ts">
 import { definePageMeta } from '#imports'
-import { computed, onMounted } from 'vue'
+import { computed, onMounted, onBeforeUnmount } from 'vue'
 import { useI18n, useHead } from '#imports'
 import { useRuntimeConfig } from 'nuxt/app'
-import { useDarkScheme } from 'composables/themeManager'
+import { useThemeManager } from 'composables/themeManager'
 import HeroSection from 'components/landing/HeroSection.vue'
 import VideoSection from 'components/landing/VideoSection.vue'
 import AboutSection from 'components/landing/AboutSection.vue'
@@ -28,8 +28,14 @@ const config = useRuntimeConfig()
 
 const { t, locale } = useI18n()
 
+const tm = useThemeManager()
+
 onMounted(() => {
-  useDarkScheme()
+  tm.setDark()
+})
+
+onBeforeUnmount(() => {
+  tm.setAuto()
 })
 
 const title = computed(() => `${t('company.name')} | ${t('company.tagline')}`)

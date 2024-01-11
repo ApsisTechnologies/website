@@ -83,8 +83,6 @@
 import { useWindowScroll } from '@vueuse/core'
 import { useRouter } from 'vue-router'
 import { computed } from 'vue'
-import { useEventBus } from 'composables/event'
-import { EventType } from 'lib/event'
 import { useI18n } from '#imports'
 import Logo from 'components/Logo.vue'
 import Wordmark from 'components/Wordmark.vue'
@@ -92,7 +90,6 @@ import NavLinks from 'components/NavLinks.vue'
 import Button from 'components/Button.vue'
 
 const { t } = useI18n()
-const bus = useEventBus()
 
 const props = defineProps({
   threshold: {
@@ -113,6 +110,6 @@ const { y } = useWindowScroll()
 const hidden = computed(() => y.value > props.threshold)
 
 const onContact = () => {
-  bus.emit(EventType.CONTACT)
+  router.push({ path: '/', hash: '#contact' })
 }
 </script>

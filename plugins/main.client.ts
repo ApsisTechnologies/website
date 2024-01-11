@@ -11,7 +11,7 @@ export default defineNuxtPlugin((nuxtApp) => {
     const preferences = usePreferences()
 
     const themeManager = nuxtApp.vueApp.config.globalProperties.themeManager as ThemeManager
-    themeManager.setDark()
+    themeManager.setAuto()
 
     preferences.setTheme(themeManager.name)
 

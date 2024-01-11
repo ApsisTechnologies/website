@@ -5,16 +5,6 @@
   align-items: center;
   padding-top: 3rem;
 }
-
-.landing-text {
-  position: relative;
-  text-align: center;
-  font-weight: 500;
-  letter-spacing: .06rem;
-  font-size: 1.2rem;
-  line-height: 1.4rem;
-  max-width: var(--max-content-width);
-}
 </style>
 
 <template>

@@ -1,6 +1,6 @@
 <style scoped>
 .nav-links-container {
-  gap: .5rem;
+  gap: 1rem;
   display: flex;
   flex-direction: row;
 }
@@ -13,7 +13,7 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  padding: .2rem .4rem;
+  padding: .2rem 0;
   border-radius: var(--border-radius);
 }
 
@@ -55,6 +55,7 @@ const navLinks = [
   { route: '/#about', text: t('nav.about') },
   { route: '/#services', text: t('landing.features.title') },
   { route: '/#projects', text: t('landing.portfolio.title') },
+  { route: '/jobs', text: t('nav.jobs') },
 ]
 
 const router = useRouter()

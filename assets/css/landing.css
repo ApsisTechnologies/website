@@ -29,6 +29,16 @@
   margin-bottom: .8rem;
 }
 
+.landing-text {
+  position: relative;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: .06rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  max-width: var(--max-content-width);
+}
+
 .text-gradient-outline {
   padding-left: 3px;
   position: relative;

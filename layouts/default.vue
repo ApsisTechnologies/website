@@ -1,20 +1,23 @@
 <style scoped>
 .section {
-  padding-top: 6rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  margin: 0 auto;
 }
 </style>
 
 <template>
-  <main class="section content-section pos-relative">
+  <main class="section content-section pos-relative flex-col">
     <slot />
   </main>
   <Nav />
+  <Footer />
 </template>
 
 <script setup lang="ts">
 import { useHead } from '#imports'
 import Nav from 'components/Nav.vue'
-// import BreakpointDebugger from 'components/BreakpointDebugger.vue'
+import Footer from 'components/Footer.vue'
 
 useHead({
   link: [

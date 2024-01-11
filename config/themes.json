@@ -4,11 +4,11 @@
     "description": "RockinDev color theme",
     "light": {
       "--error-color": "hsl(30deg 100% 50%)",
-      "--text-color": "hsl(0deg 0% 20%)",
+      "--text-color": "hsl(0deg 0% 10%)",
       "--muted-text-color": "hsl(0deg 0% 40%)",
       "--background-color": "hsl(0deg 0% 100%)",
-      "--callout-color": "hsl(0deg 0% 97%)",
-      "--highlighted-callout-color": "hsl(0deg 0% 90%)",
+      "--callout-color": "hsl(236deg 12% 90%)",
+      "--highlighted-callout-color": "hsl(0deg 0% 60%)",
       "--border-color": "hsl(0deg 0% 80%)"
     },
     "dark": {
@@ -16,8 +16,8 @@
       "--text-color": "hsl(0deg 0% 100%)",
       "--muted-text-color": "hsl(0deg 0% 60%)",
       "--background-color": "hsl(240deg 33% 1%)",
-      "--callout-color": "hsl(0deg 0% 10%)",
-      "--highlighted-callout-color": "hsl(0deg 0% 20%)",
+      "--callout-color": "hsl(236deg 12% 18%)",
+      "--highlighted-callout-color": "hsl(0deg 0% 40%)",
       "--border-color": "hsl(0deg 0% 40%)"
     }
   }
