@@ -53,8 +53,8 @@ landing:
       - title: Cloud Rendering
         text: Unleash the power of the web for games, architectural applications, product configurators and beyond. With Cloud Rendering technology, users can now experience next-gen graphics from any internet-enabled device, no GPUs or lengthy downloads required.
 
-      - title: Multiplayer infrastructure
-        text: Seamlessly deploy multiplayer games to our scalable cloud infrastructure, no Ops team required. Our ultra-low latency, multiplayer cloud solutions support most popular game engines, auto-scaling globally with player traffic.
+      - title: LiveOps Solutions
+        text: We expertly integrate a wide range of advanced LiveOps and GameOps solutions provided by our premium partner network, addressing many advanced use cases, including Generative AI, anti-cheat solutions, multiplayer server deployments, voice chat and much more.
 
       - title: Web3 solutions
         text: Integrate plug-and-play blockchain solutions to enable frictionless monetization of your game and entertainment projects. From collectibles, digital asset purchases and in-game microtransactions, blockchain technology paves the way to a permissionless, decentralized future.
@@ -124,12 +124,12 @@ jobs:
   title: Join our team
   content:
     - If you love games, technology and creative challenges then we'd love to hear from you!
-    - Please take a moment to read about our values below. They should give you a good sense of what it feels like being part of our team. If you think you might be a good fit then please take a look at our open positions and consider applying.
+    - Please take a moment to learn about our values below, they should give you a good sense of what it feels like being part of our team. If you think you might be a good fit then please take a look at our open positions and consider applying.
     - We highly appreciate your interest in working with us and look forward to learning more about you.
 
   positions:
     open: Browse open positions
-    closed: No positions currently open
+    closed: No open positions
 
   values:
     title: Our values
