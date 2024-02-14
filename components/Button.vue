@@ -43,7 +43,7 @@
   }
 
   .button:hover > .button-background {
-    background-color: var(--highlighted-callout-color);
+    background: var(--secondary-gradient);
   }
 }
 
@@ -60,14 +60,14 @@
 
 .button-background {
   border-radius: 1.3em;
-  background-color: var(--background-color);
+  background: var(--background-color);
   display: block;
   position: absolute;
   top: var(--decoration-line-thickness);
   left: var(--decoration-line-thickness);
   width: calc(100% - var(--decoration-line-thickness) * 2);
   height: calc(100% - var(--decoration-line-thickness) * 2);
-  transition: background-color 150ms linear;
+  transition: background 150ms linear;
 }
 
 .button-glow {

@@ -42,6 +42,7 @@ jobs:
         THEME: ${{ vars.THEME }}
         APP_BASE_URL: ${{ vars.APP_BASE_URL }}
         BLOG_BASE_URL: ${{ vars.BLOG_BASE_URL }}
+        JOB_BOARD_URL: ${{ vars.JOB_BOARD_URL }}
         API_BASE_URL: ${{ vars.API_BASE_URL }}
         LINKEDIN_URL: ${{ vars.LINKEDIN_URL }}
         GIT_HUB_URL: ${{ vars.GIT_HUB_URL }}

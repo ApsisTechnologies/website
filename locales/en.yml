@@ -50,11 +50,11 @@ landing:
   features:
     title: Services
     items:
-      - title: Cloud Rendering
-        text: Unleash the power of the web for games, architectural applications, product configurators and beyond. With Cloud Rendering technology, users can now experience next-gen graphics from any internet-enabled device, no GPUs or lengthy downloads required.
-
       - title: LiveOps Solutions
         text: We expertly integrate a wide range of advanced LiveOps and GameOps solutions provided by our premium partner network, addressing many advanced use cases, including Generative AI, anti-cheat solutions, multiplayer server deployments, voice chat and much more.
+
+      - title: Cloud Rendering
+        text: Unleash the power of the web for games, architectural applications, product configurators and beyond. With Cloud Rendering technology, users can now experience next-gen graphics from any internet-enabled device, no GPUs or lengthy downloads required.
 
       - title: Web3 solutions
         text: Integrate plug-and-play blockchain solutions to enable frictionless monetization of your game and entertainment projects. From collectibles, digital asset purchases and in-game microtransactions, blockchain technology paves the way to a permissionless, decentralized future.
@@ -124,29 +124,29 @@ jobs:
   title: Join our team
   content:
     - If you love games, technology and creative challenges then we'd love to hear from you!
-    - Please take a moment to learn about our values below, they should give you a good sense of what it feels like being part of our team. If you think you might be a good fit then please take a look at our open positions and consider applying.
+    - You can learn more about our values below. They should give you a pretty good idea of what it feels like being a part of our team. If this resonates with you then feel free to take a look at our open positions and consider applying.
     - We highly appreciate your interest in working with us and look forward to learning more about you.
 
   positions:
-    open: Browse open positions
+    open: See open positions
     closed: No open positions
 
   values:
     title: Our values
-    description: Our values shape our company culture and work philosophy. We use them as guiding principles in our everyday work and our professional life, giving us a commom framework that helps us find meaning and become a cohesive, highly-effective team, so we look for people that resonate with them.
+    description: Our values shape RockinDev's culture and work philosophy. We use them as guiding principles in our everyday work and our professional life, giving us a commom framework that helps us find meaning and become a cohesive, highly-effective team.
 
     items:
       - title: Be Curious
         body: Curiosity is the driving force that makes us constantly seek knowledge, ask questions and find answers, often in unlikely places. We value curiosity and expect our team members to freely express it, staying open to new ways of thinking and regularly venturing out of their comfort zones in order to constantly improve and innovate.
 
       - title: Have a growth mindset
-        body: We believe that life is a never-ending process of acquiring knowledge, developing new skills and expanding our awareness in multiple areas. We actively disabuse us of the notion that "we already know everything there is to know" and realize there's always room for improvement, while staying humble and open to new ideas.
+        body: We believe that life is a never-ending process of acquiring knowledge, developing new skills and expanding our awareness in multiple areas. We actively disabuse ourselves of the notion that "we already know everything there is to know" and realize there's always room for improvement, while staying humble and open to new ideas.
 
-      - title: Build and generalize
+      - title: Iterate and generalize
         body: Problem-solving is the main way in which we deliver value. Still, we realize we can go beyond the problem at hand and actively attempt to generalize solutions so that they can potentially transcend their original purpose, leading to discoveries, reusability, cost savings, efficiency and new business opportunities.
 
-      - title: Communicate effectively
-        body: Team work requires more than solving problems. It also requires others to understand the value of our ideas. This means we don't just settle for solving immediate problems, but also actively hone our communication skills every chance we get in order to generate team alignment and eventually become trusted leaders.
+      - title: Active leadership
+        body: Solving complex challenges requires team work, which in turn requires others to understand the value of our ideas. This means most of the time we can't solve problems in a vacuum. Instead, we actively hone our communication skills every chance we get in order to generate team alignment and eventually become trusted leaders.
 
       - title: Have integrity
         body: We take pride in our work and expect our team to act in a professional, honorable way. We prioritize doing what's right on top of doing what's easy, upholding our core values at all times.
@@ -154,8 +154,8 @@ jobs:
       - title: Be Bold
         body: Change is often difficult and innovation requires constant experimentation. We recognize that for every successful experiment there might be many failed ones, so we encourage boldness, experimentation and calculated risk-taking. We realize that every failed attempt gets us one step closer to success.
 
-      - title: Connect and enjoy yourself
-        body: We believe that work is more than just a means to make a living. Work is one of our main sources of human significance and meaning. We strive to not just do work we can be proud of but also to connect deeply with others in a common pursuit of excellence, building long-lasting connections that propel us forward as a team while also having fun and enjoying the process.
+      - title: Enjoy yourself
+        body: Work is one of the main sources of human meaning. We strive not to just do excellent work but also to enjoy the process. be proud of what we accomplish together as a team and celebrate the victories.
 
 error:
   notFound:

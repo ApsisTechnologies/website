@@ -11,8 +11,7 @@
   <p>{{ t('jobs.content[1]') }}</p>
   <p>{{ t('jobs.content[2]') }}</p>
 
-  <Button :enabled="positionsOpen" small :text="positionsOpen ? t('jobs.positions.open') : t('jobs.positions.closed')" />
-  <!-- <p v-if="!positionsOpen" class="note">{{ t('jobs.positions.note') }}</p> -->
+  <Button small :text="t('jobs.positions.open')" @click="navigate(config.public.JOB_BOARD_URL, true)" />
 
   <Divider />
 
@@ -45,6 +44,7 @@
 import { computed } from 'vue'
 import { useI18n, useHead } from '#imports'
 import { useRuntimeConfig } from 'nuxt/app'
+import { navigate } from 'lib/util'
 import Divider from 'components/Divider.vue'
 
 const config = useRuntimeConfig()
@@ -52,8 +52,6 @@ const config = useRuntimeConfig()
 const { t, locale } = useI18n()
 
 const title = computed(() => `${t('company.name')} | ${t('jobs.title')}`)
-
-const positionsOpen = false
 
 useHead({
   title,

@@ -120,12 +120,12 @@ const { t } = useI18n()
 
 const items = [
 {
-    img: pixelStreaming,
+    img: datacenter,
     title: t('landing.features.items[0].title'),
     text: t('landing.features.items[0].text')
   },
   {
-    img: datacenter,
+    img: pixelStreaming,
     title: t('landing.features.items[1].title'),
     text: t('landing.features.items[1].text')
   },
