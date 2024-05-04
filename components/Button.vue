@@ -43,7 +43,7 @@
   }
 
   .button:hover > .button-background {
-    background: var(--secondary-gradient);
+    background: var(--primary-gradient);
   }
 }
 

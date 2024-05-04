@@ -22,7 +22,6 @@
     <p class="landing-text">{{ t('landing.video.text[0]') }}</p>
     <p class="landing-text">{{ t('landing.video.text[1]') }}</p>
     <p class="landing-text">{{ t('landing.video.text[2]') }}</p>
-
   </div>
 </template>
 

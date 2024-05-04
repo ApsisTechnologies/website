@@ -1,8 +1,8 @@
 <style>
-html {
+/* html {
   scroll-snap-type: y proximity;
   scroll-snap-stop: normal;
-}
+} */
 </style>
 
 <template>

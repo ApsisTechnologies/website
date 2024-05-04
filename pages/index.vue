@@ -1,7 +1,8 @@
 <template>
   <HeroSection />
   <VideoSection />
-  <AboutSection />
+  <ValidationSection />
+  <!-- <AboutSection /> -->
   <FeaturesSection />
   <PortfolioSection />
   <StackSection />
@@ -16,6 +17,7 @@ import { useRuntimeConfig } from 'nuxt/app'
 import { useThemeManager } from 'composables/themeManager'
 import HeroSection from 'components/landing/HeroSection.vue'
 import VideoSection from 'components/landing/VideoSection.vue'
+import ValidationSection from 'components/landing/ValidationSection.vue'
 import AboutSection from 'components/landing/AboutSection.vue'
 import FeaturesSection from 'components/landing/FeaturesSection.vue'
 import PortfolioSection from 'components/landing/PortfolioSection.vue'

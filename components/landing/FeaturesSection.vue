@@ -7,7 +7,6 @@
 }
 
 .container {
-  /* max-width: var(--max-content-width); */
   gap: 1rem;
   /* border: 1px dashed yellow; */
 }
@@ -112,7 +111,7 @@ import { addClassIfVisible } from 'lib/util'
 import blockchain from 'assets/images/blockchain.png'
 import ux from 'assets/images/ux.png'
 import web from 'assets/images/web-services.png'
-import automation from 'assets/images/automation.png'
+import brain from 'assets/images/brain.png'
 import datacenter from 'assets/images/datacenter.png'
 import pixelStreaming from 'assets/images/pixel-streaming.png'
 
@@ -120,35 +119,25 @@ const { t } = useI18n()
 
 const items = [
 {
-    img: datacenter,
+    img: web,
     title: t('landing.features.items[0].title'),
     text: t('landing.features.items[0].text')
   },
   {
-    img: pixelStreaming,
+    img: datacenter,
     title: t('landing.features.items[1].title'),
     text: t('landing.features.items[1].text')
   },
   {
-    img: blockchain,
+    img: brain,
     title: t('landing.features.items[2].title'),
     text: t('landing.features.items[2].text')
   },
   {
-    img: automation,
+    img: ux,
     title: t('landing.features.items[3].title'),
     text: t('landing.features.items[3].text')
-  },
-  {
-    img: web,
-    title: t('landing.features.items[4].title'),
-    text: t('landing.features.items[4].text')
-  },
-  {
-    img: ux,
-    title: t('landing.features.items[5].title'),
-    text: t('landing.features.items[5].text')
-  },
+  }
 ]
 
 const onIntersect = (e: IntersectionObserverEntry[]) => {

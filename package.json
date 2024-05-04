@@ -16,23 +16,23 @@
     "@csstools/postcss-global-data": "^2.1.0",
     "@nuxtjs/i18n": "^8.0.0-beta.12",
     "@types/node": "^20.3.2",
-    "@types/three": "^0.156.0",
-    "@typescript-eslint/eslint-plugin": "^6.7.0",
-    "@typescript-eslint/parser": "^6.7.0",
-    "eslint": "^8.43.0",
+    "@types/three": "^0.164.0",
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
+    "eslint": "^9.2.0",
     "eslint-plugin-vue": "^9.15.1",
     "nuxt": "^3.9.1",
-    "nuxt-svgo": "^3.1.0",
+    "nuxt-svgo": "^4.0.0",
     "postcss-custom-media": "^10.0.0",
     "serve": "^14.2.0",
-    "typescript": "5.2.2"
+    "typescript": "5.4.5"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.4.11",
+    "@pinia/nuxt": "^0.5.1",
     "@vueuse/components": "^10.3.0",
     "@vueuse/core": "^10.3.0",
     "axios": "^1.4.0",
     "firebase": "^10.2.0",
-    "three": "^0.156.1"
+    "three": "^0.164.1"
   }
 }

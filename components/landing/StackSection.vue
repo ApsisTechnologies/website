@@ -35,15 +35,10 @@
   <div class="section pos-relative flex-col">
     <span class="landing-title">{{ t('landing.stack.title') }}</span>
     <div class="logos-container">
-      <AWSLogo
-        class="logo"
-        style="width: 7rem; transform: translateY(1rem);"
-        v-intersection-observer="onIntersect"
-      />
+      <AWSLogo class="logo" style="width: 7rem; transform: translateY(1rem);" v-intersection-observer="onIntersect" />
+      <GCPLogo class="logo" v-intersection-observer="onIntersect" />
+      <K8SLogo class="logo" v-intersection-observer="onIntersect" />
       <UELogo class="logo" v-intersection-observer="onIntersect" />
-      <EthereumLogo class="logo" v-intersection-observer="onIntersect" />
-      <PolygonLogo class="logo" v-intersection-observer="onIntersect" />
-      <AlgorandLogo class="logo" v-intersection-observer="onIntersect" />
     </div>
   </div>
 </template>
@@ -53,10 +48,9 @@ import { useI18n } from '#imports'
 import { vIntersectionObserver } from '@vueuse/components'
 import { addClassIfVisible } from 'lib/util'
 import UELogo from '@/assets/icons/logos/ue.svg'
-import PolygonLogo from '@/assets/icons/logos/polygon.svg'
-import EthereumLogo from '@/assets/icons/logos/ethereum.svg'
 import AWSLogo from '@/assets/icons/logos/aws.svg'
-import AlgorandLogo from '@/assets/icons/logos/algorand.svg'
+import GCPLogo from '@/assets/icons/logos/gcp.svg'
+import K8SLogo from '@/assets/icons/logos/k8s.svg'
 
 const { t } = useI18n()
 

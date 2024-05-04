@@ -1,7 +1,7 @@
 <style scoped>
 .section {
   padding-top: 3rem;
-  background: var(--background-gradient);
+  background: var(--secondary-gradient);
 }
 
 .slider {

@@ -2,7 +2,7 @@ flag: 🇺🇸
 
 company:
   name: RockinDev
-  tagline: Next-Gen Entertainment Solutions
+  tagline: Next-Gen Digital Solutions
 
 nav:
   blog: Blog
@@ -19,7 +19,7 @@ landing:
   hero:
     header: Reimagine
     title: Technology
-    about: We help gaming companies build and launch awesome experiences, reducing complexity and maximizing fan engagement throughout the entire game release cycle.
+    about: We help companies build standout digital products that turn users into raving fans, monetizing frictionlessly and transforming organizations into digital native brands.
 
   video:
     loading: loading
@@ -30,8 +30,20 @@ landing:
       - 再考する
     text:
       - Welcome to RockinDev, where imagination meets innovation.
-      - We're on a mission to help entertainment companies launch superior experiences so they can grow their fan base, monetize frictionlessly and build a long-lasting brand and legacy.
-      - We specialize in GameOps and game production services, developing custom systems and integrating plug-and-play solutions that simplify continuous game releases and maximize fan engagement.
+      - We are a team of creative technologists with a passion for building innovative digital products that push boundaries, unlocking new avenues for growth while leading the way through our clients’ digital journey.
+      - We specialize in Web, Cloud and Game technologies. Our advanced solutions are the result of deep industry expertise accumulated over decades of combined technical experience building software products.
+
+  validation:
+    header: RockinDev in numbers
+    title: Trusted by
+
+    stats:
+      - count: '4'
+        text: metaverse worlds launched
+      - count: '3'
+        text: web platforms deployed
+      - count: '5'
+        text: open source projects contributed
 
   about:
     title: What we do
@@ -48,25 +60,22 @@ landing:
     cta: Explore case studies
 
   features:
-    title: Services
+    title: What we do
     items:
-      - title: LiveOps Solutions
-        text: We expertly integrate a wide range of advanced LiveOps and GameOps solutions provided by our premium partner network, addressing many advanced use cases, including Generative AI, anti-cheat solutions, multiplayer server deployments, voice chat and much more.
+      - title: Web applications
+        text: From vibrant landing pages to fully-featured web applications, we put global audiences at your fingertips through carefully-crafted web experiences that delight users and grow with your business.
 
-      - title: Cloud Rendering
-        text: Unleash the power of the web for games, architectural applications, product configurators and beyond. With Cloud Rendering technology, users can now experience next-gen graphics from any internet-enabled device, no GPUs or lengthy downloads required.
+      - title: Cloud engineering
+        text: As backend experts, our team specializes in deploying modern web and cloud solutions at a global scale, helping you achieve the quality of service that users expect in today's hyper-connected world.
 
-      - title: Web3 solutions
-        text: Integrate plug-and-play blockchain solutions to enable frictionless monetization of your game and entertainment projects. From collectibles, digital asset purchases and in-game microtransactions, blockchain technology paves the way to a permissionless, decentralized future.
+      - title: Artificial Intelligence
+        text: We help companies productize artificial intelligence technologies leveraging open source tools and modern training workflows that can imbue your digital products with near-human intelligence, making you and your users incredibly more productive.
 
-      - title: Pipeline automation
-        text: Accelerate your product release cycle by automating game builds and custom asset pipelines through our continuous integration solutions, freeing up your team's resources so they can focus on building experiences and iterating faster.
+      - title: Game development
+        text: Our game development team are experts at crafting immersive, interactive experiences that captivate younger audiences who crave new forms of expression and seek novel experiences and human interactions.
 
-      - title: Web services
-        text: From vibrant landing pages, documentation sites, blogs, user feedback, analytics solutions and more, we holistically build your online presence, empowering your marketing efforts so that you can continuously maximize fan value.
-
-      - title: Game production
-        text: Need help with game development and production? No problem! We can augment your team with top game dev talent, even taking full ownership of your project. From game concept to release, we got you covered every step of the way.
+      # - title: Pixel streaming
+      #   text: Unleash the power of the immersive web for games, architectural applications, product configurators and beyond. With cloud rendering technology, users can now experience next-gen graphics from any internet-enabled device, no GPUs or lengthy downloads required.
 
   portfolio:
     title: Projects

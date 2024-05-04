@@ -17,9 +17,9 @@
 }
 
 .about {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.6em;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.4em;
   max-width: 80%;
 }
 
