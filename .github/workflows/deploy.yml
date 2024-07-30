@@ -26,7 +26,10 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: 18
+        node-version: 20
+
+    - name: Install pnpm package manager
+      uses: pnpm/action-setup@v4
 
     - name: Install AWS CLI
       uses: unfor19/install-aws-cli-action@v1
@@ -55,8 +58,8 @@ jobs:
         FIREBASE_MEASUREMENT_ID: ${{ secrets.FIREBASE_MEASUREMENT_ID }}
 
       run: |
-        yarn install
-        yarn generate
+        pnpm install
+        pnpm generate
         cp config/robots.${ENV}.txt dist/robots.txt
 
     - name: Deploy website to S3

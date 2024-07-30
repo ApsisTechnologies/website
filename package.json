@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "nuxt dev --host 0.0.0.0",
     "generate": "nuxt generate",
     "clean": "rm -fr .nuxt .output dist",
     "preview": "nuxt preview",
@@ -25,7 +25,8 @@
     "nuxt-svgo": "^4.0.0",
     "postcss-custom-media": "^10.0.0",
     "serve": "^14.2.0",
-    "typescript": "5.4.5"
+    "typescript": "5.4.5",
+    "ua-parser-js": "^1.0.38"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
@@ -33,6 +34,7 @@
     "@vueuse/core": "^10.3.0",
     "axios": "^1.4.0",
     "firebase": "^10.2.0",
-    "three": "^0.164.1"
-  }
+    "three": "^0.167.0"
+  },
+  "packageManager": "pnpm@9.6.0+sha512.38dc6fba8dba35b39340b9700112c2fe1e12f10b17134715a4aa98ccf7bb035e76fd981cf0bb384dfa98f8d6af5481c2bef2f4266a24bfa20c34eb7147ce0b5e"
 }

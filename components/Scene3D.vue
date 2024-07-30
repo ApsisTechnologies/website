@@ -28,14 +28,7 @@ import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass'
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass'
 import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass'
-
-const canvas = ref<HTMLCanvasElement>()
-
-// Reference: https://threejs.org/docs/#examples/en/loaders/GLTFLoader
-const loader = new GLTFLoader()
-const dracoLoader = new DRACOLoader()
-dracoLoader.setDecoderPath('https://www.gstatic.com/draco/v1/decoders/')
-loader.setDRACOLoader(dracoLoader)
+import { UAParser } from 'ua-parser-js'
 
 const props = withDefaults(defineProps<{
   assetUrl: string
@@ -47,6 +40,14 @@ const props = withDefaults(defineProps<{
   animate: false,
   postProcess: false
 })
+
+const canvas = ref<HTMLCanvasElement>()
+
+// Reference: https://threejs.org/docs/#examples/en/loaders/GLTFLoader
+const loader = new GLTFLoader()
+const dracoLoader = new DRACOLoader()
+dracoLoader.setDecoderPath('https://www.gstatic.com/draco/v1/decoders/')
+loader.setDRACOLoader(dracoLoader)
 
 watch(() => props.enabled, () => {
   renderScene()
@@ -94,7 +95,10 @@ const initScene = (canvas: HTMLCanvasElement) => {
   camera.position.set(0,5,13)
   scene.add(camera)
 
-  if (props.postProcess) {
+  const userAgent = new UAParser(navigator.userAgent)
+  const isIOS = userAgent.getOS().name === 'iOS'
+
+  if (props.postProcess && !isIOS) {
     renderPass = new RenderPass(scene, camera)
     outputPass = new OutputPass(Three.ReinhardToneMapping)
     bloomPass = new UnrealBloomPass(new Three.Vector2(1,1), 1.5, 0.4, 0.85)
