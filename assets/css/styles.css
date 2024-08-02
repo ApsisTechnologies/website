@@ -35,15 +35,6 @@
     var(--secondary-gradient-stop-color) 80%
   );
 
-  --tertiary-gradient-start-color: hsl(162, 100%, 45%);
-  --tertiary-gradient-stop-color: hsl(266, 88%, 51%);
-  --tertiary-gradient-angle: 130deg;
-  --tertiary-gradient: linear-gradient(
-    var(--tertiary-gradient-angle),
-    var(--tertiary-gradient-start-color) 10%,
-    var(--tertiary-gradient-stop-color) 80%
-  );
-
   --button-gradient: linear-gradient(hsl(4deg 100% 50%) 0%, hsl(271deg 100% 50%) 100%);
 
   --background-gradient: linear-gradient(330deg, var(--background-color) 0%, #1c2169 100%);

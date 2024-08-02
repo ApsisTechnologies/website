@@ -18,8 +18,7 @@
 }
 
 .active-nav-link {
-  color: var(--muted-text-color);
-  pointer-events: none;
+  display: none;
 }
 </style>
 
@@ -28,14 +27,14 @@
     <span
       :key="item.route"
       v-for="item of navLinks"
-      class="link nav-link pos-relative"
+      class="link nav-link pos-relative non-breaking-text"
       :class="{ 'active-nav-link': router.currentRoute.value.path === item.route }"
       @click="router.push(item.route)"
     >
       {{ item.text }}
     </span>
     <span
-      class="link nav-link pos-relative"
+      class="link nav-link pos-relative non-breaking-text"
       @click="onNavigateToBlog"
     >
       {{ t('nav.blog') }}
@@ -52,9 +51,8 @@ import { useNuxtApp } from 'nuxt/app'
 const { t } = useI18n()
 
 const navLinks = [
-  { route: '/#about', text: t('nav.about') },
   { route: '/#services', text: t('landing.features.title') },
-  { route: '/#projects', text: t('landing.portfolio.title') },
+  { route: '/projects', text: t('landing.portfolio.title') },
   { route: '/jobs', text: t('nav.jobs') },
 ]
 

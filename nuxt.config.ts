@@ -5,6 +5,7 @@ import { resolve } from 'path'
 export default defineNuxtConfig({
   ssr: true,
   spaLoadingTemplate: false,
+
   runtimeConfig: {
     public: {
       THEME: process.env.THEME,
@@ -23,14 +24,17 @@ export default defineNuxtConfig({
       FIREBASE_MEASUREMENT_ID: process.env.FIREBASE_MEASUREMENT_ID,
     }
   },
+
   modules: [
     'nuxt-svgo',
     '@nuxtjs/i18n',
     '@pinia/nuxt'
   ],
+
   imports: {
     autoImport: false
   },
+
   alias: {
     assets: resolve(__dirname, 'assets'),
     lib: resolve(__dirname, 'lib'),
@@ -39,6 +43,7 @@ export default defineNuxtConfig({
     components: resolve(__dirname, 'components'),
     store: resolve(__dirname, 'store'),
   },
+
   css: [
     'assets/css/typeface.css',
     'assets/css/styles.css',
@@ -46,6 +51,7 @@ export default defineNuxtConfig({
     'assets/css/landing.css',
     'assets/css/animations.css'
   ],
+
   postcss: {
     plugins: {
       '@csstools/postcss-global-data': {
@@ -56,6 +62,7 @@ export default defineNuxtConfig({
       'postcss-custom-media': {}
     }
   },
+
   i18n: {
     strategy: 'no_prefix',
     defaultLocale: 'en',
@@ -68,5 +75,7 @@ export default defineNuxtConfig({
         file: 'en.yml',
       }
     ]
-  }
+  },
+
+  compatibilityDate: '2024-07-31'
 })

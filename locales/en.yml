@@ -74,27 +74,30 @@ landing:
       - title: Game development
         text: Our game development team are experts at crafting immersive, interactive experiences that captivate younger audiences who crave new forms of expression and seek novel experiences and human interactions.
 
-      # - title: Pixel streaming
-      #   text: Unleash the power of the immersive web for games, architectural applications, product configurators and beyond. With cloud rendering technology, users can now experience next-gen graphics from any internet-enabled device, no GPUs or lengthy downloads required.
-
   portfolio:
-    title: Projects
+    title: Portfolio
     projects:
       minipcr:
         title: miniPCR Digital
-        description: "We partnered with miniPCR Bio to develop their flagship, gamified e-learning platform, to train students on how to use their cutting-edge biotech products.\\nminiPCR delivers their technology to the International Space Station and we're proud to be a key part of their digital transformation!"
+        description: "We built miniPCR's flagship e-learning web platform to educate biotech professionals and students alike on how to use their advanced biotech products, which are actively being used in labs and schools across the US, as well as at the International Space Station."
+        accent: 'hsl(211 100% 50%)'
+        cta:
+          text: Read case study
 
       ristband:
         title: Ristband
         description: "Ristband pushes the boundaries of live entertainment by bringing music shows to the metaverse.\\nWe developed Ristband's metaverse platform leveraging Unreal Engine's pixel streaming technology and AWS cloud infrastructure to deliver truly next-gen immersive experiences."
+        accent: '#fcec36'
 
       forestify:
         title: Forestify
         description: "Forestify is an Ethereum-based decentralized app (a.k.a. \"dapp\") that allows users to invest in natural habitat restoration projects through nature-backed NFTs in a gamified experience with several tiers of rewards, producing a truly virtuous cycle."
+        accent: '#a2f838'
 
       groovly:
         title: Groovly
         description: "\"TikTok for music\", Groovly is an audio platform that allows independent artists to upload short music tracks as well as unfinished projects to promote their work and grow their fan base."
+        accent: 'hsl(195 100% 50%)'
 
   stack:
     title: Our stack

@@ -1,10 +1,5 @@
 <template>
-  <HeroSection />
-  <VideoSection />
-  <ValidationSection />
-  <FeaturesSection />
-  <StackSection />
-  <ContactSection />
+  <PortfolioSection />
 </template>
 
 <script setup lang="ts">
@@ -13,12 +8,7 @@ import { computed, onMounted, onBeforeUnmount } from 'vue'
 import { useI18n, useHead } from '#imports'
 import { useRuntimeConfig } from 'nuxt/app'
 import { useThemeManager } from 'composables/themeManager'
-import HeroSection from 'components/landing/HeroSection.vue'
-import VideoSection from 'components/landing/VideoSection.vue'
-import ValidationSection from 'components/landing/ValidationSection.vue'
-import FeaturesSection from 'components/landing/FeaturesSection.vue'
-import StackSection from 'components/landing/StackSection.vue'
-import ContactSection from 'components/landing/ContactSection.vue'
+import PortfolioSection from 'components/landing/PortfolioSection.vue'
 
 definePageMeta({ layout: 'landing' })
 
