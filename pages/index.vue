@@ -1,9 +1,8 @@
 <template>
   <HeroSection />
-  <VideoSection />
-  <ValidationSection />
   <FeaturesSection />
-  <StackSection />
+  <ValidationSection />
+  <PortfolioSection />
   <ContactSection />
 </template>
 
@@ -14,10 +13,9 @@ import { useI18n, useHead } from '#imports'
 import { useRuntimeConfig } from 'nuxt/app'
 import { useThemeManager } from 'composables/themeManager'
 import HeroSection from 'components/landing/HeroSection.vue'
-import VideoSection from 'components/landing/VideoSection.vue'
 import ValidationSection from 'components/landing/ValidationSection.vue'
+import PortfolioSection from 'components/landing/PortfolioSection.vue'
 import FeaturesSection from 'components/landing/FeaturesSection.vue'
-import StackSection from 'components/landing/StackSection.vue'
 import ContactSection from 'components/landing/ContactSection.vue'
 
 definePageMeta({ layout: 'landing' })
@@ -50,8 +48,8 @@ useHead({
     { property: 'og:url', content: config.public.APP_BASE_URL as string },
     { property: 'og:site_name', content: t('company.name') },
     { property: 'og:description', content: t('landing.hero.about') },
-    { property: 'og:image', content: `${config.public.APP_BASE_URL}/opengraph-banner.png` },
-    { property: 'og:image:type', content: 'image/png' },
+    { property: 'og:image', content: `${config.public.APP_BASE_URL}/opengraph-banner.jpg` },
+    { property: 'og:image:type', content: 'image/jpeg' },
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' }
   ]

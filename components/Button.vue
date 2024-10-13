@@ -14,6 +14,7 @@
   overflow: hidden;
   transition: all 150ms ease-out;
 
+  font-family: var(--primary-font);
   font-weight: 600;
   font-size: 1.1rem;
   line-height: normal;
@@ -85,7 +86,7 @@
 </style>
 
 <template>
-  <div
+  <button
     class="button"
     :style="style_"
     @click="onClick"
@@ -94,12 +95,12 @@
     <div :class="`button-background ${loading ? 'button-glow': ''}`" :style="backgroundStyle_" />
     <div v-if="icon" class="button-icon" v-html="svg_" />
     <span :class="`button-text non-breaking-text ${icon ? 'text-with-icon' : ''}`">{{ text }}</span>
-  </div>
+  </button>
 </template>
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import { clamp } from 'lib/util'
+import { clamp, navigate } from 'lib/util'
 import { useRouter } from 'vue-router'
 
 const props = defineProps({
@@ -158,7 +159,7 @@ const props = defineProps({
 const router = useRouter()
 
 const style_ = computed(() =>
-  `${props.expand ? '' : 'margin: auto;'}` +
+  // `${props.expand ? '' : 'margin: auto;'}` +
   `${props.enabled ? '' : 'pointer-events: none;'}` +
   `${props.small ? 'height: 2rem; padding: 0 1rem; font-size: .9rem' : ''};` +
   `color: ${props.enabled ? props.textColor : 'var(--highlighted-callout-color)'}`
@@ -194,7 +195,11 @@ const onClick = (event: Event) => {
   if (props.enabled) {
     doRipple(event)
     if (props.to) {
-      router.push(props.to)
+      if (props.to.startsWith('/')) {
+        router.push(props.to)
+      } else {
+        navigate(props.to, true)
+      }
     }
   }
 }

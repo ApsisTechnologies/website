@@ -108,6 +108,10 @@
   flex-wrap: wrap;
 }
 
+.flex-expand {
+  flex: 1;
+}
+
 .flex-no-wrap {
   flex-wrap: nowrap;
 }

@@ -14,31 +14,37 @@
 </style>
 
 <template>
-  <canvas ref="canvas" class="canvas" />
+  <canvas
+    ref="canvas"
+    class="canvas"
+    :class="{ 'no-pointer-events': !props.interactive }"
+  />
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount, watch } from 'vue'
 import { useResizeObserver } from '@vueuse/core'
 import * as Three from 'three'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
-import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer'
-import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass'
-import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass'
-import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js'
+import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js'
+import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js'
+import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass.js'
 import { UAParser } from 'ua-parser-js'
 
 const props = withDefaults(defineProps<{
   assetUrl: string
   enabled?: boolean,
   animate?: boolean
-  postProcess?: boolean
+  postProcess?: boolean,
+  interactive?: boolean
 }>(), {
   enabled: true,
   animate: false,
-  postProcess: false
+  postProcess: false,
+  interactive: false
 })
 
 const canvas = ref<HTMLCanvasElement>()
@@ -92,7 +98,7 @@ const initScene = (canvas: HTMLCanvasElement) => {
   const h = canvas.clientHeight
   camera = new Three.PerspectiveCamera(50, w / h, 0.1, 1000)
   camera.lookAt(0,0,0)
-  camera.position.set(0,5,13)
+  camera.position.set(0,0,13)
   scene.add(camera)
 
   const userAgent = new UAParser(navigator.userAgent)
@@ -105,7 +111,7 @@ const initScene = (canvas: HTMLCanvasElement) => {
     composer = new EffectComposer(renderer)
 
     bloomPass.threshold = 0.5
-    bloomPass.strength = .03
+    bloomPass.strength = .02
     bloomPass.radius = 0
     outputPass.toneMappingExposure = .3
 
@@ -120,7 +126,7 @@ const initScene = (canvas: HTMLCanvasElement) => {
   orbitControl.enableZoom = false
   orbitControl.enablePan = false
   orbitControl.autoRotate = true
-  orbitControl.autoRotateSpeed = -.5
+  orbitControl.autoRotateSpeed = -2
 
   if (!props.animate) {
     orbitControl.addEventListener('change', () => renderScene())

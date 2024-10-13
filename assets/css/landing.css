@@ -11,7 +11,7 @@
 
 .landing-title {
   font-weight: 700;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   letter-spacing: .1rem;
   line-height: 1em;
   text-transform: uppercase;
@@ -26,7 +26,6 @@
   line-height: 1.2em;
   text-transform: uppercase;
   width: fit-content;
-  margin-bottom: .8rem;
 }
 
 .landing-text {
@@ -43,16 +42,11 @@
   padding-left: 3px;
   position: relative;
   display: block;
-  font-weight: 600;
-  font-size: 1.5rem;
-  letter-spacing: 0.08em;
-  line-height: 1.2em;
-  text-transform: uppercase;
   background: var(--main-gradient);
   color: var(--background-color);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-stroke: 0.08em transparent;
+  -webkit-text-stroke: 0.04em transparent;
 }
 
 .text-outline {

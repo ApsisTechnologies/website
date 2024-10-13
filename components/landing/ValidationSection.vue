@@ -1,10 +1,10 @@
 <style scoped>
 .section {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   padding-left: var(--content-margin);
   padding-right: var(--content-margin);
-  background: var(--secondary-gradient);
+  /* background: var(--secondary-gradient); */
   overflow-x: hidden;
 }
 
@@ -12,7 +12,7 @@
   position: relative;
   font-size: 2rem;
   font-weight: 500;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   line-height: 1em;
 }
 
@@ -80,7 +80,7 @@
 
 .client-logo {
   position: relative;
-  width: 10rem;
+  width: 6rem;
   margin: 2rem;
   opacity: 0;
 }
@@ -95,44 +95,29 @@
 
 <template>
   <div class="section pos-relative flex-col">
-    <span class="section-title" style="padding-bottom: 2rem;">{{ t('landing.validation.header') }}</span>
-    <div class="stats">
-      <div class="stat stat1 flex-row" v-intersection-observer="onIntersect">
-        <div class="number">{{ t('landing.validation.stats[0].count') }}</div>
-        <div> {{ t('landing.validation.stats[0].text') }}</div>
-      </div>
-      <div class="stat stat2 flex-row" v-intersection-observer="onIntersect">
-        <div class="number">{{ t('landing.validation.stats[1].count') }}</div>
-        <div> {{ t('landing.validation.stats[1].text') }}</div>
-      </div>
-      <div class="stat stat3 flex-row" v-intersection-observer="onIntersect">
-        <div class="number">{{ t('landing.validation.stats[2].count') }}</div>
-        <div> {{ t('landing.validation.stats[2].text') }}</div>
-      </div>
-    </div>
-    <span class="section-title">{{ t('landing.validation.title') }}</span>
+    <span class="section-title text-center">{{ t('landing.validation.title') }}</span>
     <div class="logo-carousell flex-row flex-wrap">
       <img
         class="client-logo no-pointer-events"
-        src="~/assets/images/client-logos/ithra.png"
+        src="~/assets/images/client-logos/ithra.avif"
         alt=""
         v-intersection-observer="onLogoIntersect"
       />
       <img
         class="client-logo no-pointer-events"
-        src="~/assets/images/client-logos/jagermeister.png"
+        src="~/assets/images/client-logos/jagermeister.avif"
         alt=""
         v-intersection-observer="onLogoIntersect"
       />
       <img
         class="client-logo no-pointer-events"
-        src="~/assets/images/client-logos/minipcr.png"
+        src="~/assets/images/client-logos/minipcr.avif"
         alt=""
         v-intersection-observer="onLogoIntersect"
       />
       <img
         class="client-logo no-pointer-events"
-        src="~/assets/images/client-logos/ristband.png"
+        src="~/assets/images/client-logos/ristband.avif"
         alt=""
         v-intersection-observer="onLogoIntersect"
       />

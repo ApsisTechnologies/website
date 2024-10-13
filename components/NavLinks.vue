@@ -51,8 +51,8 @@ import { useNuxtApp } from 'nuxt/app'
 const { t } = useI18n()
 
 const navLinks = [
-  { route: '/#services', text: t('landing.features.title') },
-  { route: '/projects', text: t('landing.portfolio.title') },
+  { route: '/#services', text: t('nav.services') },
+  { route: '/#projects', text: t('nav.projects') },
   { route: '/jobs', text: t('nav.jobs') },
 ]
 

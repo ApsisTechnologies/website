@@ -1,8 +1,9 @@
 <style scoped>
 .section {
-  padding-top: 5rem;
+  padding-top: 6rem;
   padding-bottom: 2rem;
-  background-color: black;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .heading-large {
@@ -18,172 +19,81 @@
 
 .about {
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.4em;
-  max-width: 80%;
+  letter-spacing: 0.06rem;
 }
 
 .text-pane {
   justify-content: flex-start;
   align-items: flex-start;
-  max-width: 70%;
+  width: 60%;
+  /* width: 32rem; */
+  /* border: 1px dashed cyan; */
 }
 
-.text-video-wrapper {
-  padding-left: 3px;
-  overflow: hidden;
-  margin-bottom: 1rem;
+.logo-pane {
+  /* border: 1px dashed cyan; */
+  height: 60%;
+  width: 40%;
+  right: 0;
 }
 
-.video {
+.backdrop {
   width: 100%;
   height: 100%;
+  /* border: 1px dashed yellow; */
   top: 0;
   left: 0;
-  object-fit: cover;
-  mix-blend-mode: multiply;
-  /* outline: 1px solid cyan; */
-}
-
-.text-overlay {
-  opacity: .6;
 }
 
 @media (--res-narrow) {
   .section {
-    padding-top: 15rem;
+    flex-direction: column;
+    justify-content: center;
+    /* flex-direction: column-reverse; */
   }
 
   .text-pane {
-    max-width: 100%;
-  }
-
-  .about {
-    max-width: 100%;
-  }
-}
-
-.model-pane {
-  top: 0;
-  right: 0;
-  /* border: 1px solid cyan; */
-}
-
-@media (--res-desktop-large) {
-  .model-pane {
-    width: 50%;
-    height: 100%;
-  }
-}
-
-@media (--res-desktop) {
-  .model-pane {
-    width: 60%;
-    height: 100%;
-  }
-
-  .heading-large {
-    font-size: 8rem;
-  }
-}
-
-@media (--res-mobile) {
-  .model-pane {
     width: 100%;
-    height: 50%;
+    align-items: flex-start;
   }
 
-  .heading-large {
-    font-size: 6rem;
+  .logo-pane {
+    /* position: relative; */
+    width: 80%;
+    top: 0;
+    right: 10%;
   }
-}
 
-.asteroid1 {
-  width: 25rem;
-  height: auto;
-  bottom: -15rem;
-  left: 10%;
-  filter: blur(7px);
+  .backdrop {
+    transform: translateY(50%);
+  }
 
-  animation-name: spin-backwards;
-  animation-duration: 160s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  transform-origin: center center;
-  /* border: 1px solid yellowgreen; */
-}
-
-.asteroid2 {
-  width: 7rem;
-  height: auto;
-  bottom: 4rem;
-  left: 8%;
-  filter: blur(1px);
-
-  animation-name: spin;
-  animation-duration: 40s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  transform-origin: 60% 50%;
-  /* border: 1px solid yellowgreen; */
-}
-
-.asteroid3 {
-  width: 4rem;
-  height: auto;
-  bottom: 2rem;
-  left: 40%;
-  filter: blur(4px);
-
-  animation-name: spin-backwards;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: backwards;
-  animation-timing-function: linear;
-  transform-origin: 60% 45%;
-  /* border: 1px solid yellowgreen; */
-}
-
-@keyframes spin {
-  100% { rotate: 1turn; }
-}
-
-@keyframes spin-backwards {
-  100% { rotate: -1turn; }
-}
-
-.overlay {
-  z-index: 1;
-  pointer-events: none;
+  .hero-cta {
+    align-self: center;
+  }
 }
 </style>
 
 <template>
-  <div class="full-page flex-col pos-relative section scroll-snap-align-start">
-    <img class="asteroid1 no-pointer-events pos-absolute" :src="asteroid1" />
-    <img class="asteroid2 no-pointer-events pos-absolute" :src="asteroid2" />
-    <img class="asteroid3 no-pointer-events pos-absolute" :src="asteroid3" />
-
-    <div class="text-pane pos-relative flex-col">
-      <span class="landing-header text-gradient overlay">{{ t('landing.hero.header') }}</span>
-      <div class="text-video-wrapper pos-relative">
-        <span class="text-mask heading-large pos-absolute">{{ t('landing.hero.title') }}</span>
-        <video class="video pos-absolute" loop autoplay muted playsinline>
-          <source type="video/mp4" :src="noiseVideo" />
-        </video>
-        <span class="text-overlay text-gradient-secondary heading-large pos-relative overlay">{{ t('landing.hero.title') }}</span>
-      </div>
-      <span class="landing-subtitle overlay">{{ t('company.tagline') }}</span>
-      <p class="pos-relative about overlay">{{ t('landing.hero.about') }}</p>
+  <div class="section full-page flex-row flex-gap scroll-snap-align-start">
+    <div class="backdrop pos-absolute">
+      <Blob gradient="secondary" />
     </div>
 
-    <div class="model-pane pos-absolute" v-intersection-observer="onMuseVisible">
-      <Scene3D
-        asset-url="/muse.glb"
-        :enabled="museIsVisible"
-        post-process
+    <div class="logo-pane pos-absolute" v-intersection-observer="on3DModelVisible">
+      <Model3D
+        asset-url="/logo.glb"
+        :enabled="is3DModelVisible"
         animate
       />
+    </div>
+
+    <div class="text-pane pos-relative flex-col flex-gap-small">
+      <CodeMarquee :words="marqueeWords" />
+      <p class="pos-relative about overlay">{{ t('landing.hero.about') }}</p>
+      <Button class="hero-cta" :text="t('landing.hero.cta')" @click="router.push('/#contact')" />
     </div>
   </div>
 </template>
@@ -191,15 +101,33 @@
 <script setup lang="ts">
 import { useI18n } from '#imports'
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 import { vIntersectionObserver } from '@vueuse/components'
-import Scene3D from 'components/Scene3D.vue'
-import noiseVideo from 'assets/video/noise.mp4'
-import asteroid1 from 'assets/images/asteroid-1.png'
-import asteroid2 from 'assets/images/asteroid-2.png'
-import asteroid3 from 'assets/images/asteroid-3.png'
+import Model3D from '@/components/landing/elements/Model3D.vue'
+import Blob from '@/components/landing/elements/Blob.vue'
+import CodeMarquee from '@/components/landing/elements/CodeMarquee.vue'
+import Button from '@/components/Button.vue'
 
 const { t } = useI18n()
-const museIsVisible = ref(true)
+const router = useRouter()
+const is3DModelVisible = ref(true)
 
-const onMuseVisible = (e: IntersectionObserverEntry[]) => { museIsVisible.value = e[0].isIntersecting }
+const on3DModelVisible = (e: IntersectionObserverEntry[]) => { is3DModelVisible.value = e[0].isIntersecting }
+
+const marqueeWords = [
+  t('landing.video.marquee[0]'),
+  t('landing.video.marquee[1]'),
+  t('landing.video.marquee[2]'),
+  t('landing.video.marquee[3]'),
+  t('landing.video.marquee[4]'),
+]
+
+const flyingWordCount = 5
+
+const flyingPhrases = [
+  '<HelloWorld />',
+  '{ Let\'s Rock }',
+  '0x00FA >> 4',
+  'var s = r * sqrt(x + y)',
+]
 </script>

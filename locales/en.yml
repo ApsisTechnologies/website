@@ -9,6 +9,7 @@ nav:
   contact: Contact us
   about: About
   services: Services
+  projects: Portfolio
   jobs: Jobs
 
 footer:
@@ -17,17 +18,18 @@ footer:
 
 landing:
   hero:
-    header: Reimagine
-    title: Technology
-    about: We help companies build standout digital products that turn users into raving fans, monetizing frictionlessly and transforming organizations into digital native brands.
+    header: Welcome to RockinDev
+    about: At RockinDev, we build standout digital products that turn users into raving fans, helping companies transform into digital native brands to unlock outsized growth at global scale.
+    cta: Let's talk
 
   video:
     loading: loading
     marquee:
-      - reimagine
-      - 重新想像
-      - أعد تخيل
-      - 再考する
+      - builders
+      - strategists
+      - tinkerers
+      - coders
+      - designers
     text:
       - Welcome to RockinDev, where imagination meets innovation.
       - We are a team of creative technologists with a passion for building innovative digital products that push boundaries, unlocking new avenues for growth while leading the way through our clients’ digital journey.
@@ -45,34 +47,26 @@ landing:
       - count: '5'
         text: open source projects contributed
 
-  about:
-    title: What we do
-
-    point:
-      text: We help entertainment companies *(build and launch interactive experiences)* through custom GameOps solutions.
-
-    heart:
-      text: We *(enhance your digital presence)* throughout the entire release cycle, accelerating fan adoption in measurable, predictable ways.
-
-    arrows:
-      text: We *(slash infrastructure costs and complexity)* through cloud automation, accelerating release cycles and continuous updates.
-
-    cta: Explore case studies
-
   features:
-    title: What we do
+    title: Our services
     items:
-      - title: Web applications
-        text: From vibrant landing pages to fully-featured web applications, we put global audiences at your fingertips through carefully-crafted web experiences that delight users and grow with your business.
+      - title: Web development
+        text: From full-fledged web apps to vibrant landing pages, we put global audiences at your fingertips through carefully-crafted web experiences that delight users throughout their digital journey.
+        cta: Read more
 
       - title: Cloud engineering
-        text: As backend experts, our team specializes in deploying modern web and cloud solutions at a global scale, helping you achieve the quality of service that users expect in today's hyper-connected world.
+        text: Our team specializes in deploying modern cloud solutions at a global scale, helping your business grow at the speed of your imagination in today's hyper-connected world.
+        cta: Read more
 
-      - title: Artificial Intelligence
-        text: We help companies productize artificial intelligence technologies leveraging open source tools and modern training workflows that can imbue your digital products with near-human intelligence, making you and your users incredibly more productive.
+      - title: Machine learning
+        text: We productize machine learning technology by leveraging modern training workflows, imbuing digital products with near-human intelligence, making teams orders of magnitude more productive.
+        cta: Read more
 
-      - title: Game development
-        text: Our game development team are experts at crafting immersive, interactive experiences that captivate younger audiences who crave new forms of expression and seek novel experiences and human interactions.
+      - title: Immersive development
+        text: We are experts at crafting immersive experiences, captivating audiences who crave new forms of expression and seek innovative experiences.
+        cta: Read more
+
+    cta: Case studies
 
   portfolio:
     title: Portfolio

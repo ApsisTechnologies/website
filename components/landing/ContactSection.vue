@@ -4,7 +4,7 @@
   padding-bottom: 5rem;
   padding-left: var(--content-margin);
   padding-right: var(--content-margin);
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
 }
 
 .panel-container {
@@ -86,7 +86,7 @@
 
 <template>
   <div id="contact" class="section pos-relative flex-col">
-    <span class="landing-title">{{ t('landing.contact.title') }}</span>
+    <span class="landing-title">{ {{ t('landing.contact.title') }} }</span>
     <div style="display: inline; margin-bottom: 2rem">
       <span class="landing-subtitle text-gradient">{{ t('landing.contact.subtitle') }}</span>
       <HeartIcon class="subtitle-decoration" />

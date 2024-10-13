@@ -2,10 +2,10 @@ const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
 const passwordRegex = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d!@#$%^&*()\-+=~`[\]{}|\\:;"'<>,.?/_]{8,}$/
 
 export const wait = (milliseconds: number) => new Promise((resolve) => {
-    window.setTimeout(resolve, milliseconds)
-  })
+  window.setTimeout(resolve, milliseconds)
+})
 
-export const pickRandomElement = (array: []) => array[Math.trunc(Math.random() * array.length)]
+export const pickRandomElement = (array: any[]) => array[Math.trunc(Math.random() * array.length)]
 
 export const clamp = (value: number, min: number, max: number) => Math.min(Math.max(value, min), max)
 

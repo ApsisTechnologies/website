@@ -1,6 +1,6 @@
 <style scoped>
 .section {
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 
 @media (--res-narrow) {
@@ -78,20 +78,18 @@
   width: 100%;
   height: 100%;
   top: 0;
-  left: 0;
+  left: 0%;
   transition: background 250ms linear;
-}
-
-.backdrop-mask {
-  background: radial-gradient(circle at 45% -100%, rgb(0,0,0) 70%, rgba(0,0,0,0) 150%);
+  /* border: 1px dashed cyan; */
 }
 </style>
 
 <template>
-  <div class="section pos-relative full-page flex-col scroll-snap-align-start">
-    <div class="pos-absolute backdrop" :style="`background: ${accentColor}`" />
-    <div class="pos-absolute backdrop backdrop-mask" />
-    <span class="landing-title pos-relative">{{ t('landing.portfolio.title') }}</span>
+  <div id="projects" class="section pos-relative full-page flex-col flex-gap scroll-snap-align-start">
+    <div class="pos-absolute backdrop">
+      <Blob height="100%" width="100%" />
+    </div>
+    <span class="landing-title pos-relative">{ {{ t('landing.portfolio.title') }} }</span>
 
     <div
       ref="slider"
@@ -99,7 +97,7 @@
       @scrollend="onScroll"
     >
       <div v-for="item in copy" class="slide scroll-snap-align-start">
-        <div class="flex-col slide-text">
+        <div class="flex-col slide-text flex-gap">
           <span class="slide-title landing-subtitle">{{ item.title }}</span>
           <p v-for="p in item.description">{{ p }}</p>
           <Button style="margin-top: 2rem;" v-if="item.cta" small :text="item.cta.text" @click="onNavigate(item.cta.route)" />
@@ -127,10 +125,11 @@ import { useIntervalFn } from '@vueuse/core'
 import { navigate } from 'lib/util'
 import Paginator from 'components/Paginator.vue'
 import Button from 'components/Button.vue'
-import minipcrImg from 'assets/images/portfolio/minipcr.png'
-import ristbandImg from 'assets/images/portfolio/ristband.png'
-import groovlyImg from 'assets/images/portfolio/groovly.png'
-import forestifyImg from 'assets/images/portfolio/forestify.png'
+import Blob from '@/components/landing/elements/Blob.vue'
+import minipcrImg from 'assets/images/portfolio/minipcr.avif'
+import ristbandImg from 'assets/images/portfolio/ristband.avif'
+import groovlyImg from 'assets/images/portfolio/groovly.avif'
+import forestifyImg from 'assets/images/portfolio/forestify.avif'
 
 const { t } = useI18n()
 
