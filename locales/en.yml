@@ -9,7 +9,7 @@ nav:
   contact: Contact us
   about: About
   services: Services
-  projects: Portfolio
+  projects: Projects
   jobs: Jobs
 
 footer:
@@ -37,7 +37,7 @@ landing:
 
   validation:
     header: RockinDev in numbers
-    title: Trusted by
+    title: Brands that trust us
 
     stats:
       - count: '4'
@@ -48,7 +48,7 @@ landing:
         text: open source projects contributed
 
   features:
-    title: Our services
+    title: What we do
     items:
       - title: Web development
         text: From full-fledged web apps to vibrant landing pages, we put global audiences at your fingertips through carefully-crafted web experiences that delight users throughout their digital journey.
@@ -69,7 +69,7 @@ landing:
     cta: Case studies
 
   portfolio:
-    title: Portfolio
+    title: Greatest hits
     projects:
       minipcr:
         title: miniPCR Digital
@@ -98,7 +98,7 @@ landing:
 
   contact:
     title: Get in touch
-    subtitle: Let's build together
+    subtitle: Let's build
     decoration: ♡
 
     formText: Reach out to our team today to discover how we can help you skyrocket your project. ✨🚀
