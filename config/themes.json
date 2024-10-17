@@ -16,7 +16,7 @@
       "--text-color": "hsl(0deg 0% 100%)",
       "--muted-text-color": "hsl(0deg 0% 60%)",
       "--background-color": "hsl(240deg 33% 1%)",
-      "--callout-color": "hsl(236deg 12% 18%)",
+      "--callout-color": "hsl(236deg 12% 12%)",
       "--highlighted-callout-color": "hsl(0deg 0% 40%)",
       "--border-color": "hsl(0deg 0% 40%)"
     }

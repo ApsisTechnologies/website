@@ -98,10 +98,9 @@ landing:
 
   contact:
     title: Get in touch
-    subtitle: Let's build
-    decoration: ♡
+    subtitle: Let's build the future
 
-    formText: Reach out to our team today to discover how we can help you skyrocket your project. ✨🚀
+    formText: Reach out to our team today to learn how we can help you fast track your dream project! ✨🚀
     namePlaceholder: Your name
     emailPlaceholder: Work email address
     buttonText: Send

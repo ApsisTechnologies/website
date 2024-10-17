@@ -35,7 +35,14 @@
     var(--secondary-gradient-stop-color) 80%
   );
 
-  --button-gradient: linear-gradient(hsl(4deg 100% 50%) 0%, hsl(271deg 100% 50%) 100%);
+  --button-gradient-start-color: hsl(0deg, 100%, 50%);
+  --button-gradient-stop-color: hsl(270deg, 100%, 50%);
+  --button-gradient-angle: 180deg;
+  --button-gradient: linear-gradient(
+    var(--button-gradient-angle),
+    var(--button-gradient-start-color) 0%,
+    var(--button-gradient-stop-color) 100%
+  );
 
   --background-gradient: linear-gradient(330deg, var(--background-color) 0%, #1c2169 100%);
 }

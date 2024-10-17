@@ -4,7 +4,6 @@
   padding-bottom: 5rem;
   padding-left: var(--content-margin);
   padding-right: var(--content-margin);
-  /* background-color: var(--background-color); */
 }
 
 .panel-container {
@@ -26,25 +25,70 @@
 }
 
 .form-panel {
-  background: linear-gradient(hsl(0deg 100% 50%) 0%, hsl(271deg 100% 50%) 100%);
+  position: relative;
+  background-color: var(--callout-color);
 
   border-radius: var(--border-radius);
   padding: 2rem;
   position: relative;
   max-width: 30rem;
+}
 
-  overflow-x: hidden;
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.form-panel::after,
+.form-panel::before
+{
+  --angle: 0deg;
+
+  content: '';
+  position: absolute;
+
+  width: calc(100% + var(--decoration-line-thickness) * 2);
+  height: calc(100% + var(--decoration-line-thickness) * 2);
+  top: calc(-1.0 * var(--decoration-line-thickness));
+  left: calc(-1.0 * var(--decoration-line-thickness));
+  z-index: -1;
+
+  border-radius: var(--border-radius);
+}
+
+.form-panel::after {
+  background: var(--button-gradient);
 }
 
 .form-panel::before {
-  content: '';
-  position: absolute;
-  width: calc(100% - var(--decoration-line-thickness) * 2);
-  height: calc(100% - var(--decoration-line-thickness) * 2);
-  top: var(--decoration-line-thickness);
-  left: var(--decoration-line-thickness);
-  border-radius: var(--border-radius);
-  background-color: var(--background-color);
+  filter: blur(1rem);
+
+  background-image: conic-gradient(
+    from var(--angle),
+    var(--button-gradient-stop-color) 0%,
+    var(--button-gradient-start-color) 66%,
+    var(--button-gradient-stop-color) 100%
+  );
+
+  opacity: 0.3;
+
+  animation: 3s spin linear infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+  0% {
+    --angle: 0deg;
+    opacity: .7;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    --angle: 360deg;
+    opacity: .7;
+  }
 }
 
 .form-text {
