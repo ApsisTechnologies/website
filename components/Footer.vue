@@ -41,6 +41,13 @@
   cursor: pointer;
   white-space: nowrap;
 }
+
+.subtitle-decoration {
+  color: red;
+  width: 1rem;
+  height: .8rem;
+  margin: 0 .3rem;
+}
 </style>
 
 <template>
@@ -57,7 +64,12 @@
     />
 
     <Separator margin="0" />
-    <span class="footer-text text-center">{{ t('footer.pre') }} @ RockinDev®️ {{ thisYear }}. {{ t('footer.notice') }}</span>
+    <div class="footer-text">
+      <span>{{ t('footer.pre') }} </span>
+      <HeartIcon class="subtitle-decoration" />
+      <span>@ RockinDev®️ {{ thisYear }}. </span>
+      <span>{{ t('footer.notice') }}</span>
+    </div>
   </footer>
 </template>
 
@@ -66,6 +78,7 @@ import { computed } from 'vue'
 import { useI18n } from '#imports'
 import { useRuntimeConfig } from 'nuxt/app'
 import Separator from 'components/Separator.vue'
+import HeartIcon from 'assets/icons/heart.svg'
 
 const config = useRuntimeConfig()
 const { t } = useI18n()

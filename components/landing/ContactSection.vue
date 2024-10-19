@@ -34,7 +34,7 @@
   max-width: 30rem;
 }
 
-@property --angle {
+@property --gradient-angle {
   syntax: "<angle>";
   initial-value: 0deg;
   inherits: false;
@@ -43,7 +43,8 @@
 .form-panel::after,
 .form-panel::before
 {
-  --angle: 0deg;
+  --gradient-angle: 0deg;
+  --gradient-angle: 1px;
 
   content: '';
   position: absolute;
@@ -62,10 +63,10 @@
 }
 
 .form-panel::before {
-  filter: blur(1rem);
+  filter: blur(2rem);
 
   background-image: conic-gradient(
-    from var(--angle),
+    from var(--gradient-angle),
     var(--button-gradient-stop-color) 0%,
     var(--button-gradient-start-color) 66%,
     var(--button-gradient-stop-color) 100%
@@ -79,14 +80,14 @@
 
 @keyframes spin {
   0% {
-    --angle: 0deg;
+    --gradient-angle: 0deg;
     opacity: .7;
   }
   50% {
     opacity: .5;
   }
   100% {
-    --angle: 360deg;
+    --gradient-angle: 360deg;
     opacity: .7;
   }
 }
@@ -94,13 +95,6 @@
 .form-text {
   font-weight: 500;
   margin-top: .5rem;
-}
-
-.subtitle-decoration {
-  color: red;
-  width: 1.8rem;
-  height: 1.4rem;
-  transform: translate(.3rem, -.3rem);
 }
 
 .location-icon {
@@ -133,7 +127,6 @@
     <span class="landing-title">{ {{ t('landing.contact.title') }} }</span>
     <div style="display: inline; margin-bottom: 2rem">
       <span class="landing-subtitle text-gradient">{{ t('landing.contact.subtitle') }}</span>
-      <HeartIcon class="subtitle-decoration" />
     </div>
     <div class="panel-container flex-row">
 
@@ -157,12 +150,19 @@
           </div>
         </div>
       </div>
+
       <div class="form-panel flex-col">
-        <span class="form-text" style="z-index: 1">{{ t('landing.contact.formText') }}</span>
+        <span class="form-text">{{ t('landing.contact.formTitle') }}</span>
         <TextInput
           ref="nameField"
           :name="t('landing.contact.namePlaceholder')"
           :validator="validateName"
+          :enabled="formEnabled"
+        />
+        <TextInput
+          ref="companyField"
+          :name="t('landing.contact.companyPlaceholder')"
+          :validator="validateCompanyName"
           :enabled="formEnabled"
         />
         <TextInput
@@ -171,6 +171,15 @@
           :validator="validateEmail"
           :enabled="formEnabled"
         />
+        <TextInput
+          ref="messageField"
+          :name="t('landing.contact.messagePlaceholder')"
+          :enabled="formEnabled"
+          :max-length="150"
+          multiline
+        />
+        <br/>
+
         <Button
           :text="t('landing.contact.buttonText')"
           @click="onSend"
@@ -195,7 +204,6 @@ import { useI18n } from '#imports'
 import { isValidEmailAddress, extractEmailDomain } from 'lib/util'
 import Button from 'components/Button.vue'
 import TextInput from 'components/TextInput.vue'
-import HeartIcon from 'assets/icons/heart.svg'
 import LocationIcon from 'assets/icons/location.svg'
 import { sendContactRequest } from 'lib/contact'
 
@@ -219,8 +227,11 @@ const personalEmailDomains = [
 
 const { t } = useI18n()
 
-const emailField = ref<InstanceType<typeof TextInput>>()
 const nameField = ref<InstanceType<typeof TextInput>>()
+const companyField = ref<InstanceType<typeof TextInput>>()
+const emailField = ref<InstanceType<typeof TextInput>>()
+const messageField = ref<InstanceType<typeof TextInput>>()
+
 let sending = ref(false)
 let sent = ref(false)
 
@@ -228,6 +239,10 @@ const formEnabled = computed(() => !sending.value && !sent.value)
 
 const validateName = (name: string) => {
   return name.length ? '' : t('landing.contact.invalidName')
+}
+
+const validateCompanyName = (name: string) => {
+  return name.length ? '' : t('landing.contact.invalidCompany')
 }
 
 const validateEmail = (emailAddress: string) => {
@@ -247,9 +262,16 @@ const validateEmail = (emailAddress: string) => {
 const onSend = async () => {
   const name =  nameField.value.getText()
   const email = emailField.value.getText()
+  const company =  companyField.value.getText()
+  const message = messageField.value.getText()
 
   if (!name.length) {
     nameField.value.focus()
+    return
+  }
+
+  if (!company.length) {
+    companyField.value.focus()
     return
   }
 
@@ -259,7 +281,7 @@ const onSend = async () => {
   }
 
   sending.value = true
-  await sendContactRequest(name, email)
+  await sendContactRequest(name, email, company, message)
   sent.value = true
   sending.value = false
 }

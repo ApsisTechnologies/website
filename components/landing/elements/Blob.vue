@@ -3,7 +3,7 @@
   filter: blur(40px);
 
   animation-name: glow;
-  animation-duration: 7s;
+  animation-duration: 13s;
   animation-iteration-count: infinite;
   animation-fill-mode: both;
 }
@@ -11,32 +11,27 @@
 @keyframes glow {
   0% {
     opacity: .3;
+    fill: var(--secondary-gradient-start-color);
+  }
+  25% {
+    fill: var(--main-gradient-start-color);
   }
   50% {
     opacity: .5;
   }
+  75% {
+    fill: var(--button-gradient-stop-color);
+  }
   100% {
     opacity: .3;
+    fill: var(--secondary-gradient-start-color);
   }
 }
 </style>
 
 <template>
-  <svg class="blob pos-relative" viewBox="0 0 980 980" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="secondary-gradient" x1="926.13" y1="774.026" x2="75.9887" y2="741.119" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#BA0888"/>
-        <stop offset="1" stop-color="#8102F7"/>
-      </linearGradient>
-
-      <linearGradient id="main-gradient" x1="621.925" y1="628.698" x2="5.31962" y2="271.537" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#09C4EE"/>
-        <stop offset="1" stop-color="#4851CB"/>
-      </linearGradient>
-
-    </defs>
-    <!-- <path d="M631.012 159.008C390.207 63.6035 208.024 17.0167 122.012 365.508C36.0013 714 214.996 826.002 363.512 872.008C554.176 931.07 665.434 899.45 780.001 807.002C940.49 677.499 805.989 655.497 762 551C718.011 446.503 946.501 284.002 631.012 159.008Z" fill="red" /> -->
-    <path :fill="`url(#${gradient}`">
+  <svg class="blob pos-relative" viewBox="0 0 980 980" xmlns="http://www.w3.org/2000/svg">
+    <path>
       <animate
         attributeName="d"
         dur="30s"
@@ -46,22 +41,3 @@
     </path>
   </svg>
 </template>
-
-<script setup lang="ts">
-import { computed } from 'vue'
-
-const props = withDefaults(defineProps<{
-  gradient?: 'main' | 'secondary'
-}>(), {
-  gradient: 'secondary'
-})
-
-const gradient = computed(() => {
-  if (props.gradient === 'main') {
-    return 'main-gradient'
-  } else if (props.gradient === 'secondary') {
-    return 'secondary-gradient'
-  }
-  return ''
-})
-</script>

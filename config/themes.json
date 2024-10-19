@@ -3,7 +3,7 @@
     "name": "Rockin'",
     "description": "RockinDev color theme",
     "light": {
-      "--error-color": "hsl(30deg 100% 50%)",
+      "--error-color": "hsl(20deg 100% 50%)",
       "--text-color": "hsl(0deg 0% 10%)",
       "--muted-text-color": "hsl(0deg 0% 40%)",
       "--background-color": "hsl(0deg 0% 100%)",
@@ -12,7 +12,7 @@
       "--border-color": "hsl(0deg 0% 80%)"
     },
     "dark": {
-      "--error-color": "hsl(30deg 100% 50%)",
+      "--error-color": "hsl(20deg 100% 50%)",
       "--text-color": "hsl(0deg 0% 100%)",
       "--muted-text-color": "hsl(0deg 0% 60%)",
       "--background-color": "hsl(240deg 33% 1%)",

@@ -4,8 +4,9 @@
   border-bottom: 1px solid var(--border-color);
   border-radius: var(--border-radius) var(--border-radius) 0 0;
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: .4rem;
   transition: background 300ms;
+  width: 100%;
 }
 
 @media (--hover) {
@@ -20,7 +21,6 @@
   position: relative;
   display: block;
   height: var(--decoration-line-thickness);
-  /* background: var(--button-gradient); */
   background: linear-gradient(90deg,
     hsl(4deg 100% 50%) 0%,
     hsl(271deg 100% 50%) 100%
@@ -76,6 +76,7 @@
 .label {
   display: block;
   color: var(--muted-text-color);
+  font-size: 1rem;
   font-weight: 400;
   position: absolute;
   pointer-events: none;
@@ -91,8 +92,13 @@
     <span
       ref="textInput"
       :contenteditable="enabled"
-      :class="`text-input selectable ${enabled ? '' : ' disabled'}${invalidMessage ? ' invalid' : ''}`"
-      :maxlength="maxLength"
+      class="text-input selectable"
+      :class="{
+        'disabled': !props.enabled,
+        'invalid': invalidMessage !== '',
+        'non-breaking-text': !props.multiline,
+      }"
+      :maxlength="props.maxLength"
       @input="onEdit"
       @keypress="onKeyPressed"
     />
@@ -109,7 +115,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 
 const props = defineProps({
   name: {
@@ -185,7 +191,7 @@ const focus = () => { textInput.value?.focus() }
 
 const getText = () => text.value as string
 
-const isValid = (): boolean => invalidMessage.value === ''
+const isValid = computed(() => invalidMessage.value === '')
 
 defineExpose({
   clear,
