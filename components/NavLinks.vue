@@ -39,26 +39,43 @@
     >
       {{ t('nav.blog') }}
     </span>
+
+    <span
+      v-for="(l, i) of locales"
+      class="link nav-link pos-relative non-breaking-text"
+      :class="{'no-pointer-events': l.code === locale}"
+      @click="onSwitchLanguage(l.code)"
+    >
+      {{ l.code }}
+    </span>
+
   </div>
 </template>
 
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
 import { navigate } from 'lib/util'
+import { computed } from 'vue'
 import { useI18n } from '#imports'
 import { useNuxtApp } from 'nuxt/app'
 
-const { t } = useI18n()
+const { t, locales, locale, setLocale } = useI18n()
 
-const navLinks = [
+const navLinks = computed(() => [
   { route: '/#services', text: t('nav.services') },
   { route: '/#projects', text: t('nav.projects') },
   { route: '/jobs', text: t('nav.jobs') },
-]
+])
 
 const router = useRouter()
 
 const onNavigateToBlog = () => {
   navigate(useNuxtApp().$config.public.BLOG_BASE_URL)
+}
+
+const onSwitchLanguage = (languageCode: string) => {
+  if (locale.value !== languageCode) {
+    setLocale(languageCode)
+  }
 }
 </script>

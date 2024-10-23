@@ -112,12 +112,13 @@ import ml from 'assets/images/ml.avif'
 import datacenter from 'assets/images/datacenter.avif'
 import Button from '@/components/Button.vue'
 import { useNuxtApp } from 'nuxt/app'
+import { computed } from 'vue'
 
 const { t } = useI18n()
 const blogUrl = useNuxtApp().$config.public.BLOG_BASE_URL
 
-const items = [
-{
+const items = computed(() => [
+  {
     img: web,
     title: t('landing.features.items[0].title'),
     text: t('landing.features.items[0].text'),
@@ -145,7 +146,7 @@ const items = [
     cta: t('landing.features.items[3].cta'),
     to: blogUrl + '/?tag=gaming',
   }
-]
+])
 
 const onIntersect = (e: IntersectionObserverEntry[]) => {
   addClassIfVisible(e[0], 'slide-in-left-or-bottom')

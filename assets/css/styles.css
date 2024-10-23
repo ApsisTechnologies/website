@@ -12,39 +12,6 @@
   --root-size-mobile: 16px;
   --root-size-desktop: 18px;
   --root-size-desktop-large: 22px;
-
-  --card-shadow: 0 0.1rem 0.2rem 0 hsl(0deg 0% 0% / 20%);
-  --text-shadow: -.1rem .1rem .1rem hsl(0deg 0% 0% / 100%);
-
-  /* GRADIENTS */
-  --main-gradient-start-color: hsl(236deg 56% 54%);
-  --main-gradient-stop-color: hsl(191deg 93% 48%);
-  --main-gradient-angle: 30deg;
-  --main-gradient: linear-gradient(
-    var(--main-gradient-angle),
-    var(--main-gradient-start-color) 10%,
-    var(--main-gradient-stop-color) 80%
-  );
-
-  --secondary-gradient-start-color: hsl(271deg 98% 49%);
-  --secondary-gradient-stop-color: hsl(317deg 92% 38%);
-  --secondary-gradient-angle: 30deg;
-  --secondary-gradient: linear-gradient(
-    var(--secondary-gradient-angle),
-    var(--secondary-gradient-start-color) 10%,
-    var(--secondary-gradient-stop-color) 80%
-  );
-
-  --button-gradient-start-color: hsl(0deg, 100%, 50%);
-  --button-gradient-stop-color: hsl(270deg, 100%, 50%);
-  --button-gradient-angle: 180deg;
-  --button-gradient: linear-gradient(
-    var(--button-gradient-angle),
-    var(--button-gradient-start-color) 0%,
-    var(--button-gradient-stop-color) 100%
-  );
-
-  --background-gradient: linear-gradient(330deg, var(--background-color) 0%, #1c2169 100%);
 }
 
 @media (--res-narrow) {

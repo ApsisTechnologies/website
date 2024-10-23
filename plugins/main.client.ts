@@ -1,6 +1,6 @@
 import { ThemeManager } from 'lib/theme'
 import { EventBus, EventType } from 'lib/event'
-import { getUserLocale } from 'lib/util'
+import { getUserLanguage } from 'lib/util'
 import { defineNuxtPlugin } from 'nuxt/app'
 import { usePreferences } from 'store/preferences'
 import { useRouter } from 'vue-router'
@@ -15,13 +15,15 @@ export default defineNuxtPlugin((nuxtApp) => {
 
     preferences.setTheme(themeManager.name)
 
-    const userLocale = getUserLocale()
     const i18n = nuxtApp.$i18n
-    if (userLocale in i18n.availableLocales) {
-      i18n.setLocale(getUserLocale)
+    const language = getUserLanguage()
+    const targetLocale = i18n.availableLocales.includes(language) ? language : 'en'
+
+    if (targetLocale !== i18n.locale.value) {
+      i18n.setLocale(targetLocale)
     }
 
-    preferences.setLocale(nuxtApp.$i18n.locale.value)
+    preferences.setLocale(targetLocale)
   })
 
   nuxtApp.vueApp.config.errorHandler = (error: any, context) => {

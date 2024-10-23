@@ -120,7 +120,7 @@
 
 <script setup lang="ts">
 import { useI18n, useNuxtApp } from '#imports'
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed } from 'vue'
 import { useIntervalFn } from '@vueuse/core'
 import { navigate } from 'lib/util'
 import Paginator from 'components/Paginator.vue'
@@ -133,7 +133,7 @@ import forestifyImg from 'assets/images/portfolio/forestify.avif'
 
 const { t } = useI18n()
 
-const copy = [
+const copy = computed(() => [
 {
     title: t('landing.portfolio.projects.minipcr.title'),
     image: minipcrImg,
@@ -162,7 +162,7 @@ const copy = [
     description: t('landing.portfolio.projects.groovly.description').split('\\n'),
     accent: t('landing.portfolio.projects.groovly.accent')
   },
-]
+])
 
 const slider = ref<HTMLElement>()
 const page = ref(0)

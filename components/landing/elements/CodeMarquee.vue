@@ -60,8 +60,8 @@
 <template>
   <div class="marquee-container flex-row flex-center flex-gap-small">
     <span class="marquee-text text-outline non-breaking-text">{ </span>
-    <span class="marquee-text text-outline non-breaking-text">We are</span>
-    <span ref="marquee" class="marquee marquee-text non-breaking-text text-center text-gradient">{{ marqueeText }}</span>
+    <span class="marquee-text text-outline non-breaking-text">{{ t('landing.hero.marquee.prefix') }}</span>
+    <span ref="marquee" class="marquee marquee-text text-center text-gradient">{{ marqueeWords[marqueeActiveIndex] }}</span>
     <span class="marquee-text text-outline non-breaking-text">}</span>
   </div>
 </template>
@@ -70,21 +70,27 @@
 import { computed, ref, onMounted } from 'vue'
 import { useEventListener } from '@vueuse/core'
 import { rotateForward } from 'lib/util'
+import { useI18n } from '#imports'
 
-const props = withDefaults(defineProps<{
-  words?: string[]
-}>(), {
-  words: () => []
-})
+const { t } = useI18n()
 
 let marqueeActiveIndex = ref(0)
-const marquee = ref<HTMLElement>()
 
-const marqueeText = computed(() => props.words ? props.words[marqueeActiveIndex.value] : '')
+const marqueeWords = computed(() => [
+  t('landing.hero.marquee.words[0]'),
+  t('landing.hero.marquee.words[1]'),
+  t('landing.hero.marquee.words[2]'),
+  t('landing.hero.marquee.words[3]'),
+  t('landing.hero.marquee.words[4]'),
+])
+
+const marqueeText = computed(() => marqueeWords.value[marqueeActiveIndex.value])
+
+const marquee = ref<HTMLElement>()
 
 onMounted(() => {
   useEventListener(marquee.value, 'animationiteration', () => {
-    marqueeActiveIndex.value = rotateForward(marqueeActiveIndex.value, props.words.length)
+    marqueeActiveIndex.value = rotateForward(marqueeActiveIndex.value, marqueeWords.value.length)
   })
 })
 </script>

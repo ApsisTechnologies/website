@@ -1,6 +1,20 @@
 import { defineNuxtConfig } from 'nuxt/config'
 import { resolve } from 'path'
 
+const locales = [
+  {
+    code: 'en',
+    name: 'English',
+    file: 'en.yml',
+    isCatchallLocale: true
+  },
+  {
+    code: 'es',
+    name: 'Español',
+    file: 'es.yml',
+  }
+]
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: true,
@@ -47,6 +61,7 @@ export default defineNuxtConfig({
   css: [
     'assets/css/typeface.css',
     'assets/css/styles.css',
+    'assets/css/theme.css',
     'assets/css/global.css',
     'assets/css/landing.css',
     'assets/css/animations.css'
@@ -67,14 +82,8 @@ export default defineNuxtConfig({
     strategy: 'no_prefix',
     defaultLocale: 'en',
     langDir: 'locales',
-    locales: [
-      {
-        code: 'en',
-        iso: 'en',
-        name: 'English',
-        file: 'en.yml',
-      }
-    ]
+    locales,
+    detectBrowserLanguage: false
   },
 
   compatibilityDate: '2024-07-31'

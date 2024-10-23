@@ -29,6 +29,8 @@ export const isValidPassword = (password: string) => passwordRegex.test(password
 
 export const getUserLocale = () => window.navigator.language
 
+export const getUserLanguage = () => getUserLocale().slice(0, 2)
+
 export function navigate(url: string, external = false) {
   window.open(url, external ? '_blank' : '_self')
 }

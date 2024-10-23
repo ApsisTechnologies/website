@@ -22,18 +22,14 @@ landing:
     about: At RockinDev, we build standout digital products that turn users into raving fans, helping companies transform into digital native brands to unlock outsized growth at global scale.
     cta: Let's talk
 
-  video:
-    loading: loading
     marquee:
-      - builders
-      - strategists
-      - tinkerers
-      - coders
-      - designers
-    text:
-      - Welcome to RockinDev, where imagination meets innovation.
-      - We are a team of creative technologists with a passion for building innovative digital products that push boundaries, unlocking new avenues for growth while leading the way through our clients’ digital journey.
-      - We specialize in Web, Cloud and Game technologies. Our advanced solutions are the result of deep industry expertise accumulated over decades of combined technical experience building software products.
+      prefix: We are
+      words:
+        - builders
+        - strategists
+        - tinkerers
+        - coders
+        - designers
 
   validation:
     header: RockinDev in numbers
@@ -62,7 +58,7 @@ landing:
         text: We productize machine learning technology by leveraging modern training workflows, imbuing digital products with near-human intelligence, making teams orders of magnitude more productive.
         cta: Read more
 
-      - title: Immersive development
+      - title: Immersive applications
         text: We are experts at crafting immersive experiences, captivating audiences who crave new forms of expression and seek innovative experiences.
         cta: Read more
 
@@ -85,16 +81,13 @@ landing:
 
       forestify:
         title: Forestify
-        description: "Forestify is an Ethereum-based decentralized app (a.k.a. \"dapp\") that allows users to invest in natural habitat restoration projects through nature-backed NFTs in a gamified experience with several tiers of rewards, producing a truly virtuous cycle."
+        description: "Forestify is an Ethereum dapp (a.k.a. \"decentralized app\") that allows users to invest in natural habitat restoration projects through nature-backed NFTs in a gamified experience with several tiers of rewards, producing a truly virtuous cycle of investment plus ecosystem restoration."
         accent: '#a2f838'
 
       groovly:
         title: Groovly
-        description: "\"TikTok for music\", Groovly is an audio platform that allows independent artists to upload short music tracks as well as unfinished projects to promote their work and grow their fan base."
+        description: "The \"TikTok of music\", Groovly is an music marketing platform that allows independent artists to upload demo music tracks to promote their work, grow their fan base and get signed by labels."
         accent: 'hsl(195 100% 50%)'
-
-  stack:
-    title: Our stack
 
   contact:
     title: Get in touch

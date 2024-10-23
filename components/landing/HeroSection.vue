@@ -91,7 +91,7 @@
     </div>
 
     <div class="text-pane pos-relative flex-col flex-gap-small">
-      <CodeMarquee :words="marqueeWords" />
+      <CodeMarquee />
       <p class="pos-relative about overlay">{{ t('landing.hero.about') }}</p>
       <Button class="hero-cta" :text="t('landing.hero.cta')" @click="router.push('/#contact')" />
     </div>
@@ -113,21 +113,4 @@ const router = useRouter()
 const is3DModelVisible = ref(true)
 
 const on3DModelVisible = (e: IntersectionObserverEntry[]) => { is3DModelVisible.value = e[0].isIntersecting }
-
-const marqueeWords = [
-  t('landing.video.marquee[0]'),
-  t('landing.video.marquee[1]'),
-  t('landing.video.marquee[2]'),
-  t('landing.video.marquee[3]'),
-  t('landing.video.marquee[4]'),
-]
-
-const flyingWordCount = 5
-
-const flyingPhrases = [
-  '<HelloWorld />',
-  '{ Let\'s Rock }',
-  '0x00FA >> 4',
-  'var s = r * sqrt(x + y)',
-]
 </script>
