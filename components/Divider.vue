@@ -48,25 +48,4 @@ const props = withDefaults(defineProps<{
   right: false,
   left: false,
 })
-
-// export default {
-//   name: 'Divider',
-//   props: {
-//     text: {
-//       type: String,
-//       default: '',
-//       required: false
-//     },
-//     left: {
-//       type: Boolean,
-//       default: false,
-//       required: false
-//     },
-//     right: {
-//       type: Boolean,
-//       default: false,
-//       required: false
-//     }
-//   }
-// }
 </script>

@@ -56,7 +56,7 @@
 import { useRouter } from 'vue-router'
 import { navigate } from 'lib/util'
 import { computed } from 'vue'
-import { useI18n } from '#imports'
+import { useI18n } from 'vue-i18n'
 import { useNuxtApp } from 'nuxt/app'
 
 const { t, locales, locale, setLocale } = useI18n()

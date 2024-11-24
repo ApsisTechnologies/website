@@ -10,6 +10,7 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 4rem;
+  margin-top: 2rem;
 }
 
 @media (--res-narrow) {
@@ -24,85 +25,13 @@
   gap: 3rem;
 }
 
-.form-panel {
-  position: relative;
-  background-color: var(--callout-color);
-
-  border-radius: var(--border-radius);
-  padding: 2rem;
-  position: relative;
-  max-width: 30rem;
-}
-
-@property --gradient-angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-
-.form-panel::after,
-.form-panel::before
-{
-  --gradient-angle: 0deg;
-  --gradient-angle: 1px;
-
-  content: '';
-  position: absolute;
-
-  width: calc(100% + var(--decoration-line-thickness) * 2);
-  height: calc(100% + var(--decoration-line-thickness) * 2);
-  top: calc(-1.0 * var(--decoration-line-thickness));
-  left: calc(-1.0 * var(--decoration-line-thickness));
-  z-index: -1;
-
-  border-radius: var(--border-radius);
-}
-
-.form-panel::after {
-  background: var(--button-gradient);
-}
-
-.form-panel::before {
-  filter: blur(2rem);
-
-  background-image: conic-gradient(
-    from var(--gradient-angle),
-    var(--button-gradient-stop-color) 0%,
-    var(--button-gradient-start-color) 66%,
-    var(--button-gradient-stop-color) 100%
-  );
-
-  opacity: 0.3;
-
-  animation: 3s spin linear infinite;
-  animation-fill-mode: forwards;
-}
-
-@keyframes spin {
-  0% {
-    --gradient-angle: 0deg;
-    opacity: .7;
-  }
-  50% {
-    opacity: .5;
-  }
-  100% {
-    --gradient-angle: 360deg;
-    opacity: .7;
-  }
-}
-
-.form-text {
-  font-weight: 500;
-  margin-top: .5rem;
-}
-
 .location-icon {
   height: 2rem;
   width: 1.4rem;
   transform: translateY(.4rem);
 
 }
+
 .location-title {
   text-transform: uppercase;
   font-weight: 800;
@@ -114,22 +43,13 @@
   font-size: .8rem;
   line-height: 1.4rem;
 }
-
-.confirmation-text {
-  font-size: .8rem;
-  line-height: 1rem;
-  margin-top: 1rem;
-}
 </style>
 
 <template>
   <div id="contact" class="section pos-relative flex-col">
     <span class="landing-title">{ {{ t('landing.contact.title') }} }</span>
-    <div style="display: inline; margin-bottom: 2rem">
-      <span class="landing-subtitle text-gradient">{{ t('landing.contact.subtitle') }}</span>
-    </div>
-    <div class="panel-container flex-row">
 
+    <div class="panel-container flex-row">
       <div class="location-panel flex-col">
         <div class="location flex-row flex-gap selectable">
           <LocationIcon class="location-icon" />
@@ -151,49 +71,7 @@
         </div>
       </div>
 
-      <div class="form-panel flex-col">
-        <span class="form-text">{{ t('landing.contact.formTitle') }}</span>
-        <TextInput
-          ref="nameField"
-          :name="t('landing.contact.namePlaceholder')"
-          :validator="validateName"
-          :enabled="formEnabled"
-        />
-        <TextInput
-          ref="companyField"
-          :name="t('landing.contact.companyPlaceholder')"
-          :validator="validateCompanyName"
-          :enabled="formEnabled"
-        />
-        <TextInput
-          ref="emailField"
-          :name="t('landing.contact.emailPlaceholder')"
-          :validator="validateEmail"
-          :enabled="formEnabled"
-        />
-        <TextInput
-          ref="messageField"
-          :name="t('landing.contact.messagePlaceholder')"
-          :enabled="formEnabled"
-          :max-length="150"
-          multiline
-        />
-        <br/>
-
-        <Button
-          :text="t('landing.contact.buttonText')"
-          @click="onSend"
-          :enabled="formEnabled"
-          :loading="sending"
-          expand
-        />
-        <span
-          v-if="sent"
-          class="pos-relative confirmation-text"
-        >
-          {{ t('landing.contact.requestSentText') }}
-        </span>
-      </div>
+       <ContactForm glow />
     </div>
   </div>
 </template>
@@ -202,8 +80,8 @@
 import { computed, ref } from 'vue'
 import { useI18n } from '#imports'
 import { isValidEmailAddress, extractEmailDomain } from 'lib/util'
-import Button from 'components/Button.vue'
-import TextInput from 'components/TextInput.vue'
+import TextInput from '@/components/TextInput.vue'
+import ContactForm from '@/components/ContactForm.vue'
 import LocationIcon from 'assets/icons/location.svg'
 import { sendContactRequest } from 'lib/contact'
 

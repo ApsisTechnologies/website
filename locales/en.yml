@@ -91,9 +91,9 @@ landing:
 
   contact:
     title: Get in touch
-    subtitle: Let's build the future
 
-    formTitle: Ready to leap ahead? Reach out to our team today to learn how we can help you fast track your dream project! ✨🚀
+    formTitle: Ready to leap ahead?
+    formSubtitle: Reach out to our team today to learn how we can help you fast track your dream project! ✨🚀
 
     namePlaceholder: Your name
     companyPlaceholder: Company name

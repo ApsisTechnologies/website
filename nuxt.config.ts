@@ -15,6 +15,24 @@ const locales = [
   }
 ]
 
+// All Nuxt Content-based routes that need to be prerendered
+const contentRoutes = [
+  '/services/web',
+  '/services/cloud',
+]
+
+// outputs all the Nuxt content routes including all locales
+function localizedContentRoutes(routes: string[]): string[] {
+  const prefixes = locales.map(locale =>  locale.isCatchallLocale ? '' : '/' + locale.code)
+  const prefixedRoutes = []
+  for (const prefix of prefixes) {
+    for (const route of routes) {
+      prefixedRoutes.push(prefix + route)
+    }
+  }
+  return prefixedRoutes
+}
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: true,
@@ -42,8 +60,21 @@ export default defineNuxtConfig({
   modules: [
     'nuxt-svgo',
     '@nuxtjs/i18n',
-    '@pinia/nuxt'
+    '@pinia/nuxt',
+    '@nuxt/content',
   ],
+
+  nitro: {
+    prerender: {
+      routes: localizedContentRoutes(contentRoutes)
+    }
+  },
+
+  content: {
+    markdown: {
+      anchorLinks: false
+    }
+  },
 
   imports: {
     autoImport: false
@@ -79,7 +110,7 @@ export default defineNuxtConfig({
   },
 
   i18n: {
-    strategy: 'no_prefix',
+    strategy: 'prefix_except_default',
     defaultLocale: 'en',
     langDir: 'locales',
     locales,

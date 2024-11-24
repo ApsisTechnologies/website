@@ -123,14 +123,15 @@ const items = computed(() => [
     title: t('landing.features.items[0].title'),
     text: t('landing.features.items[0].text'),
     cta: t('landing.features.items[0].cta'),
-    to: blogUrl + '/?tag=web',
+    to: '/services/web',
   },
   {
     img: datacenter,
     title: t('landing.features.items[1].title'),
     text: t('landing.features.items[1].text'),
     cta: t('landing.features.items[1].cta'),
-    to: blogUrl + '/?tag=cloud',
+    // to: blogUrl + '/?tag=cloud',
+    to: '/services/cloud',
   },
   {
     img: ml,

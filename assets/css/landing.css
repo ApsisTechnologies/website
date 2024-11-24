@@ -71,10 +71,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-span strong, p strong {
-  background-image: var(--secondary-gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: inherit;
+strong {
+  font-weight: 500;
 }

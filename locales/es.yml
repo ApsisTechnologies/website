@@ -91,12 +91,12 @@ landing:
 
   contact:
     title: Contáctanos
-    subtitle: Construyamos el futuro
 
-    formTitle: ¿Listo para dar el salto? ¡Ponte en contacto con nuestro equipo hoy para descubrir cómo podemos ayudarte a acelerar tu proyecto soñado! ✨🚀
+    formTitle: ¿Listo para dar el salto?
+    formSubtitle: ¡Ponte en contacto con nuestro equipo hoy para descubrir cómo podemos ayudarte a acelerar tu proyecto soñado! ✨🚀
 
     namePlaceholder: Tu nombre
-    companyPlaceholder: Nombre de la empresa
+    companyPlaceholder: Nombre de la compañía
     emailPlaceholder: Correo electrónico laboral
     messagePlaceholder: ¿Hay algo más que debamos saber?
     buttonText: Enviar mensaje

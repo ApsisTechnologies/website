@@ -13,31 +13,31 @@
 
   <Button small :text="t('jobs.positions.open')" @click="navigate(config.public.JOB_BOARD_URL, true)" />
 
-  <Divider />
+  <!-- <Divider /> -->
 
-  <h2 id="values">{{ t('jobs.values.title') }}</h2>
+  <!-- <h2 id="values">{{ t('jobs.values.title') }}</h2>
   <p>{{ t('jobs.values.description') }}</p>
 
-  <h3 class="text-gradient-outline">{{ t('jobs.values.items[0].title') }}</h3>
+  <h3 class="text-gradient">{{ t('jobs.values.items[0].title') }}</h3>
   <p>{{ t('jobs.values.items[0].body') }}</p>
 
-  <h3 class="text-gradient-outline">{{ t('jobs.values.items[1].title') }}</h3>
+  <h3 class="text-gradient">{{ t('jobs.values.items[1].title') }}</h3>
   <p>{{ t('jobs.values.items[1].body') }}</p>
 
-  <h3 class="text-gradient-outline">{{ t('jobs.values.items[2].title') }}</h3>
+  <h3 class="text-gradient">{{ t('jobs.values.items[2].title') }}</h3>
   <p>{{ t('jobs.values.items[2].body') }}</p>
 
-  <h3 class="text-gradient-outline">{{ t('jobs.values.items[3].title') }}</h3>
+  <h3 class="text-gradient">{{ t('jobs.values.items[3].title') }}</h3>
   <p>{{ t('jobs.values.items[3].body') }}</p>
 
-  <h3 class="text-gradient-outline">{{ t('jobs.values.items[4].title') }}</h3>
+  <h3 class="text-gradient">{{ t('jobs.values.items[4].title') }}</h3>
   <p>{{ t('jobs.values.items[4].body') }}</p>
 
-  <h3 class="text-gradient-outline">{{ t('jobs.values.items[5].title') }}</h3>
+  <h3 class="text-gradient">{{ t('jobs.values.items[5].title') }}</h3>
   <p>{{ t('jobs.values.items[5].body') }}</p>
 
-  <h3 class="text-gradient-outline">{{ t('jobs.values.items[6].title') }}</h3>
-  <p>{{ t('jobs.values.items[6].body') }}</p>
+  <h3 class="text-gradient">{{ t('jobs.values.items[6].title') }}</h3>
+  <p>{{ t('jobs.values.items[6].body') }}</p> -->
 </template>
 
 <script setup lang="ts">

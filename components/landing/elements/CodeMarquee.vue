@@ -60,7 +60,7 @@
 <template>
   <div class="marquee-container flex-row flex-center flex-gap-small">
     <span class="marquee-text text-outline non-breaking-text">{ </span>
-    <span class="marquee-text text-outline non-breaking-text">{{ t('landing.hero.marquee.prefix') }}</span>
+    <span class="marquee-text non-breaking-text">{{ t('landing.hero.marquee.prefix') }}</span>
     <span ref="marquee" class="marquee marquee-text text-center text-gradient">{{ marqueeWords[marqueeActiveIndex] }}</span>
     <span class="marquee-text text-outline non-breaking-text">}</span>
   </div>

@@ -56,9 +56,9 @@
     }"
   >
     <div class="navigation-container flex-row">
-      <div class="brand-container flex-row flex-center">
-        <Logo @click="router.push('/')" animation-class="grow-and-spin" />
-        <Wordmark @click="router.push('/')" />
+      <div class="brand-container flex-row flex-center" @click="router.push('/')">
+        <Logo animation-class="grow-and-spin" />
+        <Wordmark />
       </div>
 
       <div class="nav-links-middle">
