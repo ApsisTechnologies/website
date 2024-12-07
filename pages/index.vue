@@ -38,7 +38,7 @@ const title = computed(() => `${t('company.name')} | ${t('company.tagline')}`)
 
 useHead({
   title,
-  htmlAttrs: { lang: locale },
+  htmlAttrs: { lang: locale.value },
   meta: [
     { name: 'description', content: t('company.tagline') },
 

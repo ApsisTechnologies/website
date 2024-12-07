@@ -19,6 +19,8 @@ const locales = [
 const contentRoutes = [
   '/services/web',
   '/services/cloud',
+  '/services/ai-ml',
+  '/services/immersive',
 ]
 
 // outputs all the Nuxt content routes including all locales

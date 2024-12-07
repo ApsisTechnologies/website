@@ -138,14 +138,14 @@ const items = computed(() => [
     title: t('landing.features.items[2].title'),
     text: t('landing.features.items[2].text'),
     cta: t('landing.features.items[2].cta'),
-    to: blogUrl + '/?tag=ai',
+    to: '/services/ai-ml'
   },
   {
     img: immersive,
     title: t('landing.features.items[3].title'),
     text: t('landing.features.items[3].text'),
     cta: t('landing.features.items[3].cta'),
-    to: blogUrl + '/?tag=gaming',
+    to: '/services/immersive'
   }
 ])
 

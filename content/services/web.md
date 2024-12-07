@@ -2,7 +2,7 @@
 title: Web Development
 ---
 
-## Rockin' the Web, Your Way!
+## Rockin' the Web the right way!
 
 At RockinDev, we don't just build websites, we craft **digital masterpieces** that make your competitors green with envy. From full-fledged web applications that automate your workflow to sleek, responsive landing pages that convert visitors into loyal customers, we’re here to turn your web vision into a high-performing reality.
 
