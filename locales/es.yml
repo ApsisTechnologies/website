@@ -62,6 +62,10 @@ landing:
         text: Somos expertos en crear experiencias inmersivas, cautivando a audiencias que buscan nuevas formas de expresión y experiencias innovadoras.
         cta: Leer más
 
+      - title: Soluciones Corporativas
+        text: Nuestras soluciones ERP se apoyan en tecnologías modernas de código abierto para ayudarte a lograr la excelencia operativa, permitiéndote construir una base sólida para la transformación digital de tu compañía.
+        cta: Leer más
+
     cta: Casos de estudio
 
   portfolio:

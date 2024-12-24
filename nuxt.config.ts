@@ -19,6 +19,7 @@ const locales = [
 const contentRoutes = [
   '/services/web',
   '/services/cloud',
+  '/services/erp',
   '/services/ai-ml',
   '/services/immersive',
 ]

@@ -109,6 +109,7 @@ import { addClassIfVisible } from 'lib/util'
 import immersive from 'assets/images/immersive.avif'
 import web from 'assets/images/web.avif'
 import ml from 'assets/images/ml.avif'
+import erp from 'assets/images/erp.avif'
 import datacenter from 'assets/images/datacenter.avif'
 import Button from '@/components/Button.vue'
 import { useNuxtApp } from 'nuxt/app'
@@ -141,12 +142,19 @@ const items = computed(() => [
     to: '/services/ai-ml'
   },
   {
-    img: immersive,
-    title: t('landing.features.items[3].title'),
-    text: t('landing.features.items[3].text'),
-    cta: t('landing.features.items[3].cta'),
-    to: '/services/immersive'
+    img: erp,
+    title: t('landing.features.items[4].title'),
+    text: t('landing.features.items[4].text'),
+    cta: t('landing.features.items[4].cta'),
+  to: '/services/erp'
   }
+  // {
+  //   img: immersive,
+  //   title: t('landing.features.items[3].title'),
+  //   text: t('landing.features.items[3].text'),
+  //   cta: t('landing.features.items[3].cta'),
+  //   to: '/services/immersive'
+  // }
 ])
 
 const onIntersect = (e: IntersectionObserverEntry[]) => {

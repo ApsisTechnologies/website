@@ -102,7 +102,7 @@ h1, h2 {
 }
 
 h1, h2, h3, h4 {
-  padding-bottom: .5rem;
+  margin-bottom: .8rem;
 }
 
 h1 {
@@ -110,7 +110,7 @@ h1 {
   font-weight: 700;
   font-size: 3rem;
   letter-spacing: 0.03em;
-  line-height: 1.2em;
+  line-height: 1em;
   text-transform: uppercase;
 }
 
@@ -213,7 +213,6 @@ figcaption {
   font-weight: 500;
   width: 100%;
   text-align: center;
-  margin-bottom: 1rem;
 }
 
 ul {

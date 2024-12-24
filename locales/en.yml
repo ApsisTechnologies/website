@@ -62,6 +62,10 @@ landing:
         text: We are experts at crafting immersive experiences, captivating audiences who crave new forms of expression and seek innovative experiences.
         cta: Read more
 
+      - title: Enterprise Solutions
+        text: Our ERP solutions lean on modern, open-source technology to help you unlock operational excellence so your team can confidently build a solid foundation to your company's digital transformation.
+        cta: Read more
+
     cta: Case studies
 
   portfolio:
