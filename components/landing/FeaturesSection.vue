@@ -134,13 +134,13 @@ const items = computed(() => [
     // to: blogUrl + '/?tag=cloud',
     to: '/services/cloud',
   },
-  {
-    img: ml,
-    title: t('landing.features.items[2].title'),
-    text: t('landing.features.items[2].text'),
-    cta: t('landing.features.items[2].cta'),
-    to: '/services/ai-ml'
-  },
+  // {
+  //   img: ml,
+  //   title: t('landing.features.items[2].title'),
+  //   text: t('landing.features.items[2].text'),
+  //   cta: t('landing.features.items[2].cta'),
+  //   to: '/services/ai-ml'
+  // },
   {
     img: erp,
     title: t('landing.features.items[4].title'),

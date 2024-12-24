@@ -2,30 +2,63 @@
 title: Cloud Engineering
 ---
 
-## Global scaling prowess, one byte at a time
+### Transforming ideas into scalable realities
 
-In today’s always-on, always-connected world, the cloud isn’t just a buzzword — it’s the medium where modern business lives. At RockinDev, we specialize in **cloud solutions that scale at the speed of your imagination**. Whether you’re starting small or are already thinking global, we design, deploy, and manage cloud infrastructure that's built to grow with you.
+![Illustration of Cloud technology with a business man observing it from afar.](/images/cloud/cloud1.avif)
 
-## Why Our Cloud Engineering Rocks
+At RockinDev, we are **Cloud Engineering** experts, developing cutting-edge cloud solutions to turn your boldest ideas into scalable, efficient, and cost-effective products that can evolve and grow with your vision. Whether you're starting with a spark of inspiration or need a seasoned partner to scale your existing platform, we're here to deliver next-gen cloud solutions tailored to your specific business needs.
 
-We don’t just throw your app in the cloud and call it a day. We strategically craft **scalable cloud architectures** that can handle everything from sudden surges in traffic to complex, data-heavy workflows.
+### Launch faster, scale smarter
 
-- **Global Scalability, Local Expertise**: Whether you’re expanding to new markets or increasing your server load during peak times, our cloud solutions scale effortlessly to keep up with your business growth. **Kubernetes** and **Docker** are our secret weapons, providing smooth orchestration and containerization to ensure your infrastructure is both flexible and rock-solid.
+We excel in creating [minimum viable products](https://en.wikipedia.org/wiki/Minimum_viable_product){:target= "_blank"} (or MVPs for short) that don't just work — they thrive. Our team combines agility with expertise to craft products ready to scale horizontally with minimal fixed cloud costs so your team can go to market faster than ever before.
 
-- **Punching above your competition's weight with AWS**: Our team brings years of combined experience working with the undisputed heavyweight champion of public clouds, **Amazon Web Services**. This allows us to offer on-demand, always-on products that can scale in the blink of an eye while only paying for what you actually use and still support your future growth.
+Once your MVP is live, we evolve it into a full-fledged SaaS platform capable of adapting to increasing demands to deliver sustained value for years to come.
 
-- **Security That Never Sleeps**: When it comes to your data, we don’t mess around. Our approach includes things like versioning infrastructure code with **Terraform**, implementing end-to-end observability throughout your product's stack as well as advanced security and encryption protocols, we ensure your cloud environment is **bulletproof**. Your sensitive data is locked down tighter than Fort Knox. Additionally, automated backups mean you never have to worry about losing any valuable data.
+### Modern technology, limitless potential
 
-- **Cost Efficiency That Scales**: One of the biggest benefits of the cloud? Paying for what you actually use. We help you set up **auto-scaling** solutions that adjust in real time based on demand — saving you money while sustaining 24/7 peak performance. Plus, we’ll help you **optimize your cloud spend** by identifying underused resources and cost-saving opportunities.
+By leveraging the latest and greatest technologies, we design cloud-native solutions that offer exceptional performance, flexibility, and resilience. Coupled with AWS's massive cloud infrastructure, our applications can seamlessly scale up or down to meet the needs of any business, big or small.
 
-## Technologies that power our cloud stack
+Our approach leans on a cutting-edge tech stack, including (but not limited to):
 
-We don’t just dabble in cloud technologies, we master them — building scalable, resilient cloud infrastructure that is **built to handle anything you throw at it**. Here’s a sneak peek of the tools that make it all happen:
+- [Go](https://go.dev/){:target= "_blank"} & [Python](https://www.python.org/){:target= "_blank"}
+- [Kubernetes](https://kubernetes.io/){:target= "_blank"}
+- [Docker](https://www.docker.com/){:target= "_blank"}
+- [Terraform](https://www.terraform.io/){:target= "_blank"}
+- [llama.cpp](https://en.wikipedia.org/wiki/Llama.cpp){:target= "_blank"}
+- Large language models, a.k.a. LLMs ([as well as mighty small ones!](https://blog.rockindev.com/deploying-ai-workflows-through-llama-cpp-containers){:target= "_blank"})
 
-- **Kubernetes**: The go-to platform for smart container orchestration, Kubernetes allows us to manage thousands of containers with ease, ensuring your app runs seamlessly across multiple environments.
+### Products built for the future
 
-- **Docker**: Lightweight, portable, and fast. Docker containers ensure that your app is ready to go, whether it’s running locally or in the cloud.
+From immersive [metaverse cloud platforms](https://blog.rockindev.com/unlocking-mass-adoption-of-high-end-graphics-through-cloud-computing){:target= "_blank"} to powerful [e-learning SaaS platforms](https://blog.rockindev.com/case-study-how-we-built-a-globally-scalable-e-learning-platform/){:target= "_blank"}, our cloud applications are engineered to handle the demands of a connected, global audience. Whether it's millions of concurrent users or complex API integrations, our products are built to deliver reliability, scalability, and performance at every stage.
 
-- **Terraform**: Infrastructure as code? Yes, please! Terraform enables us to deploy cloud resources with precision, automating deployments in a reproducible fashion, from servers to advanced network configurations. APIs and much more.
+### Powerful features, exceptional results
 
-- **AWS**: We are Amazon Web Services experts. We'll help you make the most out of the many awesome services the undisputed leader of public cloud has to offer.
+#### Scale without limits 🚀📈
+
+Our products can [reach millions of concurrent users](https://blog.rockindev.com/easy-static-website-deployments-with-aws-and-terraform/){:target= "_blank"} worldwide, ensuring seamless experiences for your users no matter where they are.
+
+#### Complete observability 📊👀
+
+We implement [end-to-end observability](https://blog.rockindev.com/observability-application-monitoring/){:target= "_blank"} using tools like OpenTelemetry and AWS CloudWatch, so you can have real-time insights into your product's inner workings at all times and address incidents as soon as they happen.
+
+#### Data science at your fingertips 🔬🤓
+
+We unlock smart decision-making through our [flexible data science pipelines](https://blog.rockindev.com/how-we-rock-scalable-data-science-pipelines/){:target= "_blank"} powered by Python, [AWS Glue](https://aws.amazon.com/glue/){:target= "_blank"} and [AWS Athena](https://docs.aws.amazon.com/athena/latest/ug/what-is.html){:target= "_blank"}, helping you uncover insights and make better decisions with ease so your team can move faster.
+
+#### Application self-hosting freedom ⛓️‍💥💸✨
+
+We empower businesses with the ability to [self-host various open-source technologies](/services/erp){:target= "_blank"} consisting of CMS platforms, databases, ERP solutions and much more, using AWS native cloud capabilities. Self-hosting helps you reduce your reliance on external service providers (not to mention slashing those insidious subscription costs!).
+
+#### Seamless integration with external systems 💻🤝💻
+
+What do you do when your existing tools refuse talking to each other? Do not fret. Our products are designed to easily integrate with a wide range of external services, helping you centralize information and streamlining your team's workflows. Less chasing information around, more smart decision-making.
+
+#### Effortless, automated code delivery 🦾🤖
+
+All of our applications come with out-of-the-box support for continuous integration pipelines (CI/CD) powered by [AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html){:target= "_blank"}, including frontend, backend, and infrastructure codebases, greatly accelerating development cycles and improving development team efficiency.
+
+> Be sure to check out our [tech blog](https://blog.rockindev.com/){:target= "_blank"} to find in-depth information about our Cloud Engineering practice, there are lots of interesting technical details in there. 🤓🦾
+
+### Ready to Build the Future?
+
+Let's work together to transform your ideas into scalable, reliable, and groundbreaking cloud solutions. Contact us today to jumpstart your digital transformation journey.

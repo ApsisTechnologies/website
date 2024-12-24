@@ -1,31 +1,64 @@
 ---
-title: Ingeniería de Cloud
+title: Ingeniería en la Nube
 ---
 
-## Dominio en escalabilidad global, un byte a la vez
+### Transformando ideas en realidades escalables
 
-En el mundo siempre conectado y siempre activo de hoy, la nube no es solo una palabra de moda: es el medio donde viven los negocios modernos. En RockinDev, nos especializamos en **soluciones en la nube que escalan a la velocidad de tu imaginación**. Ya sea que estés comenzando desde cero o pensando en grande, diseñamos, implementamos y administramos infraestructura en la nube construida para crecer junto contigo.
+![Ilustración de tecnología de nube con un hombre de negocios observando desde lejos.](/images/cloud/cloud1.avif)
 
-## Por qué nuestra ingeniería en la nube es excepcional
+En RockinDev, somos expertos en **Ingeniería en la Nube**, desarrollando soluciones innovadoras para convertir tus ideas más audaces en productos escalables, eficientes y rentables, que puedan evolucionar y crecer junto a tu visión. Ya sea que estés comenzando con una chispa de inspiración o necesites un socio experimentado para escalar tu plataforma existente, estamos aquí para ofrecer soluciones en la nube de última generación adaptadas a las necesidades específicas de tu negocio.
 
-No nos limitamos solo a llevar tu aplicación a la nube y dar por terminado el trabajo. Diseñamos estratégicamente **arquitecturas escalables en la nube** que pueden soportarlo todo, desde aumentos repentinos de tráfico hasta flujos de trabajo complejos e intensivos en cuanto a datos.
+### Lanza más rápido, escala con inteligencia
 
-- **Escalabilidad global, experiencia local**: Ya sea que estés expandiéndote a nuevos mercados o aumentando la carga de tus servidores en momentos de alta demanda, nuestras soluciones en la nube escalan sin esfuerzo, acompañando el crecimiento de tu negocio. **Kubernetes** y **Docker** son nuestras armas secretas, proporcionando orquestación y containerización fluidas para garantizar que tu infraestructura sea flexible y robusta.
+Nos especializamos en crear [productos mínimos viables](https://es.wikipedia.org/wiki/Producto_viable_m%C3%ADnimo){:target= "_blank"} (o MVPs, por sus siglas en inglés) que no solo funcionan, sino que prosperan. Nuestro equipo combina agilidad y experiencia para diseñar productos listos para escalar horizontalmente con costos mínimos en la nube, permitiendo que tu equipo llegue al mercado más rápido que nunca.
 
-- **Superando a tu competencia con AWS**: Nuestro equipo tiene años de experiencia conjunta trabajando con el indiscutido líder de la nube, **Amazon Web Services**. Esto nos permite ofrecer productos a demanda, siempre activos, que pueden escalar en un abrir y cerrar de ojos mientras solo pagas por lo que realmente usas, y al mismo tiempo están preparados para soportar tu crecimiento futuro.
+Una vez que tu MVP esté activo, lo evolucionamos hasta convertirlo en una plataforma SaaS completamente desarrollada, capaz de adaptarse a la creciente demanda y ofrecer valor sostenido durante años.
 
-- **Seguridad que nunca duerme**: Cuando se trata de tus datos, no tomamos riesgos. Nuestro enfoque incluye versionar el código de infraestructura con **Terraform**, implementar observabilidad de punta a punta en todo el stack de tu producto, así como protocolos avanzados de seguridad y encripción. Garantizamos que tu entorno en la nube esté completamente **blindado**. Tus datos sensibles estarán más protegidos que el Fort Knox. Además, usando copias de seguridad automáticas nunca tendrás que preocuparte por perder información valiosa.
+### Tecnología moderna, potencial ilimitado
 
-- **Eficiencia de costos a escala**: Uno de los mayores beneficios de la nube es solo pagar por lo que realmente usas. Te ayudamos a configurar soluciones de **autoescalado** que se ajustan en tiempo real según la demanda, ahorrándote dinero mientras mantienen un rendimiento máximo las 24 horas del día, los 7 días de la semana. Además, te ayudaremos a **optimizar tus gastos en la nube** identificando recursos sub-utilizados y oportunidades de ahorro.
+Aprovechando las tecnologías más avanzadas, diseñamos soluciones nativas de la nube que ofrecen un rendimiento excepcional, flexibilidad y resiliencia. Combinadas con la infraestructura masiva de AWS, nuestras aplicaciones pueden escalar sin problemas hacia arriba o hacia abajo para satisfacer las necesidades de cualquier negocio, grande o pequeño.
 
-## Tecnologías que usamos en nuestro stack de cloud
+Nuestra estrategia se basa en un stack tecnológico de vanguardia, que incluye (pero no se limita a):
 
-No solo experimentamos con tecnologías en la nube sino que las dominamos. Construimos infraestructura en la nube escalables y resilientes que están **listas para manejar cualquier desafío**. Aquí tienes un resumen de las herramientas que hacen nuestro stack posible:
+- [Go](https://go.dev/){:target= "_blank"} y [Python](https://www.python.org/){:target= "_blank"}
+- [Kubernetes](https://kubernetes.io/){:target= "_blank"}
+- [Docker](https://www.docker.com/){:target= "_blank"}
+- [Terraform](https://www.terraform.io/){:target= "_blank"}
+- [llama.cpp](https://en.wikipedia.org/wiki/Llama.cpp){:target= "_blank"}
+- Modelos de lenguaje grandes (LLMs, por sus siglas en inglés) ([¡y también pequeños pero poderosos!](https://blog.rockindev.com/deploying-ai-workflows-through-llama-cpp-containers){:target= "_blank"})
 
-- **Kubernetes**: La plataforma preferida para la orquestación inteligente de contenedores. Kubernetes nos permite gestionar miles de contenedores con facilidad, garantizando que tu aplicación funcione sin problemas en múltiples entornos.
+### Productos construidos para el futuro
 
-- **Docker**: Ligero, portátil y rápido. Los contenedores Docker aseguran que tu aplicación esté lista para funcionar, ya sea localmente o en la nube.
+Desde [plataformas de metaverso en la nube](https://blog.rockindev.com/unlocking-mass-adoption-of-high-end-graphics-through-cloud-computing){:target= "_blank"} hasta [plataformas SaaS de e-learning](https://blog.rockindev.com/case-study-how-we-built-a-globally-scalable-e-learning-platform/){:target= "_blank"}, nuestras aplicaciones en la nube están diseñadas para manejar las demandas de una audiencia conectada y global. Ya sea que se trate de millones de usuarios simultáneos o integraciones de APIs complejas, nuestros productos están diseñados para ofrecer confiabilidad, escalabilidad y rendimiento en cada etapa.
 
-- **Terraform**: ¿Infraestructura como código? ¡Por supuesto! Terraform nos permite desplegar recursos en la nube con precisión, automatizando de forma reproducible el despliege tanto de servidores como configuraciones de red avanzadas, APIs y mucho mas.
+### Características potentes, resultados excepcionales
 
-- **AWS**: Somos expertos en Amazon Web Services. Te ayudaremos a aprovechar al máximo los numerosos servicios que el líder indiscutido de la nube pública tiene para ofrecer.
+#### Escala sin límites 🚀📈
+
+Nuestros productos pueden [alcanzar millones de usuarios simultáneos](https://blog.rockindev.com/easy-static-website-deployments-with-aws-and-terraform/){:target= "_blank"} a escala global, garantizando experiencias fluidas para tus usuarios, sin importar dónde se encuentren.
+
+#### Observabilidad completa 📊👀
+
+Implementamos [observabilidad de extremo a extremo](https://blog.rockindev.com/observability-application-monitoring/){:target= "_blank"} utilizando herramientas como OpenTelemetry y AWS CloudWatch, para que tengas una visión en tiempo real del funcionamiento interno de tu producto y puedas resolver incidentes al instante.
+
+#### Ciencia de datos al alcance 🔬🤓
+
+Facilitamos la toma de decisiones inteligentes mediante [pipelines de ciencia de datos flexibles](https://blog.rockindev.com/how-we-rock-scalable-data-science-pipelines/){:target= "_blank"} basados en Python, [AWS Glue](https://aws.amazon.com/glue/){:target= "_blank"} y [AWS Athena](https://docs.aws.amazon.com/athena/latest/ug/what-is.html){:target= "_blank"}, ayudándote a descubrir tendencias y tomar decisiones inteligentes con facilidad.
+
+#### Libertad en auto-hosteo de aplicaciones ⛓️‍💥💸✨
+
+Empoderamos a las empresas con la capacidad de [auto-hostear diversas tecnologías de código abierto](/es/services/erp){:target= "_blank"}, como plataformas CMS, bases de datos, soluciones ERP y mucho más, usando las capacidades nativas de nube de AWS. El auto-hosting ayuda a reducir tu dependencia de proveedores externos (¡y también esos costos de suscripción insidiosos!).
+
+#### Integración fluida con sistemas externos 💻🤝💻
+
+¿Tus herramientas actuales no se comunican entre sí? No te preocupes. Nuestros productos están diseñados para integrarse fácilmente con una amplia gama de servicios externos, centralizando la información y optimizando los flujos de trabajo de tu equipo.
+
+#### Entrega de código automatizada y sin esfuerzo 🦾🤖
+
+Todas nuestras aplicaciones incluyen soporte nativo para pipelines de integración continua (CI/CD), basados en [AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html){:target= "_blank"}, incluyendo frontends, backends y repositorios de código de infraestructura, acelerando enormemente los ciclos de desarrollo y mejorando la eficiencia del equipo de desarrollo.
+
+> No olvides visitar nuestro [blog de tecnología](https://blog.rockindev.com/){:target= "_blank"} para tener información detallada sobre nuestra práctica de Ingeniería en la Nube. Contiene muchos detalles técnicos interesantes. 🦾🤓
+
+### ¿Listo para construir el futuro?
+
+Trabajemos juntos para transformar tus ideas en soluciones en la nube escalables, confiables e innovadoras. Contáctanos hoy y comienza tu viaje hacia la transformación digital.
