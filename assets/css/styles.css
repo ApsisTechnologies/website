@@ -210,7 +210,8 @@ img, picture {
 figcaption {
   color: var(--muted-text-color);
   font-size: .7rem;
-  font-weight: 500;
+  line-height: 1rem;
+  font-weight: 400;
   width: 100%;
   text-align: center;
 }

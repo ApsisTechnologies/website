@@ -1,53 +1,76 @@
 ---
 title: Desarrollo Web
+description:
 ---
 
-## Rockeando la web, a tu manera
+## Eleva tu presencia en la web
 
-En RockinDev, no solo creamos sitios web, diseñamos **obras maestras digitales** que harán que tus competidores se pongan verdes de envidia. Desde aplicaciones web completas que automatizan tus flujos de trabajo hasta elegantes y responsivas páginas de aterrizaje que convierten visitantes en clientes leales, estamos aquí para transformar tu visión en una realidad de alto rendimiento.
+En RockinDev, no solo creamos sitios web y aplicaciones; creamos experiencias que deleitan a los usuarios a lo largo de todo su recorrido digital. Nos tomamos el tiempo para **entender completamente tu visión** y luego la hacemos realidad con **diseños impresionantes**, **funcionalidad impecable** y utilizando **tecnologías web modernas** que dejan huella.
 
-## Por Qué Nuestro Desarrollo Web Es Inigualable
+Ya sea que estés renovando tu sitio web existente, creando nuevas páginas de marketing o lanzando una plataforma empresarial SaaS, cubrimos todas tus necesidades.
 
-Cuando te asocias con RockinDev, no solo obtienes un equipo de desarrolladores, obtienes **estrategas y solucionadores de problemas** que crean aplicaciones web que escalan, evolucionan y se mantienen a la vanguardia.
+## Interfaces de usuario hermosas, diseñadas para atraer y convertir
 
-- **Adaptado a Tu Negocio**: Entregamos **aplicaciones web personalizadas** que se ajustan a tus necesidades específicas, asegurándonos de que cada función mejore tus operaciones. Nada de soluciones genéricas aquí: solo apps diseñadas para alcanzar los objetivos únicos de tu negocio.
+Tu sitio web no es solo un lugar más en internet; es un reflejo de tu marca y la primera impresión que das a tus clientes. Por eso nos enfocamos en crear interfaces llamativas y fáciles de usar que **se vean geniales**, **se sientan frescas** y que **generen tráfico** y, en última instancia, **conviertan**. Desde páginas de aterrizaje elegantes hasta interfaces de usuario completas, nuestros diseños están creados para sentirse modernos, receptivos y rápidos en cualquier dispositivo, ya sea móvil o de escritorio.
 
-- **Satisfacción del Usuario en Cada Clic**: **Navegación fluida**, **diseño limpio** y **velocidad relámpago**: creamos experiencias de usuario que hacen sonreír (y gastar). Nuestro enfoque en la **experiencia del usuario** (UX) reduce los abandonos, aumenta las conversiones y genera **clientes felices**.
+<figcaption>La plataforma de aprendizaje de biotecnología de miniPCR enseña tanto a estudiantes como a clientes conceptos científicos sobre cómo realizar experimentos complejos de secuenciación de ADN.</figcaption>
 
-- **Rendimiento Poderoso**: Los sitios lentos pierden visitantes. Nuestra arquitectura de vanguardia mantiene tu sitio **ultrarrápido**, incluso bajo cargas pesadas. Combinando arquitectura ágil en el frontend con APIs veloces basadas en **Golang**, **Node.js** y **Python**, aseguramos que tu app no solo sobreviva, sino que prospere bajo presión.
+![Capturas de pantalla de la plataforma de aprendizaje de miniPCR.](/images/web/minipcr-1.avif)
 
-- **Seguro y Escalable**: Las soluciones web de RockinDev están diseñadas para crecer. Aprovechamos **Kubernetes**, **Docker** y **Terraform**, para que tu aplicación escale – hacia arriba o abajo – sin complicaciones. Ya sea incorporando nuevos usuarios o lanzando una campaña de marketing global, nuestra infraestructura está preparada.
+## Aprovecha el poder de los frameworks web modernos
 
-- **Fiabilidad a Prueba de Todo**: Priorizamos la estabilidad y la seguridad porque el tiempo de inactividad es cosa del pasado. Con **Python** y **Go**, creamos aplicaciones web de alto rendimiento, menos propensas a fallos y vulnerabilidades, dándote tranquilidad.
+Nos encanta crear experiencias web interactivas y atractivas que mantengan a los usuarios regresando por más. Usando frameworks web de última generación como [Vue.js](https://vuejs.org/){:target="_blank"} y [React.js](https://react.dev/){:target="_blank"}, junto con WebGL y WebGPU para contenido 3D interactivo y diseños avanzados de CSS, creamos aplicaciones web rápidas, divertidas y preparadas para el futuro.
 
-- **Mantenimiento Fácil y Futuro Garantizado**: ¿Necesitas lanzar nuevas funciones o adaptarte a cambios del mercado? ¡Sin problema! Nuestras aplicaciones están diseñadas con **arquitectura modular** y código limpio, facilitando las actualizaciones futuras. Ya sea integrando nuevos sistemas o escalando tus productos globalmente, estamos aquí para apoyarte.
+## Gestión de contenido sin complicaciones
 
-## Tecnologías Que Impulsan Nuestro Desarrollo Web
+La gestión de contenido puede ser un problema si no se realiza correctamente. Por eso integramos soluciones de gestión de contenido de código abierto como [Strapi](https://strapi.io/){:target="_blank"}, brindándote la libertad de modelar, gestionar y actualizar tu contenido en tiempo real, sin necesidad de involucrar a un desarrollador. Así, obtienes toda la flexibilidad y escalabilidad que necesitas para mantener tu contenido actualizado, sin dolores de cabeza.
 
-No usamos tecnología "de moda" solo por apariencia; la aprovechamos para darte una ventaja competitiva. Nuestro equipo domina los lenguajes y frameworks más avanzados para construir aplicaciones funcionales y **preparadas para el futuro**.
+<figcaption>Gestión de contenido fácil a través de Strapi.</figcaption>
 
-#### Potencia en el Front-End
+![Captura de pantalla del producto Strapi CMS.](/images/web/strapi.avif)
 
-- **Vue.js**: Interfaces intuitivas y responsivas que hacen que los usuarios regresen por más.
-- **Ionic**: Desarrollo híbrido en su mejor versión, ofreciendo una experiencia fluida entre web y móvil.
-- **Tauri**: Creación de aplicaciones de escritorio seguras y de alto rendimiento que cargan en un instante.
+## Escala con confianza en la infraestructura global de AWS
 
-#### Excelencia en el Back-End
+Desde startups hasta grandes empresas, [te ayudamos a escalar tus aplicaciones web](https://blog.rockindev.com/easy-static-website-deployments-with-aws-and-terraform/){:target="_blank"} sin problemas utilizando el poder de la [masiva red de distribución de contenido de AWS](https://aws.amazon.com/cloudfront/){:target="_blank"}. Ya sea que estés comenzando con poco tráfico o ya estés sirviendo a millones de usuarios en todo el mundo, nuestras soluciones en la nube aseguran que tu plataforma sea siempre rápida, confiable y esté lista para cualquier crecimiento futuro.
 
-- **Nest.js** & **TypeScript**: Velocidad, escalabilidad y rendimiento sólido para tus aplicaciones web. Con Nest.js, diseñamos sistemas complejos con código limpio y mantenible.
-- **Go**: Golang está diseñado para la confiabilidad y la eficiencia a escala, asegurando que el backend de tu app maneje alto tráfico y se mantenga ágil, optimizando recursos en la nube.
-- **FastAPI** + **Python**: Servicios backend ultrarrápidos escritos en uno de los lenguajes más potentes: Python. FastAPI permite ciclos de desarrollo rápidos y soluciones de rápido acceso al mercado.
+## Empuja los límites de lo posible
 
-## La Ventaja de RockinDev – ¿Qué Nos Hace Diferentes?
+En RockinDev, nos encanta crear características innovadoras que hagan que tu plataforma destaque. No nos limitamos a lo básico; aprovechamos APIs web avanzadas, incluyendo [tecnología de pixel streaming](https://blog.rockindev.com/unlocking-mass-adoption-of-high-end-graphics-through-cloud-computing/), websockets, audio en tiempo real, [streaming adaptativo](https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming){:target="_blank"} para consumo de video fluido, [aplicaciones text-to-speech basadas por IA](https://aws.amazon.com/polly/){:target="_blank"}, gráficos 3D inmersivos y mucho más.
 
-Aquí está por qué trabajar con nosotros significa ganar:
+¡La web es realmente un medio poderoso y nos aseguramos de exprimir hasta la última gota para hacer que tus productos se destaquen!
 
-- **Menor Tiempo de Llegada al Mercado**: Gracias a nuestros procesos eficientes y frameworks probados, reducimos el tiempo de desarrollo sin comprometer la calidad. Menos tiempo esperando, más tiempo creciendo.
+<figcaption>Experiencia metaverso de Jaggermeister @ SXSW 2023.</figcaption>
 
-- **Herramientas Innovadoras, Fiabilidad Tradicional**: Combinamos tecnologías de punta como Tauri, Go y FastAPI con la robustez comprobada de Golang y Rust. Esto te da una app moderna, sin el riesgo de modas tecnológicas pasajeras.
+![Captura de pantalla de la experiencia metaverso de Jaggermeister.](/images/web/jaggermeister-sxsw.avif)
 
-- **Agilidad en Nuestro ADN**: Trabajamos en sprints, lo que significa que tu proyecto evoluciona con retroalimentación constante e iteraciones rápidas. Ves resultados más rápido y nos mantenemos alineados con tu visión en cada paso del camino.
+<figcaption>Experiencia multijugador en el metaverso del Centro Ithra de Aramco.</figcaption>
 
-- **Equipo Dedicado de Expertos en Tecnología**: Desde el inicio hasta el final, nuestros expertos te guían en cada fase del desarrollo. No somos solo programadores, somos tus socios estratégicos, listos para crecer contigo mucho después de la entrega del proyecto.
+![Captura de pantalla de la experiencia metaverso del Centro Ithra.](/images/web/ithra.avif)
 
-- **Desarrollo Enfocado en el ROI**: Con RockinDev, no solo inviertes en un sitio web, inviertes en una herramienta que genera resultados comerciales medibles. Desde un mayor engagement hasta flujos de trabajo optimizados, nuestras soluciones web generan un **ROI impresionante**.
+## Llega a los usuarios, donde sea que estén
+
+¿Quieres que tu aplicación funcione en todas las plataformas? Aprovechando [Tauri](https://tauri.app/){:target="_blank"} y [Ionic](https://ionicframework.com/){:target="_blank"}, creamos aplicaciones multiplataforma que funcionan perfectamente en la mayoría de los sistemas operativos modernos, incluidos iOS, Android, Windows, macOS y Linux. Con nuestra pila web, puedes llegar a más usuarios en más dispositivos y crear una experiencia consistente y fluida sin importar dónde estén.
+
+## Web3 hecho simple
+
+La tecnología blockchain está revolucionando las industrias, y estamos aquí para ayudarte a aprovechar su potencial. Desde autenticación basada en MetaMask hasta contratos inteligentes en Solidity, integramos soluciones seguras y descentralizadas perfectas para una variedad de aplicaciones blockchain, incluyendo fintech, NFTs y mucho más. Te ayudaremos a dar vida a tu proyecto blockchain con transparencia y seguridad.
+
+<figcaption>Marketplace NFT de Forestify, impulsado por MetaMask + blockchain de Polygon.</figcaption>
+
+![Captura de pantalla de la página de inicio del marketplace NFT Forestify.](/images/web/forestify-landing.avif)
+
+<figcaption>Vista de comercio NFT de Forestify.</figcaption>
+
+![Captura de pantalla de la vista de comercio NFT de Forestify.](/images/web/forestify-nft.avif)
+
+## Información más inteligente gracias a analíticas
+
+Para aprovechar el poder de los datos, primero necesitas recopilarlos. Todos nuestros productos vienen con tableros de analíticas avanzadas basados en eventos, listos para darte las ideas necesarias para entender el comportamiento de los usuarios, medir el rendimiento de las funciones y tomar decisiones más inteligentes para tu negocio. Ya no tendrás que adivinar qué funciona y qué no; las analíticas y los datos te ponen al mando para impulsar la evolución de tu producto.
+
+<figcaption>Los tableros de analíticas avanzadas desbloquean valiosas ideas basadas en el comportamiento del usuario.</figcaption>
+
+![Captura de pantalla del tablero de analíticas.](/images/web/analytics.avif)
+
+## ¡Construyamos algo increíble juntos!
+
+¿Listo para llevar tus aplicaciones web al siguiente nivel? En RockinDev, combinamos creatividad con tecnología para construir plataformas hermosas, escalables y repletas de funciones. Ponte en contacto con nosotros hoy para convertir tu visión web en realidad.

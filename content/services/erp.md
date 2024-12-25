@@ -3,7 +3,7 @@ title: Enterprise solutions
 description:
 ---
 
-## Transform your business operations with RockinDev's ERPNext expertise
+## Transforming your business operations
 
 At RockinDev, we partner with you to revolutionize the way your business operates. Leveraging the power of [ERPNext](https://erpnext.com/){:target="_blank"}, a modern, open-source ERP solution, we deliver tailored enterprise systems that meet your business **unique needs**, **streamline processes**, and **reduce operational costs**.
 
@@ -13,7 +13,7 @@ At RockinDev, we partner with you to revolutionize the way your business operate
 
 ### Unlocking effortless operational efficiency
 
-Part of our expertise lies in expertly deploying ERPNext, a robust and flexible ERP solution that comes equipped with a suite of powerful base modules to address the core operational needs of your business. From **billing** and **accounting** to **inventory management**, **CRM**, **Human Resources**, and even specialized areas like [**healthcare**](https://erpnext.com/open-source-healthcare){:target="_blank"}, we ensure every module is fine-tuned to suit your organization's workflows.
+Part of our expertise lies in expertly deploying ERPNext, a robust and flexible ERP solution that comes equipped with a suite of powerful modules to address the core operational needs of your business. From **billing** and **accounting** to **inventory management**, **CRM**, **Human Resources**, and even specialized areas like [**healthcare**](https://erpnext.com/open-source-healthcare){:target="_blank"}, we ensure every module is fine-tuned to suit your organization's workflows.
 
 We guide you every step of the way, ensuring a smooth transition as your team adopts and embraces the system, minimizing disruptions and maximizing efficiency.
 

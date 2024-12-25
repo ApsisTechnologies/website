@@ -20,8 +20,8 @@ const contentRoutes = [
   '/services/web',
   '/services/cloud',
   '/services/erp',
-  '/services/ai-ml',
-  '/services/immersive',
+  // '/services/ai-ml',
+  // '/services/immersive',
 ]
 
 // outputs all the Nuxt content routes including all locales
