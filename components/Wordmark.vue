@@ -20,8 +20,8 @@
     class="wordmark"
     :class="{ 'no-pointer-events': props.noInteraction, 'link': !props.noInteraction }"
   >
-    <span class="wordmark-section-1">rockin</span>
-    <span class="wordmark-section-2">dev</span>
+    <span class="wordmark-section-1">Apsis</span>
+    <span class="wordmark-section-2">Tech</span>
   </div>
 </template>
 

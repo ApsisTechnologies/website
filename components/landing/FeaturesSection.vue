@@ -87,7 +87,6 @@
           <div class="icon-backdrop pos-absolute" />
           <img class="icon pos-relative no-pointer-events" :src="item.img" :alt="item.title" />
         </div>
-        <!-- <span class="landing-subtitle text-outline"> -->
         <span class="landing-subtitle text-gradient">
           {{ item.title }}
         </span>
@@ -95,8 +94,6 @@
           {{ item.text }}
         </span>
         <div class="flex-expand" />
-
-        <Button small :text="item.cta" :to="item.to" />
       </div>
     </div>
   </div>
@@ -106,7 +103,6 @@
 import { useI18n } from '#imports'
 import { vIntersectionObserver } from '@vueuse/components'
 import { addClassIfVisible } from 'lib/util'
-import immersive from 'assets/images/immersive.avif'
 import web from 'assets/images/web.avif'
 import ml from 'assets/images/ml.avif'
 import erp from 'assets/images/erp.avif'
@@ -134,20 +130,20 @@ const items = computed(() => [
     // to: blogUrl + '/?tag=cloud',
     to: '/services/cloud',
   },
-  // {
-  //   img: ml,
-  //   title: t('landing.features.items[2].title'),
-  //   text: t('landing.features.items[2].text'),
-  //   cta: t('landing.features.items[2].cta'),
-  //   to: '/services/ai-ml'
-  // },
   {
-    img: erp,
-    title: t('landing.features.items[4].title'),
-    text: t('landing.features.items[4].text'),
-    cta: t('landing.features.items[4].cta'),
-  to: '/services/erp'
-  }
+    img: ml,
+    title: t('landing.features.items[2].title'),
+    text: t('landing.features.items[2].text'),
+    cta: t('landing.features.items[2].cta'),
+    to: '/services/ai-ml'
+  },
+  // {
+  //   img: erp,
+  //   title: t('landing.features.items[4].title'),
+  //   text: t('landing.features.items[4].text'),
+  //   cta: t('landing.features.items[4].cta'),
+  // to: '/services/erp'
+  // }
   // {
   //   img: immersive,
   //   title: t('landing.features.items[3].title'),

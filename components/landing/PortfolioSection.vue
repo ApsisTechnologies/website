@@ -100,7 +100,6 @@
         <div class="flex-col slide-text flex-gap">
           <span class="slide-title landing-subtitle">{{ item.title }}</span>
           <p v-for="p in item.description">{{ p }}</p>
-          <Button style="margin-top: 2rem;" v-if="item.cta" small :text="item.cta.text" @click="onNavigate(item.cta.route)" />
         </div>
         <img class="slide-img no-pointer-events" :src="item.image" />
       </div>

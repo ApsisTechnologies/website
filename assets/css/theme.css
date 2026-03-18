@@ -33,3 +33,31 @@
 
   --background-gradient: linear-gradient(330deg, var(--background-color) 0%, #1c2169 100%);
 }
+
+@media (--light) {
+  :root {
+    color-scheme: light;
+
+    --error-color: hsl(20deg 100% 50%);
+    --text-color: hsl(0deg 0% 10%);
+    --muted-text-color: hsl(0deg 0% 40%);
+    --background-color: hsl(0deg 0% 100%);
+    --callout-color: hsl(0deg 0% 95%);
+    --highlighted-callout-color: hsl(0deg 0% 60%);
+    --border-color: hsl(0deg 0% 80%)
+  }
+}
+
+@media (--dark) {
+  :root {
+    color-scheme: dark;
+
+    --error-color: hsl(20deg 100% 50%);
+    --text-color: hsl(0deg 0% 100%);
+    --muted-text-color: hsl(0deg 0% 60%);
+    --background-color: hsl(240deg 33% 1%);
+    --callout-color: hsl(0deg 0% 15%);
+    --highlighted-callout-color: hsl(0deg 0% 40%);
+    --border-color: hsl(0deg 0% 40%);
+  }
+}

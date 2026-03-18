@@ -1,4 +1,3 @@
-import { ThemeManager } from 'lib/theme'
 import { EventBus, EventType } from 'lib/event'
 import { getUserLanguage } from 'lib/util'
 import { defineNuxtPlugin } from 'nuxt/app'
@@ -9,11 +8,6 @@ import NotFound from '@/pages/404.vue'
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.hook('app:mounted', () => {
     const preferences = usePreferences()
-
-    const themeManager = nuxtApp.vueApp.config.globalProperties.themeManager as ThemeManager
-    themeManager.setAuto()
-
-    preferences.setTheme(themeManager.name)
 
     const i18n = nuxtApp.$i18n
     const language = getUserLanguage()

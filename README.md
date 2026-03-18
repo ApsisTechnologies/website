@@ -1,4 +1,4 @@
-# RockinDev's Nuxt 3 SSG frontend starter
+# Apsis Tech Nuxt 3 SSG frontend starter
 
 This repo includes all the necessary setup to develop a Nuxt v3 application and prerender it via `nuxt generate`.
 

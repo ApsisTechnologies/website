@@ -67,7 +67,7 @@
     <div class="footer-text">
       <span>{{ t('footer.pre') }} </span>
       <HeartIcon class="subtitle-decoration" />
-      <span>@ RockinDev®️ {{ thisYear }}. </span>
+      <span>by {{ t('company.name') }} - {{ thisYear }}. </span>
       <span>{{ t('footer.notice') }}</span>
     </div>
   </footer>

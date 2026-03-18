@@ -1,7 +1,6 @@
 <style scoped>
 .form-panel {
-  background-color: var(--background-color);
-  /* background-color: var(--callout-color); */
+  background-color: var(--callout-color);
 
   border-radius: var(--border-radius);
   padding: 2rem;
@@ -135,26 +134,20 @@
       :text="t('landing.contact.buttonText')"
       @click="onSend"
       :enabled="formEnabled"
-      :loading="sending"
       expand
     />
-    <span
-      v-if="sent"
-      class="pos-relative confirmation-text"
-    >
-      {{ t('landing.contact.requestSentText') }}
-    </span>
   </div>
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from 'vue'
-import { useI18n } from '#imports'
+import { ref } from 'vue'
+import { useRuntimeConfig } from 'nuxt/app'
 import { isValidEmailAddress, extractEmailDomain } from 'lib/util'
+import { useI18n } from '#imports'
 import Button from 'components/Button.vue'
 import TextInput from 'components/TextInput.vue'
 import LocationIcon from 'assets/icons/location.svg'
-import { sendContactRequest } from 'lib/contact'
+const config = useRuntimeConfig()
 
 const props = withDefaults(defineProps<{
   glow?: boolean
@@ -187,10 +180,7 @@ const companyField = ref<InstanceType<typeof TextInput>>()
 const emailField = ref<InstanceType<typeof TextInput>>()
 const messageField = ref<InstanceType<typeof TextInput>>()
 
-let sending = ref(false)
-let sent = ref(false)
-
-const formEnabled = computed(() => !sending.value && !sent.value)
+const formEnabled = true
 
 const validateName = (name: string) => {
   return name.length ? '' : t('landing.contact.invalidName')
@@ -235,9 +225,9 @@ const onSend = async () => {
     return
   }
 
-  sending.value = true
-  await sendContactRequest(name, email, company, message)
-  sent.value = true
-  sending.value = false
+  const emailAddress = config.public.CONTACT_EMAIL_ADDRESS
+  const subject = encodeURIComponent(`Contact from ${name} at ${company}`)
+  const body = encodeURIComponent(`Name: ${name}\nCompany: ${company}\nEmail: ${email}\n\n${message}`)
+  window.open(`mailto:${emailAddress}?subject=${subject}&body=${body}`)
 }
 </script>

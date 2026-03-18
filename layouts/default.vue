@@ -48,11 +48,7 @@ useHead({
     { property: 'og:locale', content: locale },
     { property: 'og:url', content: `${config.public.APP_BASE_URL as string}${route.fullPath}` },
     { property: 'og:site_name', content: t('company.name') },
-    { property: 'og:description', content: t('landing.hero.about') },
-    { property: 'og:image', content: `${config.public.APP_BASE_URL}/opengraph-banner.jpg` },
-    { property: 'og:image:type', content: 'image/jpeg' },
-    { property: 'og:image:width', content: '1200' },
-    { property: 'og:image:height', content: '630' }
+    { property: 'og:description', content: t('landing.hero.about') }
   ]
 })
 </script>

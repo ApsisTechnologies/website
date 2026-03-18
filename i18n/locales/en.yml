@@ -1,12 +1,12 @@
 flag: 🇺🇸
 
 company:
-  name: RockinDev
+  name: Apsis
   tagline: Next-Gen Digital Solutions
 
 nav:
   blog: Blog
-  contact: Hire us
+  contact: Work with us
   about: About
   services: Services
   projects: Projects
@@ -18,8 +18,8 @@ footer:
 
 landing:
   hero:
-    header: Welcome to RockinDev
-    about: At RockinDev, we build standout digital products that turn users into raving fans, helping companies transform into digital native brands to unlock outsized growth at global scale.
+    header: Welcome to Apsis
+    about: At Apsis, we build standout digital products that turn users into raving fans, helping companies transform into digital native brands to unlock outsized growth at global scale.
     cta: Let's talk
 
     marquee:
@@ -32,7 +32,7 @@ landing:
         - designers
 
   validation:
-    header: RockinDev in numbers
+    header: Apsis in numbers
     title: Brands that trust us
 
     stats:
@@ -69,7 +69,7 @@ landing:
     cta: Case studies
 
   portfolio:
-    title: Greatest hits
+    title: Highlights
     projects:
       minipcr:
         title: miniPCR Digital
@@ -139,7 +139,7 @@ jobs:
 
   values:
     title: Our values
-    description: Our values shape RockinDev's culture and work philosophy. We use them as guiding principles in our everyday work and our professional life, giving us a commom framework that helps us find meaning and become a cohesive, highly-effective team.
+    description: Our values shape Apsis's culture and work philosophy. We use them as guiding principles in our everyday work and our professional life, giving us a commom framework that helps us find meaning and become a cohesive, highly-effective team.
 
     items:
       - title: Be Curious
